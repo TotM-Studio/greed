@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://cdvfiia4s06hs"]
+
+[ext_resource type="Script" uid="uid://cflt5iwnm31e7" path="res://Scripts/player_rpg.gd" id="1_donwm"]
+[ext_resource type="Texture2D" uid="uid://c6dh4c1ity7bu" path="res://Assets/Characters/shadow.png" id="2_8l3wm"]
+[ext_resource type="Texture2D" uid="uid://c8nky0k5j54ev" path="res://Assets/Characters/player.png" id="3_8l3wm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_donwm"]
+size = Vector2(32, 48)
+
+[sub_resource type="Gradient" id="Gradient_donwm"]
+offsets = PackedFloat32Array(0.0238095, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8l3wm"]
+gradient = SubResource("Gradient_donwm")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 1)
+metadata/_snap_enabled = true
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_donwm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_donwm")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.462745)
+texture_filter = 1
+position = Vector2(0, 8)
+texture = ExtResource("2_8l3wm")
+
+[node name="Icon" type="Sprite2D" parent="."]
+light_mask = 2
+texture_filter = 1
+position = Vector2(0, -8)
+texture = ExtResource("3_8l3wm")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(0, -8)
+scale = Vector2(7, 7)
+color = Color(1, 1, 0, 1)
+energy = 5.58
+texture = SubResource("GradientTexture2D_8l3wm")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -24)
+zoom = Vector2(3.32, 3.32)
+limit_left = 0
+limit_top = 0
+limit_smoothed = true
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+pitch_scale = 0.71

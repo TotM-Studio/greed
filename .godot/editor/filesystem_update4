@@ -1,0 +1,7 @@
+res://Scenes/Characters/Player/player_rpg.tscn
+res://Scenes/game.tscn
+res://Scenes/Levels/test_level.tscn
+res://Scenes/gui.tscn
+res://Scripts/game.gd
+res://Scripts/player_rpg.gd
+res://Scripts/Managers/inputsManager.gd
