@@ -1,5 +1,14 @@
-[gd_scene format=3 uid="uid://m5ejk37q3dq6"]
+[gd_scene load_steps=3 format=4 uid="uid://m5ejk37q3dq6"]
+
+[ext_resource type="TileSet" uid="uid://cjn6cgkelp87t" path="res://Assets/Tiles/tile_set.tres" id="1_su72k"]
+[ext_resource type="PackedScene" uid="uid://c18rfefnmnni0" path="res://Scenes/Characters/Player/player_rogue_like.tscn" id="2_sxfsx"]
 
 [node name="testLevelRogueLike" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAAAAIAAAAAAAQAAAABAAIAAAAAAAQAAAACAAIAAAAAAAQAAAADAAIAAAAAAAQAAAAEAAIAAAAAAAQAAAAFAAIAAAAAAAQAAAAGAAIAAAAAAAQAAAAHAAIAAAAAAAQAAAAIAAIAAAAAAAQAAAAJAAIAAAAAAAQAAAAKAAIAAAAAAAQAAAALAAIAAAAAAAQAAAAMAAIAAAAAAAQAAAANAAIAAAAAAAQAAAD//wIAAAAAAAQAAAAOAAIAAAAAAAQAAAD9/wIAAAAAAAQAAAD+/wIAAAAAAAQAAAA=")
+tile_set = ExtResource("1_su72k")
+
+[node name="PlayerRogueLike" parent="." instance=ExtResource("2_sxfsx")]
+position = Vector2(0, 48)

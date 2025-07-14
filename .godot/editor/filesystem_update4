@@ -3,3 +3,6 @@ res://Scenes/game.tscn
 res://Scenes/Characters/Player/player_rpg.tscn
 res://Scenes/GUI/gui.tscn
 res://Scenes/Characters/Player/player_rogue_like.tscn
+res://Assets/Tiles/tile_set.tres
+res://Scenes/Levels/test_level_rogue_like.tscn
+res://Scripts/Player/player_rogue_like.gd
