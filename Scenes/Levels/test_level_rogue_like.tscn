@@ -12,3 +12,6 @@ tile_set = ExtResource("1_su72k")
 
 [node name="PlayerRogueLike" parent="." instance=ExtResource("2_sxfsx")]
 position = Vector2(0, 48)
+GRAVITY = 10
+acceleration = 70
+jumpForce = 550
