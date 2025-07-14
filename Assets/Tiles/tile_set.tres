@@ -1,11 +1,15 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cjn6cgkelp87t"]
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://cjn6cgkelp87t"]
 
 [ext_resource type="Texture2D" uid="uid://bjikhv2pgebcl" path="res://Assets/Tiles/tile_ground.png" id="1_2u7pv"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_2u7pv"]
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_db73o"]
 texture = ExtResource("1_2u7pv")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
+0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_2u7pv")
 1:0/0 = 0
 2:0/animation_frame_0/duration = 1.0
 2:0/animation_frame_1/duration = 1.0
@@ -24,16 +28,15 @@ texture_region_size = Vector2i(32, 32)
 2:4/0 = 0
 1:4/0 = 0
 0:4/0 = 0
-0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -8, 16, -8, 16, 16, -16, 16)
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, 0, 16, 0, 16, 16, -16, 16)
 4:2/0 = 0
 4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+5:1/size_in_atlas = Vector2i(1, 4)
 5:1/0 = 0
-5:2/0 = 0
-5:3/0 = 0
-5:4/0 = 0
 
 [resource]
 tile_size = Vector2i(32, 32)
+occlusion_layer_0/light_mask = 1
 physics_layer_0/collision_layer = 7
 physics_layer_0/collision_mask = 7
 sources/0 = SubResource("TileSetAtlasSource_db73o")
