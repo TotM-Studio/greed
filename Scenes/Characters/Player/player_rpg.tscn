@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cflt5iwnm31e7" path="res://Scripts/Player/player_rpg.gd" id="1_donwm"]
 [ext_resource type="Texture2D" uid="uid://c6dh4c1ity7bu" path="res://Assets/Characters/shadow.png" id="2_8l3wm"]
-[ext_resource type="Texture2D" uid="uid://c8nky0k5j54ev" path="res://Assets/Characters/player.png" id="3_8l3wm"]
+[ext_resource type="Texture2D" uid="uid://dn8hwvw144g04" path="res://Assets/Characters/player_greed_vu_de_dessus.piskel._2025_01_27_44.png" id="3_8l3wm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_donwm"]
 size = Vector2(32, 48)
@@ -40,7 +40,7 @@ texture = ExtResource("3_8l3wm")
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(0, -8)
 scale = Vector2(7, 7)
-color = Color(1, 0.539063, 0, 1)
+color = Color(0.558594, 0.322801, 0.0196381, 1)
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_8l3wm")
 
@@ -49,6 +49,7 @@ position = Vector2(0, -24)
 zoom = Vector2(3.32, 3.32)
 limit_left = 0
 limit_top = 0
+limit_right = 2464
 limit_smoothed = true
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
