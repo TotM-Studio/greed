@@ -30,4 +30,4 @@ autoplay = true
 stream = SubResource("AudioStreamGenerator_2ytpj")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.29273, 0.533503, 0.53363, 1)
+color = Color(0, 0.271333, 0.37, 1)

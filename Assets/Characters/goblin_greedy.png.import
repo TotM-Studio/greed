@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b836eqxn5bgts"
-path="res://.godot/imported/Sprite-0002.png-da0b91423f03849a3b874c1b28e01e53.ctex"
+uid="uid://cn2fn6ppoachx"
+path="res://.godot/imported/goblin_greedy.png-f17b9eb7d8621c2588a54b4341637ab8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tiles/Sprite-0002.png"
-dest_files=["res://.godot/imported/Sprite-0002.png-da0b91423f03849a3b874c1b28e01e53.ctex"]
+source_file="res://Assets/Characters/goblin_greedy.png"
+dest_files=["res://.godot/imported/goblin_greedy.png-f17b9eb7d8621c2588a54b4341637ab8.ctex"]
 
 [params]
 
