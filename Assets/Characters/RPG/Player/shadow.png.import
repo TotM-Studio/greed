@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcwt3i7dbjm2g"
-path="res://.godot/imported/New_Perso_greed_3.png-9396ad42fcd86a9f2776089ab2f7681e.ctex"
+uid="uid://c6dh4c1ity7bu"
+path="res://.godot/imported/shadow.png-a5fb57da4c14164adcd37ec18eafea65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Characters/New_Perso_greed_3.png"
-dest_files=["res://.godot/imported/New_Perso_greed_3.png-9396ad42fcd86a9f2776089ab2f7681e.ctex"]
+source_file="res://Assets/Characters/RPG/Player/shadow.png"
+dest_files=["res://.godot/imported/shadow.png-a5fb57da4c14164adcd37ec18eafea65.ctex"]
 
 [params]
 

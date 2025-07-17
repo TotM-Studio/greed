@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c18rfefnmnni0"]
 
-[ext_resource type="Texture2D" uid="uid://bcwt3i7dbjm2g" path="res://Assets/Characters/New_Perso_greed_3.png" id="1_qa6fu"]
+[ext_resource type="Texture2D" uid="uid://bcwt3i7dbjm2g" path="res://Assets/Characters/RogueLike/New_Perso_greed_3.png" id="1_qa6fu"]
 [ext_resource type="Script" uid="uid://dspn8rvy2q84h" path="res://Scripts/Player/player_rogue_like.gd" id="1_qcb1k"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qcb1k"]

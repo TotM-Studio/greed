@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn8hwvw144g04"
-path="res://.godot/imported/player_greed_vu_de_dessus.piskel._2025_01_27_44.png-e97cbb4c2881c2e8a31344081e39ce97.ctex"
+uid="uid://un8de2ngr8ol"
+path="res://.godot/imported/player_greed_vu_de_dessus de derrière.piskel.png-16071623917f2c80927cb3bf4ccad830.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Characters/player_greed_vu_de_dessus.piskel._2025_01_27_44.png"
-dest_files=["res://.godot/imported/player_greed_vu_de_dessus.piskel._2025_01_27_44.png-e97cbb4c2881c2e8a31344081e39ce97.ctex"]
+source_file="res://Assets/Characters/RPG/Player/player_greed_vu_de_dessus de derrière.piskel.png"
+dest_files=["res://.godot/imported/player_greed_vu_de_dessus de derrière.piskel.png-16071623917f2c80927cb3bf4ccad830.ctex"]
 
 [params]
 
