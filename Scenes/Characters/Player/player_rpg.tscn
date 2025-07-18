@@ -1,16 +1,8 @@
-[gd_scene load_steps=40 format=3 uid="uid://cdvfiia4s06hs"]
+[gd_scene load_steps=31 format=3 uid="uid://cdvfiia4s06hs"]
 
 [ext_resource type="Script" uid="uid://cflt5iwnm31e7" path="res://Scripts/Player/player_rpg.gd" id="1_donwm"]
 [ext_resource type="Texture2D" uid="uid://c6dh4c1ity7bu" path="res://Assets/Characters/RPG/Player/shadow.png" id="2_8l3wm"]
-[ext_resource type="Texture2D" uid="uid://b6jhm01rt1rps" path="res://Assets/Characters/RPG/Player/vue de derrière1.png" id="3_khfis"]
-[ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Characters/RPG/Player/devant.png" id="4_1i4tc"]
-[ext_resource type="Texture2D" uid="uid://c8nky0k5j54ev" path="res://Assets/Characters/RPG/Player/player.png" id="5_1i4tc"]
-[ext_resource type="Texture2D" uid="uid://1fad5o13n2n3" path="res://Assets/Characters/RPG/Player/gauche.png" id="5_6rpqp"]
-[ext_resource type="Texture2D" uid="uid://6g3dv6xf2hog" path="res://Assets/Characters/RPG/Player/vue de derrière2.png" id="5_dkwr0"]
-[ext_resource type="Texture2D" uid="uid://ds6rocfonekc" path="res://Assets/Characters/RPG/Player/vue de derrière3.png" id="6_6rpqp"]
-[ext_resource type="Texture2D" uid="uid://c3xtx6ukmbgus" path="res://Assets/Characters/RPG/Player/droite.png" id="6_dkwr0"]
-[ext_resource type="Texture2D" uid="uid://oicjls5srvt4" path="res://Assets/Characters/RPG/Player/devant (2).png" id="7_j1xdo"]
-[ext_resource type="Texture2D" uid="uid://b8qcy13rka1j7" path="res://Assets/Characters/RPG/Player/devant .png" id="8_lbm88"]
+[ext_resource type="SpriteFrames" uid="uid://ch1xgnwq7fla0" path="res://Assets/Characters/RPG/Player/player_rpg_animations.tres" id="3_8l3wm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_donwm"]
 size = Vector2(28, 28)
@@ -25,90 +17,6 @@ fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.4, 1)
 metadata/_snap_enabled = true
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_iyc8d"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_khfis")
-}],
-"loop": true,
-"name": &"idleBack",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_1i4tc")
-}],
-"loop": true,
-"name": &"idleFront",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_6rpqp")
-}],
-"loop": true,
-"name": &"idleLeft",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_dkwr0")
-}],
-"loop": true,
-"name": &"idleRight",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_dkwr0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_6rpqp")
-}],
-"loop": true,
-"name": &"walkBack",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_j1xdo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_lbm88")
-}],
-"loop": true,
-"name": &"walkFront",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_1i4tc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_1i4tc")
-}],
-"loop": true,
-"name": &"walkLeft",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_1i4tc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_khfis")
-}],
-"loop": true,
-"name": &"walkRight",
-"speed": 5.0
-}]
 
 [sub_resource type="Animation" id="Animation_iyc8d"]
 resource_name = "Idle Back"
@@ -327,6 +235,7 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 script = ExtResource("1_donwm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_donwm")
 
@@ -363,7 +272,7 @@ light_mask = 2
 z_index = 3
 texture_filter = 1
 position = Vector2(0, -8)
-sprite_frames = SubResource("SpriteFrames_iyc8d")
+sprite_frames = ExtResource("3_8l3wm")
 animation = &"walkFront"
 autoplay = "walkFront"
 
@@ -373,6 +282,7 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+active = false
 tree_root = SubResource("AnimationNodeStateMachine_pblej")
 anim_player = NodePath("../AnimationPlayer")
 parameters/conditions/idle = false
