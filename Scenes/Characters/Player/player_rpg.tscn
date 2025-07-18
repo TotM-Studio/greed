@@ -1,14 +1,15 @@
-[gd_scene load_steps=38 format=3 uid="uid://cdvfiia4s06hs"]
+[gd_scene load_steps=39 format=3 uid="uid://cdvfiia4s06hs"]
 
 [ext_resource type="Script" uid="uid://cflt5iwnm31e7" path="res://Scripts/Player/player_rpg.gd" id="1_donwm"]
 [ext_resource type="Texture2D" uid="uid://c6dh4c1ity7bu" path="res://Assets/Characters/RPG/Player/shadow.png" id="2_8l3wm"]
-[ext_resource type="Texture2D" uid="uid://ce1w5afbfu54p" path="res://Assets/Characters/RPG/Player/vue de derrière1.png" id="3_khfis"]
-[ext_resource type="Texture2D" uid="uid://b3jdhrljbpgxc" path="res://Assets/Characters/RPG/Player/devant.png" id="4_1i4tc"]
+[ext_resource type="Texture2D" uid="uid://b6jhm01rt1rps" path="res://Assets/Characters/RPG/Player/vue de derrière1.png" id="3_khfis"]
+[ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Characters/RPG/Player/devant.png" id="4_1i4tc"]
 [ext_resource type="Texture2D" uid="uid://c8nky0k5j54ev" path="res://Assets/Characters/RPG/Player/player.png" id="5_1i4tc"]
-[ext_resource type="Texture2D" uid="uid://bnxdllby1l3hl" path="res://Assets/Characters/RPG/Player/vue de derrière2.png" id="5_dkwr0"]
-[ext_resource type="Texture2D" uid="uid://dt7dpxpp85ajo" path="res://Assets/Characters/RPG/Player/vue de derrière3.png" id="6_6rpqp"]
-[ext_resource type="Texture2D" uid="uid://dwtp2qy4u7e0x" path="res://Assets/Characters/RPG/Player/devant (2).png" id="7_j1xdo"]
-[ext_resource type="Texture2D" uid="uid://bqgwatuxnqne3" path="res://Assets/Characters/RPG/Player/devant .png" id="8_lbm88"]
+[ext_resource type="Texture2D" uid="uid://6g3dv6xf2hog" path="res://Assets/Characters/RPG/Player/vue de derrière2.png" id="5_dkwr0"]
+[ext_resource type="Texture2D" uid="uid://ds6rocfonekc" path="res://Assets/Characters/RPG/Player/vue de derrière3.png" id="6_6rpqp"]
+[ext_resource type="Texture2D" uid="uid://c3xtx6ukmbgus" path="res://Assets/Characters/RPG/Player/droite.png" id="6_dkwr0"]
+[ext_resource type="Texture2D" uid="uid://oicjls5srvt4" path="res://Assets/Characters/RPG/Player/devant (2).png" id="7_j1xdo"]
+[ext_resource type="Texture2D" uid="uid://b8qcy13rka1j7" path="res://Assets/Characters/RPG/Player/devant .png" id="8_lbm88"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_donwm"]
 size = Vector2(28, 28)
@@ -57,7 +58,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_1i4tc")
+"texture": ExtResource("6_dkwr0")
 }],
 "loop": true,
 "name": &"idleRight",
@@ -364,7 +365,6 @@ position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_iyc8d")
 animation = &"walkFront"
 autoplay = "walkFront"
-frame_progress = 0.785519
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
