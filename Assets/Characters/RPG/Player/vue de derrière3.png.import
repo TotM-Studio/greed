@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://b3sy6ewu41rg6"
+=======
+uid="uid://dt7dpxpp85ajo"
+>>>>>>> b3a57532c31d56c4701c810975ca08da73c35f26
 path="res://.godot/imported/vue de derrière3.png-c9ed514ed78213860771f0a6f14b202c.ctex"
 metadata={
 "vram_texture": false
