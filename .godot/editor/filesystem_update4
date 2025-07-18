@@ -1,6 +1,4 @@
-res://Scenes/Characters/Player/player_rpg.tscn
+res://Scenes/game.tscn
 res://Assets/Tiles/tile_set.tres
 res://Scenes/Levels/test_level.tscn
-res://Scenes/game.tscn
-res://Scripts/Player/player_rpg.gd
-res://Scripts/Player/player_rogue_like.gd
+res://Scenes/Characters/Player/player_rpg.tscn

@@ -45,7 +45,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idleFront",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -92,7 +92,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("4_1i4tc")
 }],
-"loop": false,
+"loop": true,
 "name": &"walkLeft",
 "speed": 5.0
 }, {
@@ -108,8 +108,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Animation" id="Animation_dkwr0"]
-resource_name = "Idle Left"
+[sub_resource type="Animation" id="Animation_iyc8d"]
+resource_name = "Idle Back"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -120,37 +120,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"idleLeft"]
-}
-
-[sub_resource type="Animation" id="Animation_6rpqp"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"walkFront"]
-}
-
-[sub_resource type="Animation" id="Animation_j1xdo"]
-resource_name = "Idle Right"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"idleRight"]
+"values": [&"idleBack"]
 }
 
 [sub_resource type="Animation" id="Animation_lbm88"]
@@ -168,8 +138,8 @@ tracks/0/keys = {
 "values": [&"idleFront"]
 }
 
-[sub_resource type="Animation" id="Animation_iyc8d"]
-resource_name = "Idle Back"
+[sub_resource type="Animation" id="Animation_dkwr0"]
+resource_name = "Idle Left"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -180,11 +150,26 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"idleBack"]
+"values": [&"idleLeft"]
 }
 
-[sub_resource type="Animation" id="Animation_cj732"]
-resource_name = "Walk Front"
+[sub_resource type="Animation" id="Animation_j1xdo"]
+resource_name = "Idle Right"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Icon:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idleRight"]
+}
+
+[sub_resource type="Animation" id="Animation_6rpqp"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -211,6 +196,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [&"walkBack"]
+}
+
+[sub_resource type="Animation" id="Animation_cj732"]
+resource_name = "Walk Front"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Icon:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walkFront"]
 }
 
 [sub_resource type="Animation" id="Animation_b70df"]
@@ -364,6 +364,7 @@ position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_iyc8d")
 animation = &"walkFront"
 autoplay = "walkFront"
+frame_progress = 0.690535
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -373,7 +374,7 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_pblej")
 anim_player = NodePath("../AnimationPlayer")
-parameters/conditions/idle = true
-parameters/conditions/is_walking = false
+parameters/conditions/idle = false
+parameters/conditions/is_walking = true
 parameters/Idle/blend_position = Vector2(-0.00319487, -0.0454545)
-parameters/Walk/blend_position = Vector2(0.605431, -0.00568187)
+parameters/Walk/blend_position = Vector2(0.00806451, 0.536978)
