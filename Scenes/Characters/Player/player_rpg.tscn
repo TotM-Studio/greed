@@ -364,7 +364,7 @@ position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_iyc8d")
 animation = &"walkFront"
 autoplay = "walkFront"
-frame_progress = 0.690535
+frame_progress = 0.785519
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
