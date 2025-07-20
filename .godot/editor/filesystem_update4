@@ -2,3 +2,5 @@ res://Scenes/Levels/test_level.tscn
 res://Assets/Tiles/tile_set.tres
 res://Scenes/Characters/Player/player_rpg.tscn
 res://Assets/Characters/RPG/Player/player_rpg_animations.tres
+res://Scripts/GUI/opening.gd
+res://Scenes/GUI/opening.tscn

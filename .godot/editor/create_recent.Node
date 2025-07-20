@@ -1,5 +1,7 @@
-Node2D
+CenterContainer
 ColorRect
+MarginContainer
+Node2D
 AnimationTree
 AnimationPlayer
 AnimatedSprite2D
@@ -11,5 +13,3 @@ CharacterBody2D
 TileMapLayer
 Sprite2D
 TileMap
-AudioStreamPlayer
-AudioStreamPlayer2D

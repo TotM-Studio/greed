@@ -15,10 +15,12 @@ config/name_localized={
 "fr_FR": "Gourmandise"
 }
 config/description="Un pitit roguelike bien sympa : )"
-config/version="test 0.0.1"
+config/version="test 0.0.2"
 run/main_scene="uid://o3cfhi77nf0a"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="uid://ito1dath3eji"
+config/icon="uid://ito1dath3eji"
 
 [autoload]
 
