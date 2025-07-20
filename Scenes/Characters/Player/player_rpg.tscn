@@ -235,14 +235,13 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 script = ExtResource("1_donwm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_donwm")
 
 [node name="Shadow" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.462745)
 texture_filter = 1
-position = Vector2(0, 8)
+position = Vector2(0, 2)
 texture = ExtResource("2_8l3wm")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
@@ -276,7 +275,7 @@ position = Vector2(0, -8)
 sprite_frames = ExtResource("3_8l3wm")
 animation = &"walkFront"
 autoplay = "walkFront"
-frame_progress = 0.891166
+frame_progress = 0.202316
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
