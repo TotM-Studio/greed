@@ -11,14 +11,15 @@ extends Control
 @export var end_delay : float = 0.5
 @export var show_loading_screen : bool = false
 
-
 var tween : Tween
 var next_image_index : int = 0
 
 func _load_next_scene() -> void:
-	load(next_scene)
-	ResourceLoader.load(next_scene)
-	get_tree().change_scene_to_packed(get_resource())
+	var status = SceneLoader.get_status()
+	if show_loading_screen or status != ResourceLoader.THREAD_LOAD_LOADED:
+		SceneLoader.change_scene_to_loading_screen()
+	else:
+		SceneLoader.change_scene_to_resource()
 
 func _add_textures_to_container(textures : Array[Texture2D]) -> void:
 	for texture in textures:
@@ -28,6 +29,25 @@ func _add_textures_to_container(textures : Array[Texture2D]) -> void:
 		texture_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		texture_rect.modulate.a = 0.0
 		%ImagesContainer.call_deferred("add_child", texture_rect)
+
+func _event_skips_image(event : InputEvent) -> bool:
+	return event.is_action_released(&"ui_accept") or event.is_action_released(&"ui_select")
+
+func _event_skips_intro(event : InputEvent) -> bool:
+	return event.is_action_released(&"ui_cancel")
+
+func _event_is_mouse_button_released(event : InputEvent) -> bool:
+	return event is InputEventMouseButton and not event.is_pressed()
+
+func _unhandled_input(event : InputEvent) -> void:
+	if _event_skips_intro(event):
+		_load_next_scene()
+	elif _event_skips_image(event):
+		_show_next_image(false)
+
+func _gui_input(event : InputEvent) -> void:
+	if _event_is_mouse_button_released(event):
+		_show_next_image(false)
 
 func _transition_out() -> void:
 	await get_tree().create_timer(end_delay).timeout
@@ -75,5 +95,6 @@ func _show_next_image(animated : bool = true) -> void:
 	_wait_and_fade_out(texture_rect)
 
 func _ready() -> void:
+	SceneLoader.load_scene(next_scene, true)
 	_add_textures_to_container(images)
 	_transition_in()
