@@ -1,8 +1,10 @@
+res://Scripts/Managers
 res://Scenes/GUI
+C:/Users/Aydan/Desktop
+res://Assets
 res://Assets/Characters/RPG/Greedy
 res://Scenes/Levels
 res://Scripts/Managers/autoloads
-res://Assets
 res://Scenes
 res://Scripts/GUI
 res://Assets/Characters/RPG/Player
@@ -10,6 +12,4 @@ res://Assets/Tiles
 res://Scripts/Player
 res://Scenes/Characters/Player
 res://Assets/Tiles/Test
-C:/Users/Aydan/Desktop
 res://Scripts
-res://Scripts/Managers

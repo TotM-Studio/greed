@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1753083471
-export_presets.cfg::TextFile/TextFile::-1::1752103790::0::1::::<><><>0<>0<><>::
+::res://::1753083867
+export_presets.cfg::TextFile/TextFile::-1::1753083867::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::3170293212729327055::1751904575::1751904575::1::::<><><>0<>0<>982b0da918d7702093a7d166582af472<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1752523016::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1753021366
@@ -38,33 +38,32 @@ Sprite-0002.png::CompressedTexture2D/CompressedTexture2D::4762345347348124792::1
 test.tscn::PackedScene/PackedScene::8628109814465611832::1752673307::0::1::::<><><>0<>0<><>::uid://b836eqxn5bgts::::res://Assets/Tiles/Test/Sprite-0002.png<>uid://ebgy1g1ti2ov::::res://Assets/Tiles/Test/Sprite-0001.png
 ::res://Assets/Weapons/::1752836535
 arme.png::CompressedTexture2D/CompressedTexture2D::5478214295719509210::1752836535::1752522822::1::::<><><>0<>0<>c0831468389318ceee04b20e42e4e00a<>res://.godot/imported/arme.png-7e82d3f7fe6cce668138a7adfbb7521d.ctex::
-::res://Scenes/::1753083440
-game.tscn::PackedScene/PackedScene::2797320438350858787::1752829906::0::1::::<><><>0<>0<><>::uid://cvt0k8e08w0uu::::res://Scripts/game.gd
+::res://Scenes/::1753084835
 ::res://Scenes/Characters/::1751904575
-::res://Scenes/Characters/Player/::1753083378
+::res://Scenes/Characters/Player/::1753084454
 player_rogue_like.tscn::PackedScene/PackedScene::6666917104130216549::1752764446::0::1::::<><><>0<>0<><>::uid://bcwt3i7dbjm2g::::res://Assets/Characters/RogueLike/New_Perso_greed_3.png<>uid://dspn8rvy2q84h::::res://Scripts/Player/player_rogue_like.gd
-player_rpg.tscn::PackedScene/PackedScene::5027078123980127236::1753083378::0::1::::<><><>0<>0<><>::uid://cflt5iwnm31e7::::res://Scripts/Player/player_rpg.gd<>uid://c6dh4c1ity7bu::::res://Assets/Characters/RPG/Player/shadow.png<>uid://ch1xgnwq7fla0::::res://Assets/Characters/RPG/Player/player_rpg_animations.tres
-::res://Scenes/GUI/::1753083470
+player_rpg.tscn::PackedScene::5027078123980127236::1753084454::0::1::::<><><>0<>0<><>::uid://cflt5iwnm31e7::::res://Scripts/Player/player_rpg.gd<>uid://c6dh4c1ity7bu::::res://Assets/Characters/RPG/Player/shadow.png<>uid://ch1xgnwq7fla0::::res://Assets/Characters/RPG/Player/player_rpg_animations.tres
+::res://Scenes/GUI/::1753084454
 gui.tscn::PackedScene/PackedScene::4075835828317050823::1752756692::0::1::::<><><>0<>0<><>::
-opening - Copie.tscn::PackedScene::1280526303966499055::1753083470::0::1::::<><><>0<>0<><>::uid://cv8b4iqnofdvf::::res://Scripts/GUI/opening - Copie.gd<>uid://ito1dath3eji::::res://Assets/logo2.0.png<>uid://cn2fn6ppoachx::::res://Assets/Characters/RPG/Greedy/goblin_greedy.png
-opening.tscn::PackedScene/PackedScene::4525184570748803870::1753083378::0::1::::<><><>0<>0<><>::uid://c4d8jqptdqsat::::res://Scripts/GUI/opening.gd<>uid://cn2fn6ppoachx::::res://Assets/Characters/RPG/Greedy/goblin_greedy.png<>uid://ito1dath3eji::::res://Assets/logo2.0.png
-::res://Scenes/Levels/::1753083378
-test_level.tscn::PackedScene/PackedScene::1040577132520284750::1753083378::0::1::::<><><>0<>0<><>::uid://cjn6cgkelp87t::::res://Assets/Tiles/tile_set.tres<>uid://cdvfiia4s06hs::::res://Scenes/Characters/Player/player_rpg.tscn
+loading_screen.tscn::PackedScene::1142499608755505910::1753084454::0::1::::<><><>0<>0<><>::uid://dmxbxah8wfsai::::res://Scripts/GUI/loading_screen.gd
+opening - Copie.tscn::PackedScene::1280526303966499055::1753084454::0::1::::<><><>0<>0<><>::uid://cv8b4iqnofdvf::::res://Scripts/GUI/opening - Copie.gd<>uid://ito1dath3eji::::res://Assets/logo2.0.png<>uid://cn2fn6ppoachx::::res://Assets/Characters/RPG/Greedy/goblin_greedy.png
+::res://Scenes/Levels/::1753084453
+test_level.tscn::PackedScene::1040577132520284750::1753084453::0::1::::<><><>0<>0<><>::uid://cjn6cgkelp87t::::res://Assets/Tiles/tile_set.tres<>uid://cdvfiia4s06hs::::res://Scenes/Characters/Player/player_rpg.tscn
 test_level_rogue_like.tscn::PackedScene/PackedScene::904456966358836395::1752756692::0::1::::<><><>0<>0<><>::uid://cjn6cgkelp87t::::res://Assets/Tiles/tile_set.tres<>uid://c18rfefnmnni0::::res://Scenes/Characters/Player/player_rogue_like.tscn
-::res://Scripts/::1753021080
-game.gd::GDScript/GDScript::6287567784500879872::1751904575::0::1::::<>RefCounted<><>0<>0<><>::
-::res://Scripts/GUI/::1753083470
+::res://Scripts/::1753084825
+game.gd::GDScript::6287567784500879872::1753084825::0::1::::<>Node<><>0<>0<><>::
+::res://Scripts/GUI/::1753083479
+loading_screen.gd::GDScript::8049110665674262328::1751900706::0::1::::LoadingScreen<>CanvasLayer<><>0<>0<><>::
 opening - Copie.gd::GDScript::6315044500198104963::1751900706::0::1::::<>Control<><>0<>0<><>::
-::res://Scripts/Managers/::1753083470
+::res://Scripts/Managers/::1753083479
 inputsManager.gd::GDScript/GDScript::4998259960916160823::1751904575::0::1::::<>Node<><>0<>0<><>::
-loading_screen.gd::GDScript/GDScript::8049110665674262328::1751900706::0::1::::LoadingScreen<>CanvasLayer<><>0<>0<><>::
-::res://Scripts/Managers/autoloads/::1753083379
+::res://Scripts/Managers/autoloads/::1753084454
 app_config.gd::GDScript/GDScript::5716055322149362337::1751900706::0::1::::<>Node<><>0<>0<><>::
 app_config.tscn::PackedScene/PackedScene::5425483096977576605::1751900706::0::1::::<><><>0<>0<><>::uid://cno5ujal5t3kf::::res://addons/maaacks_menus_template/base/scenes/autoloads/app_config.gd
 project_music_controller.tscn::PackedScene/PackedScene::1256348865492462175::1751900706::0::1::::<><><>0<>0<><>::uid://ctrh4qyxqncss::::res://addons/maaacks_menus_template/base/scripts/music_controller.gd
 project_ui_sound_controller.tscn::PackedScene/PackedScene::4973014309445390759::1751900706::0::1::::<><><>0<>0<><>::uid://b5oej1q4h7jvh::::res://addons/maaacks_menus_template/base/scripts/ui_sound_controller.gd
 scene_loader.gd::GDScript/GDScript::6422444806138659039::1751900706::0::1::::SceneLoaderClass<>Node<><>0<>0<><>::
-scene_loader.tscn::PackedScene/PackedScene::4889206191134864012::1753083379::0::1::::<><><>0<>0<><>::uid://cxrcy0evb0j3l::::res://Scripts/Managers/autoloads/scene_loader.gd
+scene_loader.tscn::PackedScene::4889206191134864012::1753084454::0::1::::<><><>0<>0<><>::uid://cxrcy0evb0j3l::::res://Scripts/Managers/autoloads/scene_loader.gd
 ::res://Scripts/Player/::1752862944
 player_rogue_like.gd::GDScript/GDScript::8454476081444652757::1752772898::0::1::::<>CharacterBody2D<><>0<>0<><>::
 player_rpg.gd::GDScript/GDScript::5147701392331056848::1752862944::0::1::::<>CharacterBody2D<><>0<>0<><>::

@@ -5,3 +5,6 @@ res://Scenes/Characters/Player/player_rpg.tscn
 res://Scenes/GUI/opening.tscn
 res://Scripts/Managers/autoloads/scene_loader.tscn
 res://Scenes/GUI/opening - Copie.tscn
+res://Scenes/GUI/loading_screen.tscn
+res://Scripts/game.gd
+res://Scenes/game.tscn

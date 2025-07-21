@@ -1,4 +1,15 @@
-res://Scenes/Characters/Player/player_rpg.tscn::33996a8a2d522aad3c379758de160480::1752103628::res://.godot/exported/133200997/export-0b20cecf6bcf4ac72c357f0882c51314-player_rpg.scn
-res://Scenes/Levels/test_level.tscn::be5b82cc32ffc5b77ddb15ee93cc771e::1752103628::res://.godot/exported/133200997/export-d120ffbe0d0c37f3342ba06225cc60d9-test_level.scn
-res://Scenes/game.tscn::7c663432bb11e4e1529d2af2543b04fe::1752103627::res://.godot/exported/133200997/export-d45e16ca8d170891778b9dcfa9c69e68-game.scn
-res://Scenes/gui.tscn::e057e4245942bb7200d56c6aeddc2ab0::1752103628::res://.godot/exported/133200997/export-6fa2297ac3b46430f7d7000f270f4dfb-gui.scn
+res://Scenes/Characters/Player/player_rpg.tscn::66973162c941f766e6b9661071a6f7f2::1753083596::res://.godot/exported/133200997/export-0b20cecf6bcf4ac72c357f0882c51314-player_rpg.scn
+res://Scenes/Levels/test_level.tscn::4340a50b0c1da3e18387167bd3de9a9b::1753083847::res://.godot/exported/133200997/export-d120ffbe0d0c37f3342ba06225cc60d9-test_level.scn
+res://Scenes/game.tscn::7c663432bb11e4e1529d2af2543b04fe::1752829906::res://.godot/exported/133200997/export-d45e16ca8d170891778b9dcfa9c69e68-game.scn
+res://Assets/Characters/RPG/Player/player_rpg_animations.tres::d4df6b167a16038f3de3fcc3332a5950::1753003728::res://.godot/exported/133200997/export-92ce0f3ee1bdabfa0abca2db0f3a7a11-player_rpg_animations.res
+res://Assets/Tiles/Test/test.tscn::bdbdd8e9991aa9a1600b6e3720ceed9c::1752673307::res://.godot/exported/133200997/export-068e05052c7c68f3a7953863a6a777b4-test.scn
+res://Assets/Tiles/tile_set.tres::a6202ae1c91381e71dea9327db4119ed::1753083336::res://.godot/exported/133200997/export-67b4318cc10514110bd542a0609067d1-tile_set.res
+res://Scenes/Characters/Player/player_rogue_like.tscn::e3fcd688fff628df1aa105dec4ab17ef::1752764446::res://.godot/exported/133200997/export-5759b642b575e2ff3e4a9efd5f961cda-player_rogue_like.scn
+res://Scenes/GUI/gui.tscn::e057e4245942bb7200d56c6aeddc2ab0::1752756692::res://.godot/exported/133200997/export-7bc812db155cc5cbb24eaf8a92c51ee4-gui.scn
+res://Scenes/GUI/opening - Copie.tscn::4a80fdf390c6185912706ddb46fa33ce::1753083597::res://.godot/exported/133200997/export-18d401bc0e0a6c6ae03d0c3f69ea79d8-opening - Copie.scn
+res://Scenes/GUI/opening.tscn::278471c69b6fa934c24cff25a89fada4::1753083378::res://.godot/exported/133200997/export-86bb5685cca9f7db69576f14fd5c80f4-opening.scn
+res://Scenes/Levels/test_level_rogue_like.tscn::1f326d5138517441b3f8d4717afbf8cc::1752756692::res://.godot/exported/133200997/export-0b299f6f7c1fc71e92eeb493826cf763-test_level_rogue_like.scn
+res://Scripts/Managers/autoloads/app_config.tscn::6f3ded4a86476fe7436f2b55c827636e::1751900706::res://.godot/exported/133200997/export-805e141de3a7f136932e4b935d032347-app_config.scn
+res://Scripts/Managers/autoloads/project_music_controller.tscn::8d05b6f618423975ccbf6b8b0b0c5a57::1751900706::res://.godot/exported/133200997/export-678aa380ebda63de5db5d879c3b72c58-project_music_controller.scn
+res://Scripts/Managers/autoloads/project_ui_sound_controller.tscn::b981627110749799b0f02efacd59f7b3::1751900706::res://.godot/exported/133200997/export-8d494d419f871cb940b84499e002afb7-project_ui_sound_controller.scn
+res://Scripts/Managers/autoloads/scene_loader.tscn::38d72014d0f5fc8012a726307ad2b9b5::1753083597::res://.godot/exported/133200997/export-67ff00e5b3632096da62d32b3cc86f49-scene_loader.scn
