@@ -8,3 +8,4 @@ res://Scenes/GUI/opening - Copie.tscn
 res://Scenes/GUI/loading_screen.tscn
 res://Scripts/game.gd
 res://Scenes/game.tscn
+res://Scripts/Managers/game.gd
