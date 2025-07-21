@@ -3,6 +3,7 @@ extends CharacterBody2D
 var direction : Vector2 = Vector2.ZERO
 @export var speed = 320
 @export var acceleration = 3000
+@export var health = 100
 
 @onready var animationTree : AnimationTree = $AnimationTree
 

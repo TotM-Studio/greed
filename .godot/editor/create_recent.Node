@@ -1,5 +1,7 @@
-Weapon
+CollisionShape2D
 AttackComponent
+HitBoxComponent
+Weapon
 ColorRect
 CenterContainer
 MarginContainer
@@ -10,6 +12,3 @@ AnimatedSprite2D
 DirectionalLight2D
 CanvasModulate
 Camera2D
-CollisionShape2D
-CharacterBody2D
-TileMapLayer

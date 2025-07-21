@@ -13,3 +13,5 @@ res://Scenes/Items/weapon.tscn
 res://Scripts/Components/attack_component.gd
 res://Scripts/Components/hit_box_component.gd
 res://Scenes/Items/weapon.gd
+res://Scripts/Player/player_rpg.gd
+res://Scenes/Test/hit_box_and_attack.tscn
