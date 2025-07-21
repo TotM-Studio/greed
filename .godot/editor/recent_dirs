@@ -1,6 +1,8 @@
-res://Assets
 res://Scenes/GUI
+res://Assets/Characters/RPG/Greedy
 res://Scenes/Levels
+res://Scripts/Managers/autoloads
+res://Assets
 res://Scenes
 res://Scripts/GUI
 res://Assets/Characters/RPG/Player

@@ -16,7 +16,7 @@ config/name_localized={
 }
 config/description="Un pitit roguelike bien sympa : )"
 config/version="test 0.0.2"
-run/main_scene="uid://o3cfhi77nf0a"
+run/main_scene="uid://sikc02ddepyt"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="uid://ito1dath3eji"
@@ -25,6 +25,14 @@ config/icon="uid://ito1dath3eji"
 [autoload]
 
 InputsManager="*res://Scripts/Managers/inputsManager.gd"
+SceneLoader="*res://Scripts/Managers/autoloads/scene_loader.tscn"
+
+[file_customization]
+
+folder_colors={
+"res://Scenes/": "purple",
+"res://Scripts/": "green"
+}
 
 [input]
 

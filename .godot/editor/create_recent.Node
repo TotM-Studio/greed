@@ -1,5 +1,5 @@
-CenterContainer
 ColorRect
+CenterContainer
 MarginContainer
 Node2D
 AnimationTree
@@ -12,4 +12,3 @@ CollisionShape2D
 CharacterBody2D
 TileMapLayer
 Sprite2D
-TileMap
