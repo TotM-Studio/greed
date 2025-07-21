@@ -9,3 +9,7 @@ res://Scenes/GUI/loading_screen.tscn
 res://Scripts/game.gd
 res://Scenes/game.tscn
 res://Scripts/Managers/game.gd
+res://Scenes/Items/weapon.tscn
+res://Scripts/Components/attack_component.gd
+res://Scripts/Components/hit_box_component.gd
+res://Scenes/Items/weapon.gd
