@@ -12,5 +12,8 @@ func on_area_entered(Area : HitBoxComponent) -> void :
 		var direction_2 = Vector2(direction.x * direction2(Area, self), direction.y)
 		Area.take_dammage(dammages, direction_2)
 
-func direction2(chr1, chr2) -> float:
-	return chr1.position.x - chr2.position.x
+func direction2(chr1, chr2) -> int:
+	if chr1.position.x - chr2.position.x < 0:
+		return 1
+	else:
+		return -1
