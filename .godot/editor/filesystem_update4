@@ -5,3 +5,4 @@ res://Scenes/game.tscn
 res://Scenes/Items/weapon.tscn
 res://Scenes/Test/hit_box_and_attack.tscn
 res://Scripts/Components/attack_component.gd
+res://Assets/Characters/RPG/Player/player_rpg_animations.tres

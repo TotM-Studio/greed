@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=9 format=3 uid="uid://ch1xgnwq7fla0"]
+[gd_resource type="SpriteFrames" load_steps=13 format=3 uid="uid://ch1xgnwq7fla0"]
 
 [ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Characters/RPG/Player/devant.png" id="1_xft4o"]
 [ext_resource type="Texture2D" uid="uid://c3xtx6ukmbgus" path="res://Assets/Characters/RPG/Player/droite.png" id="2_pbjx5"]
@@ -8,6 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://ds6rocfonekc" path="res://Assets/Characters/RPG/Player/vue de derrière3.png" id="6_ddlhh"]
 [ext_resource type="Texture2D" uid="uid://oicjls5srvt4" path="res://Assets/Characters/RPG/Player/devant (2).png" id="7_dy4v3"]
 [ext_resource type="Texture2D" uid="uid://b8qcy13rka1j7" path="res://Assets/Characters/RPG/Player/devant .png" id="8_rjav3"]
+[ext_resource type="Texture2D" uid="uid://c0nxwsw5wgm11" path="res://Assets/Characters/RPG/Player/gauche2.png" id="9_36id4"]
+[ext_resource type="Texture2D" uid="uid://bq2fhcdwv4kqq" path="res://Assets/Characters/RPG/Player/gauche3.png" id="10_34eqk"]
+[ext_resource type="Texture2D" uid="uid://cpfj1uwevi28i" path="res://Assets/Characters/RPG/Player/droite2.png" id="11_ddlhh"]
+[ext_resource type="Texture2D" uid="uid://ch4t4n00hr8at" path="res://Assets/Characters/RPG/Player/droite3.png" id="12_dy4v3"]
 
 [resource]
 animations = [{
@@ -84,17 +88,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_36id4")
+"texture": ExtResource("9_36id4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_34eqk")
 }],
 "loop": true,
 "name": &"walkLeft",
-"speed": 5.0
+"speed": 9.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_pbjx5")
+"texture": ExtResource("11_ddlhh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_dy4v3")
 }],
 "loop": true,
 "name": &"walkRight",
-"speed": 5.0
+"speed": 9.0
 }]
