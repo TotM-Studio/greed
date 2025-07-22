@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://dpmhbwnrp6nk" path="res://Scripts/Components/attack_component.gd" id="3_8y120"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tk5t5"]
-size = Vector2(42, 42)
+size = Vector2(32, 48)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_akelp"]
 
@@ -19,13 +19,12 @@ script = ExtResource("2_c781p")
 metadata/_custom_type_script = "uid://ds4ps5v85x6xr"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/HitBoxComponent"]
-position = Vector2(48, 0)
+position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_tk5t5")
 
 [node name="AttackComponent" type="Area2D" parent="."]
 position = Vector2(80, 64)
 script = ExtResource("3_8y120")
-direction = Vector2(-1000, 0)
 metadata/_custom_type_script = "uid://dpmhbwnrp6nk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackComponent"]
