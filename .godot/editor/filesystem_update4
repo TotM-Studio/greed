@@ -1,8 +1,8 @@
-res://Scenes/Levels/test_level.tscn
-res://Assets/Tiles/tile_set.tres
 res://Scenes/Characters/Player/player_rpg.tscn
-res://Scenes/game.tscn
-res://Scenes/Items/weapon.tscn
+res://Assets/Tiles/tile_set.tres
+res://Scenes/Levels/test_level.tscn
 res://Scenes/Test/hit_box_and_attack.tscn
-res://Scripts/Components/attack_component.gd
+res://Scripts/Player/player_rpg.gd
 res://Assets/Characters/RPG/Player/player_rpg_animations.tres
+res://Assets/Characters/RPG/Player/Devant.tres
+res://Assets/Characters/RPG/Player/Resources/player_rpg_animations.tres

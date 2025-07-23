@@ -1,10 +1,14 @@
 extends CharacterBody2D
+class_name Player
 
 var direction : Vector2 = Vector2.ZERO
 @export var speed = 320
 @export var acceleration = 3000
 @export var health = 100
+@export_category("Light")
+@export var lightOn : bool = false
 
+@onready var light : PointLight2D = $PointLight2D
 @onready var animationTree : AnimationTree = $AnimationTree
 
 
@@ -14,7 +18,7 @@ func  _ready() -> void:
 
 func _process(_delta: float) -> void:
 	update_animation_tree()
-	pass
+	light.visible = lightOn
 
 func _physics_process(delta: float) -> void:
 	direction = Input.get_vector("Gauche","Droite","Haut","Bas").normalized()
