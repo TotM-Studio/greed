@@ -1,3 +1,4 @@
+Node2D
 Node
 LightOccluder2D
 DirectionalLight2D
@@ -8,8 +9,6 @@ Weapon
 ColorRect
 CenterContainer
 MarginContainer
-Node2D
 AnimationTree
 AnimationPlayer
 AnimatedSprite2D
-CanvasModulate
