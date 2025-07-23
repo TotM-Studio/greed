@@ -47,7 +47,6 @@ position = Vector2(96, 80)
 rotation = -0.785397
 energy = 0.5
 shadow_enabled = true
-shadow_filter = 2
-shadow_filter_smooth = 19.4
+shadow_filter_smooth = 10.9
 
 [editable path="Player"]

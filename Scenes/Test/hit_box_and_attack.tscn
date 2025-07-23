@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cquw8w11pmhto"]
+[gd_scene load_steps=8 format=3 uid="uid://cquw8w11pmhto"]
 
 [ext_resource type="PackedScene" uid="uid://cdvfiia4s06hs" path="res://Scenes/Characters/Player/player_rpg.tscn" id="1_i8xqx"]
 [ext_resource type="Script" uid="uid://ds4ps5v85x6xr" path="res://Scripts/Components/hit_box_component.gd" id="2_c781p"]
@@ -8,6 +8,19 @@
 size = Vector2(32, 48)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_akelp"]
+
+[sub_resource type="Gradient" id="Gradient_8l3wm"]
+offsets = PackedFloat32Array(0.0238095, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_i8xqx"]
+gradient = SubResource("Gradient_8l3wm")
+width = 20
+height = 20
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.4, 1)
+metadata/_snap_enabled = true
 
 [node name="Node2D" type="Node2D"]
 
@@ -31,3 +44,9 @@ metadata/_custom_type_script = "uid://dpmhbwnrp6nk"
 position = Vector2(192, 32)
 shape = SubResource("CircleShape2D_akelp")
 debug_color = Color(0.7, 0, 0, 0.42)
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(64, 32)
+scale = Vector2(7, 7)
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_i8xqx")
