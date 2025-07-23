@@ -87,7 +87,3 @@ Jump={
 2d_physics/layer_2="Player HurtBox"
 2d_physics/layer_5="Enemy"
 2d_physics/layer_6="Enemy HurtBox"
-
-[rendering]
-
-renderer/rendering_method="mobile"
