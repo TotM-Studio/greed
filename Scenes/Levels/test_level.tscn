@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=4 uid="uid://o3cfhi77nf0a"]
+[gd_scene load_steps=4 format=4 uid="uid://o3cfhi77nf0a"]
 
 [ext_resource type="TileSet" uid="uid://cjn6cgkelp87t" path="res://Assets/Tiles/tile_set.tres" id="1_2ytpj"]
 [ext_resource type="PackedScene" uid="uid://cdvfiia4s06hs" path="res://Scenes/Characters/Player/player_rpg.tscn" id="2_2ytpj"]
+[ext_resource type="PackedScene" uid="uid://c18rfefnmnni0" path="res://Scenes/Characters/Player/player_rogue_like.tscn" id="3_2ytpj"]
 
 [node name="testLevel" type="Node2D"]
 
@@ -51,5 +52,11 @@ rotation = -0.785397
 energy = 0.5
 shadow_enabled = true
 shadow_filter_smooth = 10.9
+
+[node name="PlayerRogueLike" parent="." instance=ExtResource("3_2ytpj")]
+position = Vector2(498, 1240)
+GRAVITY = 50
+speed = 90
+jumpForce = 900
 
 [editable path="Player"]
