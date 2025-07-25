@@ -1,3 +1,5 @@
+AnimationTree
+AnimationPlayer
 Node2D
 Node
 LightOccluder2D
@@ -9,6 +11,4 @@ Weapon
 ColorRect
 CenterContainer
 MarginContainer
-AnimationTree
-AnimationPlayer
 AnimatedSprite2D
