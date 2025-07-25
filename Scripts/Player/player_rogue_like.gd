@@ -6,7 +6,7 @@ extends CharacterBody2D
 
 @export var jumpForce : int = 100
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if (!is_on_floor()):
 		velocity.y += GRAVITY
 	elif (Input.is_action_just_pressed("Jump")):

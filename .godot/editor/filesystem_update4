@@ -1,6 +1,4 @@
 res://Scenes/Levels/test_level.tscn
 res://Assets/Tiles/tile_set.tres
-res://Assets/Characters/RPG/Player/Resources/Devant.tres
-res://Assets/Characters/RPG/Player/Resources/player_rpg_animations.tres
 res://Scenes/Characters/Player/player_rpg.tscn
 res://Scenes/Test/hit_box_and_attack.tscn

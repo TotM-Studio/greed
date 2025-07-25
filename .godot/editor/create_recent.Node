@@ -1,3 +1,5 @@
+PathFollow2D
+Path2D
 AnimationTree
 AnimationPlayer
 Node2D
@@ -10,5 +12,3 @@ HitBoxComponent
 Weapon
 ColorRect
 CenterContainer
-MarginContainer
-AnimatedSprite2D
