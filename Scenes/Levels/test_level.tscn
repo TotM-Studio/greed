@@ -178,27 +178,24 @@ jumpForce = 900
 [node name="PointLight2D" type="PointLight2D" parent="Lights"]
 position = Vector2(2000, 418)
 scale = Vector2(7, 7)
-color = Color(0.0833335, 0, 1, 1)
+color = Color(0, 0, 1, 1)
 energy = 10.0
-blend_mode = 1
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_2ytpj")
 
 [node name="PointLight2D2" type="PointLight2D" parent="Lights"]
 position = Vector2(1584, 418)
 scale = Vector2(7, 7)
-color = Color(0.71, 0.0284, 0.0284, 1)
+color = Color(1, 0, 0, 1)
 energy = 10.0
-blend_mode = 1
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_2ytpj")
 
 [node name="PointLight2D3" type="PointLight2D" parent="Lights"]
 position = Vector2(1562, 824)
 scale = Vector2(7, 7)
-color = Color(0.71, 0.683375, 0.0284, 1)
+color = Color(0.078125, 1, 0, 1)
 energy = 10.0
-blend_mode = 1
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_2ytpj")
 
