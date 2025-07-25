@@ -18,6 +18,7 @@ metadata/_snap_enabled = true
 
 [sub_resource type="Animation" id="Animation_db73o"]
 resource_name = "discothèque"
+length = 5.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -26,8 +27,8 @@ tracks/0/path = NodePath("PointLight2D:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.266667, 0.49),
-"transitions": PackedFloat32Array(1, 3.36359, 1),
+"times": PackedFloat32Array(0, 1.16667, 3.4),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(2000, 418), Vector2(1554, 368), Vector2(1762, 706)]
 }
@@ -38,7 +39,7 @@ tracks/1/path = NodePath("PointLight2D2:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.22),
+"times": PackedFloat32Array(0, 2.06667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1584, 418), Vector2(2132, 678)]
@@ -50,7 +51,7 @@ tracks/2/path = NodePath("PointLight2D3:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.57),
+"times": PackedFloat32Array(0, 2.26667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1562, 824), Vector2(2054, 412)]
@@ -200,7 +201,6 @@ texture = SubResource("GradientTexture2D_2ytpj")
 libraries = {
 &"": SubResource("AnimationLibrary_k8g1k")
 }
-speed_scale = 0.5
 
 [node name="AnimationTree" type="AnimationTree" parent="Lights"]
 tree_root = SubResource("AnimationNodeStateMachine_k8g1k")
