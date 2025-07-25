@@ -11,9 +11,11 @@ colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_2ytpj"]
 gradient = SubResource("Gradient_8l3wm")
+width = 128
+height = 128
 fill = 1
 fill_from = Vector2(0.5, 0.5)
-fill_to = Vector2(0.4, 1)
+fill_to = Vector2(0.3, 1)
 metadata/_snap_enabled = true
 
 [sub_resource type="Animation" id="Animation_db73o"]
@@ -186,6 +188,7 @@ position = Vector2(1584, 418)
 scale = Vector2(7, 7)
 color = Color(0.71, 0.0284, 0.0284, 1)
 energy = 10.0
+blend_mode = 2
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_2ytpj")
 
