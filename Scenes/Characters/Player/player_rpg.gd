@@ -10,7 +10,7 @@ var direction : Vector2 = Vector2.ZERO
 
 @onready var light : PointLight2D = $PointLight2D
 @onready var animationTree : AnimationTree = $Animation/AnimationTree
-
+@onready var weapons = $Weapons
 
 
 func  _ready() -> void:
@@ -19,11 +19,16 @@ func  _ready() -> void:
 func _process(_delta: float) -> void:
 	update_animation_tree()
 	light.visible = lightOn
+	if Input.is_action_just_pressed("Attack"):
+		$Weapons/AnimationPlayer.play("Attack")
 
 func _physics_process(delta: float) -> void:
 	direction = Input.get_vector("Gauche","Droite","Haut","Bas").normalized()
 	velocity.y = move_toward(velocity.y, direction.y * speed, acceleration * delta)
 	velocity.x = move_toward(velocity.x, direction.x * speed, acceleration * delta)
+	if direction != Vector2.ZERO:
+		weapons.global_rotation = direction.angle() + 0.5*PI
+	
 	
 	move_and_slide()
 
@@ -38,3 +43,5 @@ func update_animation_tree():
 		animationTree["parameters/Idle/blend_position"] = direction
 		animationTree["parameters/Walk/blend_position"] = direction
 		
+func direction2dergrees(direction : Vector2) -> int:
+	return 0

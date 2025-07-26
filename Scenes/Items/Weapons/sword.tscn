@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcrdquwts8i82"]
+
+[ext_resource type="Script" uid="uid://dnfe4dypt6p5r" path="res://Scenes/Items/weapon.gd" id="1_c4acs"]
+[ext_resource type="Texture2D" uid="uid://bc8fl0vo5enm" path="res://Assets/SFX/Sword.png" id="2_2bfj6"]
+[ext_resource type="Texture2D" uid="uid://ckbxnh1e003ic" path="res://Assets/Weapons/arme.png" id="2_d6nal"]
+[ext_resource type="Script" uid="uid://dpmhbwnrp6nk" path="res://Scripts/Components/attack_component.gd" id="2_ykfa2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x2u2t"]
+size = Vector2(9, 32)
+
+[node name="Sword" type="Node2D"]
+script = ExtResource("1_c4acs")
+
+[node name="AttackComponent" type="Area2D" parent="."]
+script = ExtResource("2_ykfa2")
+knockback = 450
+metadata/_custom_type_script = "uid://dpmhbwnrp6nk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackComponent"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_x2u2t")
+
+[node name="Sword" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.423529)
+position = Vector2(-12, 2)
+texture = ExtResource("2_2bfj6")
+
+[node name="Arme" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_d6nal")
+hframes = 4
+vframes = 4

@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://k4j8kb50a86"]
+
+[ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Characters/Greedy/goblin_greedy.png" id="1_j5lp6"]
+[ext_resource type="Script" uid="uid://djmn7n4wpe6dg" path="res://Scenes/Characters/Greedy/greedy.gd" id="1_ybk54"]
+[ext_resource type="Script" uid="uid://ds4ps5v85x6xr" path="res://Scripts/Components/hit_box_component.gd" id="2_0kogh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0kogh"]
+size = Vector2(20, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybk54"]
+size = Vector2(20, 30)
+
+[node name="Greedy" type="CharacterBody2D"]
+script = ExtResource("1_ybk54")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_0kogh")
+
+[node name="GoblinGreedy" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_j5lp6")
+
+[node name="HitBoxComponent" type="Area2D" parent="."]
+script = ExtResource("2_0kogh")
+metadata/_custom_type_script = "uid://ds4ps5v85x6xr"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBoxComponent"]
+shape = SubResource("RectangleShape2D_ybk54")

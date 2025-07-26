@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=4 uid="uid://dfq7cnbqled4l"]
+[gd_scene load_steps=6 format=4 uid="uid://dfq7cnbqled4l"]
 
 [ext_resource type="PackedScene" uid="uid://cdvfiia4s06hs" path="res://Scenes/Characters/Player/player_rpg.tscn" id="1_yct88"]
 [ext_resource type="TileSet" uid="uid://cjn6cgkelp87t" path="res://Assets/Tiles/tile_set.tres" id="2_ovupf"]
 [ext_resource type="Script" uid="uid://co1se4v71ksw0" path="res://Scripts/Components/scene_door.gd" id="3_7jfor"]
+[ext_resource type="PackedScene" uid="uid://k4j8kb50a86" path="res://Scenes/Characters/Greedy/greedy.tscn" id="4_ovupf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kaul"]
 size = Vector2(128, 32)
@@ -11,7 +12,7 @@ size = Vector2(128, 32)
 
 [node name="Player" parent="." instance=ExtResource("1_yct88")]
 modulate = Color(0.83, 0.83, 0.83, 1)
-position = Vector2(736, 72)
+position = Vector2(728, 72)
 
 [node name="TileMap" type="Node2D" parent="."]
 
@@ -44,3 +45,6 @@ metadata/_custom_type_script = "uid://co1se4v71ksw0"
 position = Vector2(736, 16)
 shape = SubResource("RectangleShape2D_0kaul")
 debug_color = Color(0.169531, 0.7, 0, 0.42)
+
+[node name="Greedy" parent="." instance=ExtResource("4_ovupf")]
+position = Vector2(736, 128)

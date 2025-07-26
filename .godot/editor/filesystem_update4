@@ -7,3 +7,8 @@ res://Scripts/Player/player_rpg.gd
 res://Assets/Characters/RPG/Player_1/Resources/player_rpg_animations.tres
 res://Scenes/Levels/rpg_level_1.tscn
 res://Scenes/Levels/rpg_level_2.tscn
+res://Scenes/Items/Weapons/sword.tscn
+res://Scenes/Characters/Player/player_rpg.gd
+res://Scenes/Characters/Greedy/greedy.tscn
+res://Scenes/Characters/Greedy/greedy.gd
+res://Scripts/Components/attack_component.gd
