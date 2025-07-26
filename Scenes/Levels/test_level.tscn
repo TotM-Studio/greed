@@ -16,6 +16,9 @@ position = Vector2(1280, 1320)
 [node name="PointLight2D" parent="Player" index="2"]
 energy = 4.86
 
+[node name="Icon" parent="Player" index="5"]
+animation = &"idleFront"
+
 [node name="AnimationTree" parent="Player" index="7"]
 active = true
 parameters/conditions/idle = true

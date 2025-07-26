@@ -1,8 +1,19 @@
-[gd_scene load_steps=31 format=3 uid="uid://cdvfiia4s06hs"]
+[gd_scene load_steps=43 format=3 uid="uid://cdvfiia4s06hs"]
 
-[ext_resource type="Script" uid="uid://cflt5iwnm31e7" path="res://Scripts/Player/player_rpg.gd" id="1_donwm"]
-[ext_resource type="Texture2D" uid="uid://c6dh4c1ity7bu" path="res://Assets/Characters/RPG/Player_1/Textures/shadow.png" id="2_8l3wm"]
-[ext_resource type="SpriteFrames" uid="uid://ch1xgnwq7fla0" path="res://Assets/Characters/RPG/Player_1/Resources/player_rpg_animations.tres" id="3_8l3wm"]
+[ext_resource type="Script" uid="uid://cflt5iwnm31e7" path="res://Scripts/Characters/Player/player_rpg.gd" id="1_donwm"]
+[ext_resource type="Texture2D" uid="uid://c6dh4c1ity7bu" path="res://Assets/Characters/Player_1/shadow.png" id="2_8l3wm"]
+[ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Characters/Player_1/devant.png" id="2_iyc8d"]
+[ext_resource type="Texture2D" uid="uid://c3xtx6ukmbgus" path="res://Assets/Characters/Player_1/droite.png" id="3_cj732"]
+[ext_resource type="Texture2D" uid="uid://b6jhm01rt1rps" path="res://Assets/Characters/Player_1/vue de derrière1.png" id="4_hmdh8"]
+[ext_resource type="Texture2D" uid="uid://1fad5o13n2n3" path="res://Assets/Characters/Player_1/gauche.png" id="5_b70df"]
+[ext_resource type="Texture2D" uid="uid://6g3dv6xf2hog" path="res://Assets/Characters/Player_1/vue de derrière2.png" id="6_kw2s4"]
+[ext_resource type="Texture2D" uid="uid://ds6rocfonekc" path="res://Assets/Characters/Player_1/vue de derrière3.png" id="7_mutwq"]
+[ext_resource type="Texture2D" uid="uid://oicjls5srvt4" path="res://Assets/Characters/Player_1/devant (2).png" id="8_xubch"]
+[ext_resource type="Texture2D" uid="uid://b8qcy13rka1j7" path="res://Assets/Characters/Player_1/devant .png" id="9_ycnua"]
+[ext_resource type="Texture2D" uid="uid://c0nxwsw5wgm11" path="res://Assets/Characters/Player_1/gauche2.png" id="10_iodfc"]
+[ext_resource type="Texture2D" uid="uid://bq2fhcdwv4kqq" path="res://Assets/Characters/Player_1/gauche3.png" id="11_q7ui1"]
+[ext_resource type="Texture2D" uid="uid://cpfj1uwevi28i" path="res://Assets/Characters/Player_1/droite2.png" id="12_lwwpi"]
+[ext_resource type="Texture2D" uid="uid://ch4t4n00hr8at" path="res://Assets/Characters/Player_1/droite3.png" id="13_x8ja7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_donwm"]
 size = Vector2(28, 28)
@@ -23,7 +34,7 @@ resource_name = "Idle Back"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
+tracks/0/path = NodePath("Sprites/Icon:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -38,7 +49,7 @@ resource_name = "Idle Front"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
+tracks/0/path = NodePath("Sprites/Icon:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -53,7 +64,7 @@ resource_name = "Idle Left"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
+tracks/0/path = NodePath("Sprites/Icon:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -68,7 +79,7 @@ resource_name = "Idle Right"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
+tracks/0/path = NodePath("Sprites/Icon:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -83,7 +94,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
+tracks/0/path = NodePath("Sprites/Icon:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -98,7 +109,7 @@ resource_name = "Walk Back"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
+tracks/0/path = NodePath("Sprites/Icon:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -113,7 +124,7 @@ resource_name = "Walk Front"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
+tracks/0/path = NodePath("Sprites/Icon:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -128,7 +139,7 @@ resource_name = "Walk Left"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
+tracks/0/path = NodePath("Sprites/Icon:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -143,7 +154,7 @@ resource_name = "Walk Right"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Icon:animation")
+tracks/0/path = NodePath("Sprites/Icon:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -231,6 +242,102 @@ states/Walk/node = SubResource("AnimationNodeBlendSpace2D_x8ja7")
 states/Walk/position = Vector2(539, 100)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_8dtjg"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_dr4pe"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_yjwax")]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_8dtjg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_iyc8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cj732")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hmdh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_b70df")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_hmdh8")
+}],
+"loop": true,
+"name": &"idleBack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_iyc8d")
+}],
+"loop": true,
+"name": &"idleFront",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_b70df")
+}],
+"loop": true,
+"name": &"idleLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_cj732")
+}],
+"loop": true,
+"name": &"idleRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_kw2s4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_mutwq")
+}],
+"loop": true,
+"name": &"walkBack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_xubch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ycnua")
+}],
+"loop": true,
+"name": &"walkFront",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_iodfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_q7ui1")
+}],
+"loop": true,
+"name": &"walkLeft",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_lwwpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_x8ja7")
+}],
+"loop": true,
+"name": &"walkRight",
+"speed": 9.0
+}]
+
 [node name="Player" type="CharacterBody2D"]
 process_mode = 1
 collision_layer = 5
@@ -239,13 +346,6 @@ script = ExtResource("1_donwm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_donwm")
-
-[node name="Shadow" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.462745)
-z_index = 1
-texture_filter = 1
-position = Vector2(0, 2)
-texture = ExtResource("2_8l3wm")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 visible = false
@@ -270,23 +370,37 @@ drag_vertical_enabled = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 pitch_scale = 0.71
 
-[node name="Icon" type="AnimatedSprite2D" parent="."]
-z_index = 3
-texture_filter = 1
-position = Vector2(0, -8)
-sprite_frames = ExtResource("3_8l3wm")
-animation = &"walkFront"
-autoplay = "walkFront"
+[node name="Animation" type="Node2D" parent="."]
+position = Vector2(0, 2)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Animation"]
+root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_mutwq")
 }
 
-[node name="AnimationTree" type="AnimationTree" parent="."]
+[node name="AnimationTree" type="AnimationTree" parent="Animation"]
+root_node = NodePath("../..")
 tree_root = SubResource("AnimationNodeStateMachine_pblej")
 anim_player = NodePath("../AnimationPlayer")
 parameters/conditions/idle = true
 parameters/conditions/is_walking = false
 parameters/Idle/blend_position = Vector2(-0.00319487, -0.0454545)
 parameters/Walk/blend_position = Vector2(0.00806451, 0.536978)
+
+[node name="Sprites" type="Node2D" parent="."]
+
+[node name="Icon" type="AnimatedSprite2D" parent="Sprites"]
+z_index = 3
+texture_filter = 1
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_8dtjg")
+animation = &"walkFront"
+autoplay = "walkFront"
+
+[node name="Shadow" type="Sprite2D" parent="Sprites"]
+modulate = Color(1, 1, 1, 0.462745)
+z_index = 1
+texture_filter = 1
+position = Vector2(0, 2)
+texture = ExtResource("2_8l3wm")
