@@ -5,3 +5,5 @@ res://Scenes/Test/hit_box_and_attack.tscn
 res://Scenes/Levels/test_level_rpg_2.tscn
 res://Scripts/Player/player_rpg.gd
 res://Assets/Characters/RPG/Player_1/Resources/player_rpg_animations.tres
+res://Scenes/Levels/rpg_level_1.tscn
+res://Scenes/Levels/rpg_level_2.tscn
