@@ -4,3 +4,4 @@ res://Scenes/Characters/Player/player_rpg.tscn
 res://Scenes/Test/hit_box_and_attack.tscn
 res://Scripts/Components/scene_door.gd
 res://Scenes/Levels/test_level_rpg_2.tscn
+res://Scripts/Player/player_rpg.gd

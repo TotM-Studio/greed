@@ -15,7 +15,7 @@ config/name_localized={
 "fr_FR": "Gourmandise"
 }
 config/description="Un pitit roguelike bien sympa : )"
-config/version="test 0.0.3"
+config/version="0.0.4"
 run/main_scene="uid://sikc02ddepyt"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/bg_color=Color(0, 0, 0, 1)
