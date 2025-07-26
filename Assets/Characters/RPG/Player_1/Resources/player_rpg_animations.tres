@@ -1,10 +1,9 @@
-[gd_resource type="SpriteFrames" load_steps=14 format=3 uid="uid://ch1xgnwq7fla0"]
+[gd_resource type="SpriteFrames" load_steps=13 format=3 uid="uid://ch1xgnwq7fla0"]
 
 [ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Characters/RPG/Player_1/Textures/devant.png" id="1_psvpx"]
 [ext_resource type="Texture2D" uid="uid://c3xtx6ukmbgus" path="res://Assets/Characters/RPG/Player_1/Textures/droite.png" id="2_i581k"]
 [ext_resource type="Texture2D" uid="uid://b6jhm01rt1rps" path="res://Assets/Characters/RPG/Player_1/Textures/vue de derrière1.png" id="3_kp3aq"]
 [ext_resource type="Texture2D" uid="uid://1fad5o13n2n3" path="res://Assets/Characters/RPG/Player_1/Textures/gauche.png" id="4_2yp51"]
-[ext_resource type="Texture2D" uid="uid://dt5fb4xh50ah4" path="res://Assets/Characters/RPG/Player_1/Resources/Devant.tres" id="5_8oauk"]
 [ext_resource type="Texture2D" uid="uid://6g3dv6xf2hog" path="res://Assets/Characters/RPG/Player_1/Textures/vue de derrière2.png" id="6_pcd3r"]
 [ext_resource type="Texture2D" uid="uid://ds6rocfonekc" path="res://Assets/Characters/RPG/Player_1/Textures/vue de derrière3.png" id="7_e083o"]
 [ext_resource type="Texture2D" uid="uid://oicjls5srvt4" path="res://Assets/Characters/RPG/Player_1/Textures/devant (2).png" id="8_0bui6"]
@@ -43,7 +42,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_8oauk")
+"texture": ExtResource("1_psvpx")
 }],
 "loop": true,
 "name": &"idleFront",

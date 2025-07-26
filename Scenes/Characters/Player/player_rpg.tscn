@@ -242,6 +242,7 @@ shape = SubResource("RectangleShape2D_donwm")
 
 [node name="Shadow" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.462745)
+z_index = 1
 texture_filter = 1
 position = Vector2(0, 2)
 texture = ExtResource("2_8l3wm")
@@ -283,10 +284,9 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-active = false
 tree_root = SubResource("AnimationNodeStateMachine_pblej")
 anim_player = NodePath("../AnimationPlayer")
-parameters/conditions/idle = false
-parameters/conditions/is_walking = true
+parameters/conditions/idle = true
+parameters/conditions/is_walking = false
 parameters/Idle/blend_position = Vector2(-0.00319487, -0.0454545)
 parameters/Walk/blend_position = Vector2(0.00806451, 0.536978)
