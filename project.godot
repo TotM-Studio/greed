@@ -24,7 +24,6 @@ config/icon="uid://ito1dath3eji"
 
 [autoload]
 
-InputsManager="*res://Scripts/Managers/inputsManager.gd"
 SceneLoader="*res://Scripts/autoloads/scene_loader.tscn"
 Game="*res://Scripts/autoloads/game.gd"
 

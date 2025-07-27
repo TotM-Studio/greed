@@ -42,6 +42,3 @@ func update_animation_tree():
 			
 		animationTree["parameters/Idle/blend_position"] = direction
 		animationTree["parameters/Walk/blend_position"] = direction
-		
-func direction2dergrees(direction : Vector2) -> int:
-	return 0

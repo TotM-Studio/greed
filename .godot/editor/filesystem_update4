@@ -1,14 +1,8 @@
-res://Scenes/Levels/test_level.tscn
-res://Assets/Tiles/tile_set.tres
 res://Scenes/Characters/Player/player_rpg.tscn
-res://Scenes/Test/hit_box_and_attack.tscn
-res://Scenes/Levels/test_level_rpg_2.tscn
-res://Scripts/Player/player_rpg.gd
-res://Assets/Characters/RPG/Player_1/Resources/player_rpg_animations.tres
+res://Assets/Tiles/tile_set.tres
+res://Scenes/Items/Weapons/sword.tscn
+res://Scenes/Items/weapon.gd
 res://Scenes/Levels/rpg_level_1.tscn
 res://Scenes/Levels/rpg_level_2.tscn
-res://Scenes/Items/Weapons/sword.tscn
-res://Scenes/Characters/Player/player_rpg.gd
 res://Scenes/Characters/Greedy/greedy.tscn
 res://Scenes/Characters/Greedy/greedy.gd
-res://Scripts/Components/attack_component.gd

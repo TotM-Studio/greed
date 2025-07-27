@@ -14,6 +14,7 @@ size = Vector2(20, 30)
 script = ExtResource("1_ybk54")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_0kogh")
 
 [node name="GoblinGreedy" type="Sprite2D" parent="."]
@@ -21,6 +22,7 @@ texture_filter = 1
 texture = ExtResource("1_j5lp6")
 
 [node name="HitBoxComponent" type="Area2D" parent="."]
+visible = false
 script = ExtResource("2_0kogh")
 metadata/_custom_type_script = "uid://ds4ps5v85x6xr"
 
