@@ -10,7 +10,9 @@ func take_dammage(amount:float ,dir:Vector2 = Vector2.ZERO) -> void :
 	if !parent.has_meta("health"):
 		parent.health -= amount
 		if parent is CharacterBody2D:
-			parent.velocity += dir
-		print(parent.health)
+			parent.velocity = dir
+		if parent.has_method("take_dammage"):
+			parent.take_dammage()
+		
 		if parent.health < 0:
 			parent.queue_free()

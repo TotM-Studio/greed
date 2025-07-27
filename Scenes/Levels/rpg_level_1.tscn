@@ -16,10 +16,6 @@ position = Vector2(1280, 1320)
 [node name="PointLight2D" parent="Player" index="1"]
 energy = 4.86
 
-[node name="Sword" parent="Player/Weapons/SwordPivot" index="0"]
-position = Vector2(0, 0)
-disabled = true
-
 [node name="TileMap" type="Node2D" parent="."]
 
 [node name="Sol" type="TileMapLayer" parent="TileMap"]

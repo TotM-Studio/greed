@@ -290,7 +290,7 @@ animation = &"Idle Right"
 blend_point_0/node = SubResource("AnimationNodeAnimation_xubch")
 blend_point_0/pos = Vector2(0, -1)
 blend_point_1/node = SubResource("AnimationNodeAnimation_ycnua")
-blend_point_1/pos = Vector2(0, 1.1)
+blend_point_1/pos = Vector2(0, 0.9)
 blend_point_2/node = SubResource("AnimationNodeAnimation_iodfc")
 blend_point_2/pos = Vector2(-1, 0)
 blend_point_3/node = SubResource("AnimationNodeAnimation_q7ui1")
@@ -484,12 +484,13 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="Animation"]
+active = false
 root_node = NodePath("../..")
 tree_root = SubResource("AnimationNodeStateMachine_pblej")
 anim_player = NodePath("../AnimationPlayer")
 parameters/conditions/idle = true
 parameters/conditions/is_walking = false
-parameters/Idle/blend_position = Vector2(0.0129032, 0.897368)
+parameters/Idle/blend_position = Vector2(-0.0016129, 0.472807)
 parameters/Walk/blend_position = Vector2(0, 0)
 
 [node name="Weapons" type="Node2D" parent="."]
