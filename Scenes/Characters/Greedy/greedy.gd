@@ -3,6 +3,6 @@ extends CharacterBody2D
 @export var health = 100
 
 func _physics_process(delta: float) -> void:
-	velocity.y = move_toward(velocity.y, 0, 600 * delta)
-	velocity.x = move_toward(velocity.x, 0, 600 * delta)
+	velocity.y = move_toward(velocity.y, 0, 1000 * delta)
+	velocity.x = move_toward(velocity.x, 0, 1000 * delta)
 	move_and_slide()

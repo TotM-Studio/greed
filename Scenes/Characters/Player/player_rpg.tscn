@@ -297,7 +297,7 @@ blend_point_3/node = SubResource("AnimationNodeAnimation_q7ui1")
 blend_point_3/pos = Vector2(1, 0)
 min_space = Vector2(-1, -1.1)
 max_space = Vector2(1, 1.1)
-blend_mode = 1
+blend_mode = 2
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1i4tc"]
 animation = &"Walk Front"

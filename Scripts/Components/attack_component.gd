@@ -12,4 +12,5 @@ func on_area_entered(Area : HitBoxComponent) -> void :
 		var knock = (Area.global_position - global_position).normalized()
 		print(knock * knockback)
 		print(knockback)
+		Game.freeze_engine(0.1,0.5)
 		Area.take_dammage(dammages, knockback * knock)
