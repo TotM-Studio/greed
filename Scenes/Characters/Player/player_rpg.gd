@@ -31,7 +31,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y = move_toward(velocity.y, direction.y * speed, acceleration * delta)
 		velocity.x = move_toward(velocity.x, direction.x * speed, acceleration * delta)
 		if direction != Vector2.ZERO:
-			weapons.global_rotation = direction.angle() + 0.5*PI
+			weapons.global_rotation = direction.angle() + 0.5 * PI
 		move_and_slide()
 
 func update_animation_tree():

@@ -1,3 +1,4 @@
+CPUParticles2D
 CollisionShape2D
 SceneDoor
 Node2D
@@ -11,4 +12,3 @@ Weapon
 DirectionalLight2D
 Player
 TileMapLayer
-PathFollow2D
