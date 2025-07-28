@@ -1,14 +1,52 @@
-[gd_scene load_steps=6 format=3 uid="uid://k4j8kb50a86"]
+[gd_scene load_steps=10 format=3 uid="uid://k4j8kb50a86"]
 
 [ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Characters/Greedy/goblin_greedy.png" id="1_j5lp6"]
 [ext_resource type="Script" uid="uid://djmn7n4wpe6dg" path="res://Scenes/Characters/Greedy/greedy.gd" id="1_ybk54"]
 [ext_resource type="Script" uid="uid://ds4ps5v85x6xr" path="res://Scripts/Components/hit_box_component.gd" id="2_0kogh"]
+[ext_resource type="Texture2D" uid="uid://gp6qalbg4h3c" path="res://Assets/Characters/Greedy/shadow.png" id="2_v84si"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kogh"]
 size = Vector2(20, 30)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ybk54"]
 size = Vector2(20, 30)
+
+[sub_resource type="Animation" id="Animation_v84si"]
+resource_name = "take_dmmage"
+length = 0.45
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GoblinGreedy:offset")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.4),
+"transitions": PackedFloat32Array(1, 0.34151, 0.196146),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -8.71), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hnfa7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GoblinGreedy:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2asb6"]
+_data = {
+&"RESET": SubResource("Animation_hnfa7"),
+&"take_dmmage": SubResource("Animation_v84si")
+}
 
 [node name="Greedy" type="CharacterBody2D"]
 collision_layer = 48
@@ -18,6 +56,12 @@ script = ExtResource("1_ybk54")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 shape = SubResource("RectangleShape2D_0kogh")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.517647)
+texture_filter = 1
+position = Vector2(0, 1)
+texture = ExtResource("2_v84si")
 
 [node name="GoblinGreedy" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -30,3 +74,8 @@ metadata/_custom_type_script = "uid://ds4ps5v85x6xr"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBoxComponent"]
 shape = SubResource("RectangleShape2D_ybk54")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_2asb6")
+}

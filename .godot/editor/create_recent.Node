@@ -1,3 +1,4 @@
+AnimationPlayer
 StaticBody3D
 CollisionShape3D
 MeshInstance3D
@@ -5,11 +6,9 @@ Node2D
 CollisionShape2D
 HitBoxComponent
 CharacterBody2D
-AnimationPlayer
 Weapon
 DirectionalLight2D
 SceneDoor
 Player
 TileMapLayer
 PathFollow2D
-Path2D

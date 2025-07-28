@@ -7,3 +7,4 @@ res://Scenes/Characters/Greedy/greedy.tscn
 res://Scenes/Levels/hd_2d_level.tscn
 res://Scripts/Components/attack_component.gd
 res://Scenes/Characters/Player/player_rpg.gd
+res://Scenes/Characters/Greedy/greedy.gd
