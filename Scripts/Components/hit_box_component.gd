@@ -4,7 +4,7 @@ class_name HitBoxComponent
 @onready var parent = get_parent()
 
 func _ready() -> void:
-	print(parent)
+	pass
 
 func take_dammage(amount:float ,dir:Vector2 = Vector2.ZERO) -> void :
 	if !parent.has_meta("health"):

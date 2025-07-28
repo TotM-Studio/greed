@@ -88,6 +88,7 @@ position = Vector2(0, 1)
 texture = ExtResource("2_v84si")
 
 [node name="GoblinGreedy" type="Sprite2D" parent="."]
+z_index = 1
 texture_filter = 1
 texture = ExtResource("1_j5lp6")
 

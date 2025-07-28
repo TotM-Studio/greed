@@ -8,12 +8,11 @@
 size = Vector2(9, 32)
 
 [node name="Sword" type="Node2D"]
+z_index = 1
 script = ExtResource("1_c4acs")
 
 [node name="AttackComponent" type="Area2D" parent="."]
 script = ExtResource("2_ykfa2")
-dammages = 30.0
-knockback = 400
 metadata/_custom_type_script = "uid://dpmhbwnrp6nk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackComponent"]

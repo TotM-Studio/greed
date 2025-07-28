@@ -8,3 +8,5 @@ res://Scenes/Levels/hd_2d_level.tscn
 res://Scripts/Components/attack_component.gd
 res://Scenes/Characters/Player/player_rpg.gd
 res://Scenes/Characters/Greedy/greedy.gd
+res://Scripts/Components/hit_box_component.gd
+res://Scenes/Items/weapon.gd
