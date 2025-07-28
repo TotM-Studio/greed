@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://gp6qalbg4h3c" path="res://Assets/Characters/Greedy/shadow.png" id="2_v84si"]
 [ext_resource type="Shader" uid="uid://dhd3e32jnm73j" path="res://Scenes/Characters/Greedy/greedy.tres" id="3_hnfa7"]
 [ext_resource type="AudioStream" uid="uid://bylcovv4eaq5j" path="res://Assets/Sounds/punch.mp3" id="6_kriru"]
-[ext_resource type="AudioStream" uid="uid://ddi87cn3ao2to" path="res://Assets/Sounds/aaaaaaaa.mp3" id="7_ajao6"]
+[ext_resource type="AudioStream" uid="uid://cmqu3h0db25gh" path="res://Assets/Sounds/rehehehe.mp3" id="7_kriru"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kogh"]
 size = Vector2(20, 30)
@@ -151,6 +151,6 @@ color = Color(1, 0.00390625, 0.00390625, 1)
 stream = ExtResource("6_kriru")
 pitch_scale = 0.9
 
-[node name="Aaaaaaaa" type="AudioStreamPlayer2D" parent="."]
+[node name="Death" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(0, -1)
-stream = ExtResource("7_ajao6")
+stream = ExtResource("7_kriru")
