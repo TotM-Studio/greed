@@ -56,7 +56,7 @@ debug_color = Color(0.169531, 0.7, 0, 0.42)
 position = Vector2(664, 192)
 
 [node name="Greedy2" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(328, 256)
+position = Vector2(640, 192)
 
 [node name="Greedy3" parent="Enemies" instance=ExtResource("4_ovupf")]
 position = Vector2(1344, 368)
