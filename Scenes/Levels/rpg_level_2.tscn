@@ -73,4 +73,28 @@ position = Vector2(792, 312)
 [node name="Greedy7" parent="Enemies" instance=ExtResource("4_ovupf")]
 position = Vector2(1384, 720)
 
+[node name="Greedy8" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(176, 832)
+
+[node name="Greedy9" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(536, 680)
+
+[node name="Greedy10" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1016, 792)
+
+[node name="Greedy11" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1096, 504)
+
+[node name="Greedy12" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1088, 184)
+
+[node name="Greedy13" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(576, 424)
+
+[node name="Greedy14" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(136, 168)
+
+[node name="Greedy15" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1368, 200)
+
 [editable path="Player"]
