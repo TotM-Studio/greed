@@ -102,8 +102,3 @@ Run={
 2d_physics/layer_2="Player HurtBox"
 2d_physics/layer_5="Enemy"
 2d_physics/layer_6="Enemy HurtBox"
-
-[rendering]
-
-viewport/hdr_2d=true
-environment/defaults/default_clear_color=Color(0.0625153, 0.063032, 0.0664063, 1)
