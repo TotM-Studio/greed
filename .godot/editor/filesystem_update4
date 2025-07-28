@@ -5,3 +5,5 @@ res://Scenes/Levels/rpg_level_2.tscn
 res://Scenes/Items/Weapons/sword.tscn
 res://Scenes/Characters/Greedy/greedy.tscn
 res://Scenes/Levels/hd_2d_level.tscn
+res://Scripts/Components/attack_component.gd
+res://Scenes/Characters/Player/player_rpg.gd

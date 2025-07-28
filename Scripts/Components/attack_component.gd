@@ -9,8 +9,11 @@ func _ready() -> void:
 
 func on_area_entered(Area : HitBoxComponent) -> void :
 	if Area != null and Area.has_method("take_dammage"):
-		var knock = (Area.global_position - global_position).normalized()
-		print(knock * knockback)
+		
+		var angle = global_rotation + -0.5 * PI
+		var direction = Vector2(cos(angle), sin(angle))
+		
+		print(direction * knockback)
 		print(knockback)
 		Game.freeze_engine(0.1,0.5)
-		Area.take_dammage(dammages, knockback * knock)
+		Area.take_dammage(dammages, knockback * direction)

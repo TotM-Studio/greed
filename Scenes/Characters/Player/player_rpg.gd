@@ -13,6 +13,7 @@ var direction : Vector2 = Vector2.ZERO
 @onready var animationTree : AnimationTree = $Animation/AnimationTree
 @onready var weapons = $Weapons
 
+var move : bool = true
 
 func  _ready() -> void:
 	animationTree.active = true
@@ -24,14 +25,14 @@ func _process(_delta: float) -> void:
 		$Weapons/AnimationPlayer.play("Attack")
 
 func _physics_process(delta: float) -> void:
-	direction = Input.get_vector("Gauche","Droite","Haut","Bas").normalized()
-	velocity.y = move_toward(velocity.y, direction.y * speed, acceleration * delta)
-	velocity.x = move_toward(velocity.x, direction.x * speed, acceleration * delta)
-	if direction != Vector2.ZERO:
-		weapons.global_rotation = direction.angle() + 0.5*PI
-	
-	
-	move_and_slide()
+	move = !$Weapons/AnimationPlayer.is_playing()
+	if move:
+		direction = Input.get_vector("Gauche","Droite","Haut","Bas").normalized()
+		velocity.y = move_toward(velocity.y, direction.y * speed, acceleration * delta)
+		velocity.x = move_toward(velocity.x, direction.x * speed, acceleration * delta)
+		if direction != Vector2.ZERO:
+			weapons.global_rotation = direction.angle() + 0.5*PI
+		move_and_slide()
 
 func update_animation_tree():
 	if (velocity == Vector2.ZERO):
