@@ -10,3 +10,4 @@ func _physics_process(delta: float) -> void:
 func take_dammage():
 	$AnimationPlayer.play("take_dmmage")
 	Input.start_joy_vibration(1, 0.5, 0, 0.1)
+	Input.start_joy_vibration(0, 0.5, 0, 0.1)
