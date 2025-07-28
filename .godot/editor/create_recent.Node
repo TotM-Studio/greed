@@ -1,3 +1,6 @@
+StaticBody3D
+CollisionShape3D
+MeshInstance3D
 Node2D
 CollisionShape2D
 HitBoxComponent
@@ -10,5 +13,3 @@ Player
 TileMapLayer
 PathFollow2D
 Path2D
-AnimationTree
-Node
