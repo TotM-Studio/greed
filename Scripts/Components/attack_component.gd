@@ -12,8 +12,4 @@ func on_area_entered(Area : HitBoxComponent) -> void :
 		
 		var angle = global_rotation + -0.5 * PI
 		var direction = Vector2(cos(angle), sin(angle))
-		
-		print(direction * knockback)
-		print(knockback)
-		Game.freeze_engine(0.1,0.5)
 		Area.take_dammage(dammages, knockback * direction)
