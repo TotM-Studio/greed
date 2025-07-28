@@ -1,10 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://k4j8kb50a86"]
+[gd_scene load_steps=14 format=3 uid="uid://k4j8kb50a86"]
 
 [ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Characters/Greedy/goblin_greedy.png" id="1_j5lp6"]
 [ext_resource type="Script" uid="uid://djmn7n4wpe6dg" path="res://Scenes/Characters/Greedy/greedy.gd" id="1_ybk54"]
 [ext_resource type="Script" uid="uid://ds4ps5v85x6xr" path="res://Scripts/Components/hit_box_component.gd" id="2_0kogh"]
 [ext_resource type="Texture2D" uid="uid://gp6qalbg4h3c" path="res://Assets/Characters/Greedy/shadow.png" id="2_v84si"]
 [ext_resource type="Shader" uid="uid://dhd3e32jnm73j" path="res://Scenes/Characters/Greedy/greedy.tres" id="3_hnfa7"]
+[ext_resource type="AudioStream" uid="uid://bylcovv4eaq5j" path="res://Assets/Sounds/punch.mp3" id="6_kriru"]
+[ext_resource type="AudioStream" uid="uid://ddi87cn3ao2to" path="res://Assets/Sounds/aaaaaaaa.mp3" id="7_ajao6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kogh"]
 size = Vector2(20, 30)
@@ -53,18 +55,6 @@ tracks/2/keys = {
 "update": 1,
 "values": [true]
 }
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("CPUParticles2D:emitting")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
 
 [sub_resource type="Animation" id="Animation_v84si"]
 resource_name = "take_dmmage"
@@ -104,18 +94,6 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [false, true, false, true]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("CPUParticles2D:emitting")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2asb6"]
@@ -168,3 +146,11 @@ gravity = Vector2(0, 0)
 initial_velocity_max = 700.0
 scale_amount_max = 10.43
 color = Color(1, 0.00390625, 0.00390625, 1)
+
+[node name="Punch" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_kriru")
+pitch_scale = 0.9
+
+[node name="Aaaaaaaa" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0, -1)
+stream = ExtResource("7_ajao6")
