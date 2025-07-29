@@ -1,13 +1,14 @@
-res://Scenes/Characters/Player/player_rpg.tscn::4e97a9cd134d70d3e2b52b2228eea65f::1753714422::res://.godot/exported/133200997/export-0b20cecf6bcf4ac72c357f0882c51314-player_rpg.scn
-res://Assets/Tiles/tile_set.tres::3525ae285a9873587a68e23a617e0363::1753707844::res://.godot/exported/133200997/export-67b4318cc10514110bd542a0609067d1-tile_set.res
+res://Scenes/Characters/Player/player_rpg.tscn::4e97a9cd134d70d3e2b52b2228eea65f::1753729446::res://.godot/exported/133200997/export-0b20cecf6bcf4ac72c357f0882c51314-player_rpg.scn
+res://Assets/Tiles/tile_set.tres::3525ae285a9873587a68e23a617e0363::1753726813::res://.godot/exported/133200997/export-67b4318cc10514110bd542a0609067d1-tile_set.res
 res://Scenes/GUI/gui.tscn::eb31e635254373b45be25e72bcb0ce5f::1753439031::res://.godot/exported/133200997/export-7bc812db155cc5cbb24eaf8a92c51ee4-gui.scn
 res://Scenes/GUI/opening - Copie.tscn::2192ea36c4d1b1d683524e1af93ece91::1753557075::res://.godot/exported/133200997/export-18d401bc0e0a6c6ae03d0c3f69ea79d8-opening - Copie.scn
 res://Scenes/GUI/loading_screen.tscn::2dd8d88213bf56020a2976ae222c2ccb::1753557075::res://.godot/exported/133200997/export-90f5b8556e98b11c8b3bbfc2e5d3a516-loading_screen.scn
 res://Scenes/Items/weapon.tscn::45d353cdde14d6d2c387ef9f958a4f55::1753439031::res://.godot/exported/133200997/export-6694e4cbf2b3679f80bcfffe19186c3d-weapon.scn
-res://Scenes/Characters/Greedy/greedy.tscn::614d7d99dc80e644446774512d0688ba::1753714422::res://.godot/exported/133200997/export-9324f0ae8d6b0cb41f50040b919d3309-greedy.scn
-res://Scenes/Items/Weapons/sword.tscn::d36f0b72598f1d7f0260047a323950a9::1753714422::res://.godot/exported/133200997/export-1b07fa844f2e525f1b9fb3eebbb350df-sword.scn
+res://Scenes/Characters/Greedy/greedy.tscn::b6a8354b0b146398936393a7b31e750a::1753729446::res://.godot/exported/133200997/export-9324f0ae8d6b0cb41f50040b919d3309-greedy.scn
+res://Scenes/Items/Weapons/sword.tscn::d36f0b72598f1d7f0260047a323950a9::1753729446::res://.godot/exported/133200997/export-1b07fa844f2e525f1b9fb3eebbb350df-sword.scn
 res://Scenes/Levels/hd_2d_level.tscn::e0198c067c721f13076b47c7d26918a0::1753707883::res://.godot/exported/133200997/export-5f10e937e88599722e95b94d3181409b-hd_2d_level.scn
-res://Scenes/Levels/rpg_level_1.tscn::8073be78f3fbca0fff65a0126aa9344f::1753714422::res://.godot/exported/133200997/export-f8c09e675eaf3c6ed3cf30da10bfc3f9-rpg_level_1.scn
-res://Scenes/Levels/rpg_level_2.tscn::f06d813f86beeb32a90a5b0a5e98163f::1753714422::res://.godot/exported/133200997/export-bfc8a2729721c98742983efe1ea5e791-rpg_level_2.scn
+res://Scenes/Levels/rpg_level_1.tscn::4f987e3704e33b31b5355563724c6527::1753729446::res://.godot/exported/133200997/export-f8c09e675eaf3c6ed3cf30da10bfc3f9-rpg_level_1.scn
+res://Scenes/Levels/rpg_level_2.tscn::2aad0a23c8c212d1fe46a6f90b03a605::1753729446::res://.godot/exported/133200997/export-bfc8a2729721c98742983efe1ea5e791-rpg_level_2.scn
 res://Scripts/autoloads/game.tscn::a1e841c4a0a417dc1a7300ce373a1e46::1753557146::res://.godot/exported/133200997/export-922351d21b796735ec8fd75118a7b618-game.scn
 res://Scripts/autoloads/scene_loader.tscn::568caa23969ca7658de78685cf5302ce::1753557095::res://.godot/exported/133200997/export-c14709859e261cc3c4c804f980df775a-scene_loader.scn
+res://Scenes/Characters/Greedy/greedy.tres::d8ad8ac594d28a020572a1d3e0631e35::1753729447::res://.godot/exported/133200997/export-0791d6eccb0e5b477848b0bb25c730f3-greedy.res

@@ -1,28 +1,35 @@
-[gd_scene load_steps=14 format=3 uid="uid://k4j8kb50a86"]
+[gd_scene load_steps=17 format=3 uid="uid://k4j8kb50a86"]
 
 [ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Characters/Greedy/goblin_greedy.png" id="1_j5lp6"]
 [ext_resource type="Script" uid="uid://djmn7n4wpe6dg" path="res://Scenes/Characters/Greedy/greedy.gd" id="1_ybk54"]
 [ext_resource type="Script" uid="uid://ds4ps5v85x6xr" path="res://Scripts/Components/hit_box_component.gd" id="2_0kogh"]
 [ext_resource type="Texture2D" uid="uid://gp6qalbg4h3c" path="res://Assets/Characters/Greedy/shadow.png" id="2_v84si"]
 [ext_resource type="Shader" uid="uid://dhd3e32jnm73j" path="res://Scenes/Characters/Greedy/greedy.tres" id="3_hnfa7"]
+[ext_resource type="Texture2D" uid="uid://ekoxk1yp0hr" path="res://Assets/SFX/particule.png" id="6_ajao6"]
 [ext_resource type="AudioStream" uid="uid://bylcovv4eaq5j" path="res://Assets/Sounds/punch.mp3" id="6_kriru"]
-[ext_resource type="AudioStream" uid="uid://cmqu3h0db25gh" path="res://Assets/Sounds/rehehehe.mp3" id="7_kriru"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kogh"]
+size = Vector2(20, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybk54"]
 size = Vector2(20, 30)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2asb6"]
 shader = ExtResource("3_hnfa7")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybk54"]
-size = Vector2(20, 30)
+[sub_resource type="Gradient" id="Gradient_2asb6"]
+offsets = PackedFloat32Array(0, 0.993902)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="Gradient" id="Gradient_kriru"]
+colors = PackedColorArray(1, 0.0351563, 0.0351563, 1, 1, 0.515625, 0, 1)
 
 [sub_resource type="Animation" id="Animation_hnfa7"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("GoblinGreedy:offset")
+tracks/0/path = NodePath("Sprites/GoblinGreedy:offset")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -46,7 +53,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("GoblinGreedy:use_parent_material")
+tracks/2/path = NodePath("Sprites/GoblinGreedy:use_parent_material")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -55,6 +62,18 @@ tracks/2/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprites:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_v84si"]
 resource_name = "take_dmmage"
@@ -62,7 +81,7 @@ length = 0.45
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("GoblinGreedy:offset")
+tracks/0/path = NodePath("Sprites/GoblinGreedy:offset")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -86,7 +105,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("GoblinGreedy:use_parent_material")
+tracks/2/path = NodePath("Sprites/GoblinGreedy:use_parent_material")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -96,8 +115,24 @@ tracks/2/keys = {
 "values": [false, true, false, true]
 }
 
+[sub_resource type="Animation" id="Animation_2asb6"]
+resource_name = "Death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 0)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2asb6"]
 _data = {
+&"Death": SubResource("Animation_2asb6"),
 &"RESET": SubResource("Animation_hnfa7"),
 &"take_dmmage": SubResource("Animation_v84si")
 }
@@ -111,19 +146,6 @@ script = ExtResource("1_ybk54")
 visible = false
 shape = SubResource("RectangleShape2D_0kogh")
 
-[node name="Shadow" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0.517647)
-texture_filter = 1
-position = Vector2(0, 1)
-texture = ExtResource("2_v84si")
-
-[node name="GoblinGreedy" type="Sprite2D" parent="."]
-z_index = 1
-texture_filter = 1
-material = SubResource("ShaderMaterial_2asb6")
-use_parent_material = true
-texture = ExtResource("1_j5lp6")
-
 [node name="HitBoxComponent" type="Area2D" parent="."]
 visible = false
 script = ExtResource("2_0kogh")
@@ -132,25 +154,59 @@ metadata/_custom_type_script = "uid://ds4ps5v85x6xr"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBoxComponent"]
 shape = SubResource("RectangleShape2D_ybk54")
 
+[node name="Sprites" type="Node2D" parent="."]
+
+[node name="Shadow" type="Sprite2D" parent="Sprites"]
+modulate = Color(1, 1, 1, 0.517647)
+texture_filter = 1
+position = Vector2(0, 1)
+texture = ExtResource("2_v84si")
+
+[node name="GoblinGreedy" type="Sprite2D" parent="Sprites"]
+z_index = 1
+texture_filter = 1
+material = SubResource("ShaderMaterial_2asb6")
+use_parent_material = true
+texture = ExtResource("1_j5lp6")
+
+[node name="Particles" type="Node2D" parent="."]
+
+[node name="Death" type="CPUParticles2D" parent="Particles"]
+texture_filter = 1
+position = Vector2(0, 10)
+emitting = false
+amount = 30
+texture = ExtResource("6_ajao6")
+one_shot = true
+randomness = 0.65
+gravity = Vector2(0, -100)
+orbit_velocity_min = -1.0
+orbit_velocity_max = 1.0
+angle_min = -30.0
+angle_max = 30.0
+scale_amount_min = 0.1
+color = Color(1, 0, 0, 1)
+color_ramp = SubResource("Gradient_2asb6")
+
+[node name="Hit" type="CPUParticles2D" parent="Particles"]
+emitting = false
+amount = 30
+lifetime = 0.1
+one_shot = true
+explosiveness = 1.0
+fixed_fps = 30
+gravity = Vector2(0, 0)
+initial_velocity_min = 200.0
+initial_velocity_max = 700.0
+scale_amount_min = 0.0
+scale_amount_max = 5.0
+color_ramp = SubResource("Gradient_kriru")
+
+[node name="Sounds" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0, -1)
+stream = ExtResource("6_kriru")
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_2asb6")
 }
-
-[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-emitting = false
-amount = 30
-lifetime = 0.15
-one_shot = true
-gravity = Vector2(0, 0)
-initial_velocity_max = 700.0
-scale_amount_max = 10.43
-color = Color(1, 0.00390625, 0.00390625, 1)
-
-[node name="Punch" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_kriru")
-pitch_scale = 0.9
-
-[node name="Death" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(0, -1)
-stream = ExtResource("7_kriru")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://un8de2ngr8ol"
-path="res://.godot/imported/player_greed_vu_de_dessus de derrière.piskel.png-16071623917f2c80927cb3bf4ccad830.ctex"
+uid="uid://dgww08jpf57nr"
+path="res://.godot/imported/église.png-fc70e84e4beacc64973a4cb01a77475e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Characters/RPG/Player/player_greed_vu_de_dessus de derrière.piskel.png"
-dest_files=["res://.godot/imported/player_greed_vu_de_dessus de derrière.piskel.png-16071623917f2c80927cb3bf4ccad830.ctex"]
+source_file="res://Assets/bâtiments/église.png"
+dest_files=["res://.godot/imported/église.png-fc70e84e4beacc64973a4cb01a77475e.ctex"]
 
 [params]
 

@@ -1,1 +1,3 @@
+AudioStreamMP3
+AudioStream
 CanvasTexture

@@ -1,7 +1,8 @@
+Node2D
 CPUParticles2D
+AudioStreamPlayer
 CollisionShape2D
 SceneDoor
-Node2D
 AnimationPlayer
 StaticBody3D
 CollisionShape3D
@@ -11,4 +12,3 @@ CharacterBody2D
 Weapon
 DirectionalLight2D
 Player
-TileMapLayer

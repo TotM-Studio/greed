@@ -1,15 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1753726487
-export_presets.cfg::TextFile::-1::1753714536::0::1::::<><><>0<>0<><>::
+::res://::1753770183
+export_presets.cfg::TextFile/TextFile::-1::1753729568::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::3170293212729327055::1753439031::1753439091::1::::<><><>0<>0<>982b0da918d7702093a7d166582af472<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1753439031::0::1::::<><><>0<>0<><>::
-::res://Assets/::1753556685
+::res://Assets/::1753770151
 icon.png::CompressedTexture2D/CompressedTexture2D::601630553415435898::1753439031::1753556685::1::::<><><>0<>0<>46917866745de4416a587be22f1ae23d<>res://.godot/imported/icon.png-ec880de02d5dab0aa15458af9d6c53ed.ctex::
+::res://Assets/bâtiments/::1753770151
+église.png::CompressedTexture2D::7627193590048521259::1753770151::1753770187::1::::<><><>0<>0<>71131670360706438a4655b1ea9bbdf8<>res://.godot/imported/église.png-fc70e84e4beacc64973a4cb01a77475e.ctex::
 ::res://Assets/Characters/::1753556601
 ::res://Assets/Characters/Greedy/::1753712373
 goblin_greedy.png::CompressedTexture2D/CompressedTexture2D::5741362986420996365::1753542607::1753556582::1::::<><><>0<>0<>53a32b3c0742d90b2978918ef193b0e1<>res://.godot/imported/goblin_greedy.png-611385e224fd270674501255c39a0ef4.ctex::
 shadow.png::CompressedTexture2D/CompressedTexture2D::454009544664780542::1753712367::1753712373::1::::<><><>0<>0<>4488b7ed3c97deb0e3ab9346ca6f0a8b<>res://.godot/imported/shadow.png-5f5f3988fa0936ea3e660bb11fd90a14.ctex::
-::res://Assets/Characters/Player_1/::1753556601
+::res://Assets/Characters/Player_1/::1753731014
 devant (2).png::CompressedTexture2D/CompressedTexture2D::999296946046749535::1753439030::1753556582::1::::<><><>0<>0<>eb07940a9da17ad09d795a3caf04190b<>res://.godot/imported/devant (2).png-bfd2148e4cd97a6534b205321779c43c.ctex::
 devant .png::CompressedTexture2D/CompressedTexture2D::4735848270499799930::1753439030::1753556582::1::::<><><>0<>0<>074d7f18958a67ee0416daa220cf0045<>res://.godot/imported/devant .png-baea44f730e6d33f56555e1c7658f2ce.ctex::
 devant blessé.png::CompressedTexture2D/CompressedTexture2D::1253184889230167927::1753441801::1753556582::1::::<><><>0<>0<>f37ce4bf9aca5c0baca843aa6d01f543<>res://.godot/imported/devant blessé.png-ca2bd98ec893d3bf966b7882b11194bb.ctex::
@@ -22,6 +24,7 @@ gauche3.png::CompressedTexture2D/CompressedTexture2D::3565496577492307600::17534
 gauche.png::CompressedTexture2D/CompressedTexture2D::1835238779287902762::1753439030::1753556582::1::::<><><>0<>0<>97deb122549028400bd6d4a158c6147d<>res://.godot/imported/gauche.png-39190a1758028ca5d157df59828c4350.ctex::
 Le Panneau.png::CompressedTexture2D/CompressedTexture2D::6789203193109489539::1753441801::1753556582::1::::<><><>0<>0<>9706f7fe1da3078f2728a621b4ca793e<>res://.godot/imported/Le Panneau.png-cf4df68bc320cf6f1b6906c496e7aaba.ctex::
 player.png::CompressedTexture2D/CompressedTexture2D::7116561477133530321::1753439030::1753556582::1::::<><><>0<>0<>65c7123ba1b347e90ef2335ee6edd581<>res://.godot/imported/player.png-2654e6712d16f180c0c3bf61738a28b0.ctex::
+player_sprite_sheet.png::CompressedTexture2D/CompressedTexture2D::5507553020402457532::1753730936::1753731014::1::::<><><>0<>0<>f4471a1fd5d6f3fb223263faae1f98a9<>res://.godot/imported/player_sprite_sheet.png-30321e1df918fdfdfe8789d620f437ad.ctex::
 shadow.png::CompressedTexture2D/CompressedTexture2D::6955365606001461798::1753556198::1753556582::1::::<><><>0<>0<>58e8829d6db8b43f2112a4a68ecb2fe5<>res://.godot/imported/shadow.png-692bb3c87e06ed859d6f572354f0afc1.ctex::
 vue de derrière1.png::CompressedTexture2D/CompressedTexture2D::4581302038782370036::1753439030::1753556582::1::::<><><>0<>0<>5fb6d93f317eb0d81d41fa4dc251f71e<>res://.godot/imported/vue de derrière1.png-d78c37ace7c576c37164f2459361652f.ctex::
 vue de derrière2.png::CompressedTexture2D/CompressedTexture2D::2189947004414594374::1753439030::1753556582::1::::<><><>0<>0<>2d9cbfe4a27a84b7022c6c208640c3c8<>res://.godot/imported/vue de derrière2.png-f20fcb0cc43304487f95db24d15bf2a9.ctex::
@@ -36,10 +39,10 @@ Fille kawaÏ 3.png::CompressedTexture2D/CompressedTexture2D::6203930723821490078
 ::res://Assets/SFX/::1753639185
 particule.png::CompressedTexture2D/CompressedTexture2D::8890906757681563::1753639183::1753639185::1::::<><><>0<>0<>00473181a81f7b3929e93cd4e28edcce<>res://.godot/imported/particule.png-ee09f77a368a0cc80c11e1dba3d11b53.ctex::
 Sword.png::CompressedTexture2D/CompressedTexture2D::76330806227968518::1753561078::1753561087::1::::<><><>0<>0<>aa3bbb21309ddc7e86fc5726db07c0ab<>res://.godot/imported/Sword.png-fce7e866d498b5ae88c39e2c1ae02acc.ctex::
-::res://Assets/Sounds/::1753728509
-aaaaaaaa.mp3::AudioStreamMP3::7388404536594060208::1753727879::1753727947::1::::<><><>0<>0<>f9b94717f20d70aeca509708eaf432b7<>res://.godot/imported/aaaaaaaa.mp3-f6e252608a12006da37e1c4d1e753546.mp3str::
-punch.mp3::AudioStreamMP3::4093808658154975205::1753727944::1753727947::1::::<><><>0<>0<>add3ab2099aa8d1c0509819be9a8fe20<>res://.godot/imported/punch.mp3-4b35328c60b01782512585f3b9a21c50.mp3str::
-rehehehe.mp3::AudioStreamMP3::5649402283614513619::1753728512::1753728514::1::::<><><>0<>0<>9c2ee3549f8fde325f72d667665a87eb<>res://.godot/imported/rehehehe.mp3-cfaf31d34d57719459161fedda6b1c19.mp3str::
+::res://Assets/Sounds/::1753728514
+aaaaaaaa.mp3::AudioStreamMP3/AudioStreamMP3::7388404536594060208::1753727879::1753727947::1::::<><><>0<>0<>f9b94717f20d70aeca509708eaf432b7<>res://.godot/imported/aaaaaaaa.mp3-f6e252608a12006da37e1c4d1e753546.mp3str::
+punch.mp3::AudioStreamMP3/AudioStreamMP3::4093808658154975205::1753727944::1753727947::1::::<><><>0<>0<>add3ab2099aa8d1c0509819be9a8fe20<>res://.godot/imported/punch.mp3-4b35328c60b01782512585f3b9a21c50.mp3str::
+rehehehe.mp3::AudioStreamMP3/AudioStreamMP3::5649402283614513619::1753728512::1753728514::1::::<><><>0<>0<>9c2ee3549f8fde325f72d667665a87eb<>res://.godot/imported/rehehehe.mp3-cfaf31d34d57719459161fedda6b1c19.mp3str::
 ::res://Assets/Tiles/::1753726813
 MUR.png::CompressedTexture2D/CompressedTexture2D::6596722679481629416::1753439031::1753439091::1::::<><><>0<>0<>138811d3cb5aec7420fa90ab0cf4cf2b<>res://.godot/imported/MUR.png-b836c6f5c468ce25f212ffde7e1777ee.ctex::
 tile_ground.png::CompressedTexture2D/CompressedTexture2D::3035256114342649715::1753439031::1753439091::1::::<><><>0<>0<>b7fa19cd648855f03fcccd9809b14984<>res://.godot/imported/tile_ground.png-4a5a2525e6537551850fc43927afd141.ctex::
@@ -48,13 +51,13 @@ tile_set.tres::TileSet::5433264000080056063::1753726813::0::1::::<><><>0<>0<><>:
 arme.png::CompressedTexture2D/CompressedTexture2D::5478214295719509210::1753439031::1753439091::1::::<><><>0<>0<>c0831468389318ceee04b20e42e4e00a<>res://.godot/imported/arme.png-7e82d3f7fe6cce668138a7adfbb7521d.ctex::
 ::res://Scenes/::1753557172
 ::res://Scenes/Characters/::1753559637
-::res://Scenes/Characters/Greedy/::1753728363
-greedy.gd::GDScript::7816581371803930104::1753728224::0::1::::Enemy<>CharacterBody2D<><>0<>0<><>::
-greedy.tres::VisualShader::7658485821571113809::1753728363::0::1::::<><><>0<>0<><>::
-greedy.tscn::PackedScene::22422391281077449::1753728363::0::1::::<><><>0<>0<><>::uid://cn2fn6ppoachx::::res://Assets/Characters/Greedy/goblin_greedy.png<>uid://djmn7n4wpe6dg::::res://Scenes/Characters/Greedy/greedy.gd<>uid://ds4ps5v85x6xr::::res://Scripts/Components/hit_box_component.gd<>uid://gp6qalbg4h3c::::res://Assets/Characters/Greedy/shadow.png<>uid://dhd3e32jnm73j::::res://Scenes/Characters/Greedy/greedy.tres<>uid://bylcovv4eaq5j::::res://Assets/Sounds/punch.mp3<>uid://ddi87cn3ao2to::::res://Assets/Sounds/aaaaaaaa.mp3
-::res://Scenes/Characters/Player/::1753728363
+::res://Scenes/Characters/Greedy/::1753731155
+greedy.gd::GDScript::7816581371803930104::1753728970::0::1::::Enemy<>CharacterBody2D<><>0<>0<><>::
+greedy.tres::VisualShader::7658485821571113809::1753731155::0::1::::<><><>0<>0<><>::
+greedy.tscn::PackedScene::22422391281077449::1753731021::0::1::::<><><>0<>0<><>::uid://cn2fn6ppoachx::::res://Assets/Characters/Greedy/goblin_greedy.png<>uid://djmn7n4wpe6dg::::res://Scenes/Characters/Greedy/greedy.gd<>uid://ds4ps5v85x6xr::::res://Scripts/Components/hit_box_component.gd<>uid://gp6qalbg4h3c::::res://Assets/Characters/Greedy/shadow.png<>uid://dhd3e32jnm73j::::res://Scenes/Characters/Greedy/greedy.tres<>uid://bylcovv4eaq5j::::res://Assets/Sounds/punch.mp3<>uid://cmqu3h0db25gh::::res://Assets/Sounds/rehehehe.mp3
+::res://Scenes/Characters/Player/::1753731021
 player_rpg.gd::GDScript::5147701392331056848::1753727019::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
-player_rpg.tscn::PackedScene::5027078123980127236::1753728363::0::1::::<><><>0<>0<><>::uid://cflt5iwnm31e7::::res://Scenes/Characters/Player/player_rpg.gd<>uid://c6dh4c1ity7bu::::res://Assets/Characters/Player_1/shadow.png<>uid://boru4y0ybx575::::res://Assets/Characters/Player_1/devant.png<>uid://c3xtx6ukmbgus::::res://Assets/Characters/Player_1/droite.png<>uid://b6jhm01rt1rps::::res://Assets/Characters/Player_1/vue de derrière1.png<>uid://1fad5o13n2n3::::res://Assets/Characters/Player_1/gauche.png<>uid://6g3dv6xf2hog::::res://Assets/Characters/Player_1/vue de derrière2.png<>uid://ds6rocfonekc::::res://Assets/Characters/Player_1/vue de derrière3.png<>uid://oicjls5srvt4::::res://Assets/Characters/Player_1/devant (2).png<>uid://b8qcy13rka1j7::::res://Assets/Characters/Player_1/devant .png<>uid://c0nxwsw5wgm11::::res://Assets/Characters/Player_1/gauche2.png<>uid://bq2fhcdwv4kqq::::res://Assets/Characters/Player_1/gauche3.png<>uid://cpfj1uwevi28i::::res://Assets/Characters/Player_1/droite2.png<>uid://ch4t4n00hr8at::::res://Assets/Characters/Player_1/droite3.png<>uid://bcrdquwts8i82::::res://Scenes/Items/Weapons/sword.tscn
+player_rpg.tscn::PackedScene::5027078123980127236::1753731021::0::1::::<><><>0<>0<><>::uid://cflt5iwnm31e7::::res://Scenes/Characters/Player/player_rpg.gd<>uid://c6dh4c1ity7bu::::res://Assets/Characters/Player_1/shadow.png<>uid://boru4y0ybx575::::res://Assets/Characters/Player_1/devant.png<>uid://c3xtx6ukmbgus::::res://Assets/Characters/Player_1/droite.png<>uid://b6jhm01rt1rps::::res://Assets/Characters/Player_1/vue de derrière1.png<>uid://1fad5o13n2n3::::res://Assets/Characters/Player_1/gauche.png<>uid://6g3dv6xf2hog::::res://Assets/Characters/Player_1/vue de derrière2.png<>uid://ds6rocfonekc::::res://Assets/Characters/Player_1/vue de derrière3.png<>uid://oicjls5srvt4::::res://Assets/Characters/Player_1/devant (2).png<>uid://b8qcy13rka1j7::::res://Assets/Characters/Player_1/devant .png<>uid://c0nxwsw5wgm11::::res://Assets/Characters/Player_1/gauche2.png<>uid://bq2fhcdwv4kqq::::res://Assets/Characters/Player_1/gauche3.png<>uid://cpfj1uwevi28i::::res://Assets/Characters/Player_1/droite2.png<>uid://ch4t4n00hr8at::::res://Assets/Characters/Player_1/droite3.png<>uid://bcrdquwts8i82::::res://Scenes/Items/Weapons/sword.tscn
 ::res://Scenes/GUI/::1753557075
 gui.tscn::PackedScene/PackedScene::4075835828317050823::1753439031::0::1::::<><><>0<>0<><>::
 loading_screen.gd::GDScript/GDScript::8049110665674262328::1753439031::0::1::::LoadingScreen<>CanvasLayer<><>0<>0<><>::
@@ -62,14 +65,14 @@ loading_screen.tscn::PackedScene/PackedScene::1142499608755505910::1753557075::0
 opening - Copie.gd::GDScript/GDScript::6315044500198104963::1753439031::0::1::::<>Control<><>0<>0<><>::
 opening - Copie.tscn::PackedScene/PackedScene::1280526303966499055::1753557075::0::1::::<><><>0<>0<><>::uid://cv8b4iqnofdvf::::res://Scenes/GUI/opening - Copie.gd<>uid://ito1dath3eji::::res://Assets/icon.png<>uid://cn2fn6ppoachx::::res://Assets/Characters/Greedy/goblin_greedy.png
 ::res://Scenes/Items/::1753714070
-weapon.gd::GDScript::8082333758491845841::1753714070::0::1::::Weapon<>Node2D<><>0<>0<><>::
+weapon.gd::GDScript/GDScript::8082333758491845841::1753714070::0::1::::Weapon<>Node2D<><>0<>0<><>::
 weapon.tscn::PackedScene/PackedScene::5107834780983722294::1753439031::0::1::::<><><>0<>0<><>::uid://dpmhbwnrp6nk::::res://Scripts/Components/attack_component.gd<>uid://dnfe4dypt6p5r::::res://Scenes/Items/weapon.gd
-::res://Scenes/Items/Weapons/::1753728363
-sword.tscn::PackedScene::2562104601810294309::1753728363::0::1::::<><><>0<>0<><>::uid://dnfe4dypt6p5r::::res://Scenes/Items/weapon.gd<>uid://ckbxnh1e003ic::::res://Assets/Weapons/arme.png<>uid://dpmhbwnrp6nk::::res://Scripts/Components/attack_component.gd
-::res://Scenes/Levels/::1753728363
-hd_2d_level.tscn::PackedScene::6472862851713015036::1753707883::0::1::::<><><>0<>0<><>::
-rpg_level_1.tscn::PackedScene::1040577132520284750::1753728363::0::1::::<><><>0<>0<><>::uid://cdvfiia4s06hs::::res://Scenes/Characters/Player/player_rpg.tscn<>uid://cjn6cgkelp87t::::res://Assets/Tiles/tile_set.tres<>uid://co1se4v71ksw0::::res://Scripts/Components/scene_door.gd
-rpg_level_2.tscn::PackedScene::7545183513780942593::1753728363::0::1::::<><><>0<>0<><>::uid://cdvfiia4s06hs::::res://Scenes/Characters/Player/player_rpg.tscn<>uid://cjn6cgkelp87t::::res://Assets/Tiles/tile_set.tres<>uid://co1se4v71ksw0::::res://Scripts/Components/scene_door.gd<>uid://k4j8kb50a86::::res://Scenes/Characters/Greedy/greedy.tscn
+::res://Scenes/Items/Weapons/::1753731021
+sword.tscn::PackedScene::2562104601810294309::1753731021::0::1::::<><><>0<>0<><>::uid://dnfe4dypt6p5r::::res://Scenes/Items/weapon.gd<>uid://ckbxnh1e003ic::::res://Assets/Weapons/arme.png<>uid://dpmhbwnrp6nk::::res://Scripts/Components/attack_component.gd
+::res://Scenes/Levels/::1753731021
+hd_2d_level.tscn::PackedScene/PackedScene::6472862851713015036::1753707883::0::1::::<><><>0<>0<><>::
+rpg_level_1.tscn::PackedScene::1040577132520284750::1753731021::0::1::::<><><>0<>0<><>::uid://cdvfiia4s06hs::::res://Scenes/Characters/Player/player_rpg.tscn<>uid://cjn6cgkelp87t::::res://Assets/Tiles/tile_set.tres<>uid://co1se4v71ksw0::::res://Scripts/Components/scene_door.gd
+rpg_level_2.tscn::PackedScene::7545183513780942593::1753731021::0::1::::<><><>0<>0<><>::uid://cdvfiia4s06hs::::res://Scenes/Characters/Player/player_rpg.tscn<>uid://cjn6cgkelp87t::::res://Assets/Tiles/tile_set.tres<>uid://co1se4v71ksw0::::res://Scripts/Components/scene_door.gd<>uid://k4j8kb50a86::::res://Scenes/Characters/Greedy/greedy.tscn
 ::res://Scripts/::1753557150
 ::res://Scripts/autoloads/::1753557146
 game.gd::GDScript/GDScript::6287567784500879872::1753439031::0::1::::<>Node<><>0<>0<><>::
