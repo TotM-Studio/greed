@@ -1,8 +1,9 @@
 extends Node2D
+class_name WeaponManager
 
 @onready var animation_player = $AnimationPlayer
 
-var weapons = []
+var weapons : Array
 var current_weapon : int = 0
 
 var playing : bool = false
@@ -11,6 +12,7 @@ func _ready() -> void:
 	for i in $Pivot.get_children():
 		if i is Weapon:
 			weapons += [i]
+	change_weapon()
 
 func  _process(_delta: float) -> void:
 	playing = animation_player.is_playing()
@@ -28,5 +30,4 @@ func attack():
 func change_weapon():
 	current_weapon += 1
 	current_weapon %= weapons.size()
-	UI.change_weapon("res://Assets/Sprites/Weapons/" + 
-		weapons[current_weapon].name + ".png")
+	Gui.change_weapon(weapons, current_weapon)

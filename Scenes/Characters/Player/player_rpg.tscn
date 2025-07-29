@@ -535,6 +535,7 @@ parameters/Walk/blend_position = Vector2(0, 0)
 process_mode = 1
 z_index = 1
 script = ExtResource("15_hmdh8")
+metadata/_custom_type_script = "uid://bvp3h7mgdjof6"
 
 [node name="Pivot" type="Node2D" parent="Weapons"]
 

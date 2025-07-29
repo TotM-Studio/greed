@@ -10,12 +10,12 @@ var direction : Vector2 = Vector2.ZERO
 
 @onready var light : PointLight2D = $PointLight2D
 @onready var animationTree : AnimationTree = $Animation/AnimationTree
-@onready var weapons = $Weapons
+@onready var weapons : WeaponManager = $Weapons
 
 var move : bool = true
 
 func  _ready() -> void:
-	UI.show_gui()
+	Gui.show_gui()
 	animationTree.active = true
 
 func _process(_delta: float) -> void:
@@ -23,8 +23,8 @@ func _process(_delta: float) -> void:
 	
 	light.visible = lightOn
 	
-	if Input.is_action_just_pressed("Attack") and !$Weapons.playing:
-		$Weapons.attack()
+	if Input.is_action_just_pressed("Attack") and !weapons.playing:
+		weapons.attack()
 
 func _physics_process(delta: float) -> void:
 	move = !$Weapons/AnimationPlayer.is_playing()

@@ -19,11 +19,11 @@ func take_dammage(direction : Vector2 = Vector2.ZERO):
 		$AnimationPlayer.play("take_dmmage")
 		hit_particles.direction = direction.normalized()
 		hit_particles.emitting = true
-		Game.freeze_engine(0.9, 0.04)
+		Game.freeze_engine(0.5, 0.04)
 	else:
 		$AnimationPlayer.play("Death")
 		death_particles.emitting = true
-		Game.freeze_engine(0.3, 0.06)
+		Game.freeze_engine(0.9, 0.06)
 	
 	if !sound.playing:
 		if health <= 0:
