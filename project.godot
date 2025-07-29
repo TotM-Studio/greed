@@ -20,7 +20,7 @@ config/name_localized={
 "fr_FR": "Gourmandise"
 }
 config/description="Un pitit roguelike bien sympa : )"
-config/version="0.0.5"
+config/version="0.0.6"
 config/tags=PackedStringArray("2d", "rpg")
 run/main_scene="uid://sikc02ddepyt"
 config/features=PackedStringArray("4.4", "Mobile")
