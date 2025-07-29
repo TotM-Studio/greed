@@ -7,3 +7,6 @@ func change_weapon(weapons : Array, weapon : int):
 						weapons[weapon -1].name + ".png")
 	$PanelDown/Ax.texture = load("res://Assets/Sprites/Weapons/" +
 						weapons[(weapon + 1)% weapons.size()].name + ".png")
+
+func show_gui():
+	visible = true

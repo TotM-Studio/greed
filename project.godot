@@ -32,6 +32,7 @@ config/icon="uid://ito1dath3eji"
 
 SceneLoader="*res://Scripts/autoloads/scene_loader.tscn"
 Game="*res://Scripts/autoloads/game.tscn"
+PauseMenu="*res://Scripts/autoloads/pause_menu.tscn"
 Gui="*res://Scripts/autoloads/UI.tscn"
 
 [display]
