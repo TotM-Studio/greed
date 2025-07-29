@@ -1,17 +1,18 @@
-res://Scenes/Characters/Player/player_rpg.tscn::b2dc033bfd08172d30abedd16956a98c::1753795778::res://.godot/exported/133200997/export-0b20cecf6bcf4ac72c357f0882c51314-player_rpg.scn
+res://Scenes/Characters/Player/player_rpg.tscn::b2dc033bfd08172d30abedd16956a98c::1753797633::res://.godot/exported/133200997/export-0b20cecf6bcf4ac72c357f0882c51314-player_rpg.scn
 res://Scenes/GUI/gui.tscn::eb31e635254373b45be25e72bcb0ce5f::1753439031::res://.godot/exported/133200997/export-7bc812db155cc5cbb24eaf8a92c51ee4-gui.scn
 res://Scenes/GUI/opening - Copie.tscn::28bcc229619cb349e8661f6df9774b6c::1753778618::res://.godot/exported/133200997/export-18d401bc0e0a6c6ae03d0c3f69ea79d8-opening - Copie.scn
 res://Scenes/GUI/loading_screen.tscn::2dd8d88213bf56020a2976ae222c2ccb::1753557075::res://.godot/exported/133200997/export-90f5b8556e98b11c8b3bbfc2e5d3a516-loading_screen.scn
 res://Scenes/Characters/Greedy/greedy.tscn::f3977489b49ed92ad95695aeadc0eade::1753780734::res://.godot/exported/133200997/export-9324f0ae8d6b0cb41f50040b919d3309-greedy.scn
-res://Scenes/Items/Weapons/sword.tscn::698c27342f42055782272cefc9267e13::1753795779::res://.godot/exported/133200997/export-1b07fa844f2e525f1b9fb3eebbb350df-sword.scn
+res://Scenes/Items/Weapons/sword.tscn::698c27342f42055782272cefc9267e13::1753797633::res://.godot/exported/133200997/export-1b07fa844f2e525f1b9fb3eebbb350df-sword.scn
 res://Scenes/Levels/hd_2d_level.tscn::e0198c067c721f13076b47c7d26918a0::1753707883::res://.godot/exported/133200997/export-5f10e937e88599722e95b94d3181409b-hd_2d_level.scn
 res://Scenes/Levels/rpg_level_1.tscn::f48c065912d0dcc3707868f8b050190f::1753780572::res://.godot/exported/133200997/export-f8c09e675eaf3c6ed3cf30da10bfc3f9-rpg_level_1.scn
-res://Scenes/Levels/rpg_level_2.tscn::44f7551a0e89984a0d37dde3171cfcf9::1753795779::res://.godot/exported/133200997/export-bfc8a2729721c98742983efe1ea5e791-rpg_level_2.scn
-res://Scripts/autoloads/game.tscn::240577e2cff0bc00f2f04cbf268c125d::1753795780::res://.godot/exported/133200997/export-922351d21b796735ec8fd75118a7b618-game.scn
+res://Scenes/Levels/rpg_level_2.tscn::44f7551a0e89984a0d37dde3171cfcf9::1753797634::res://.godot/exported/133200997/export-bfc8a2729721c98742983efe1ea5e791-rpg_level_2.scn
+res://Scripts/autoloads/game.tscn::240577e2cff0bc00f2f04cbf268c125d::1753797634::res://.godot/exported/133200997/export-922351d21b796735ec8fd75118a7b618-game.scn
 res://Scripts/autoloads/scene_loader.tscn::568caa23969ca7658de78685cf5302ce::1753557095::res://.godot/exported/133200997/export-c14709859e261cc3c4c804f980df775a-scene_loader.scn
-res://Scenes/Characters/Greedy/greedy.tres::d8ad8ac594d28a020572a1d3e0631e35::1753795903::res://.godot/exported/133200997/export-0791d6eccb0e5b477848b0bb25c730f3-greedy.res
+res://Scenes/Characters/Greedy/greedy.tres::d8ad8ac594d28a020572a1d3e0631e35::1753797636::res://.godot/exported/133200997/export-0791d6eccb0e5b477848b0bb25c730f3-greedy.res
 res://Assets/GUI/Themes/greedy.tres::ed23a22ce7c661c191039a37be8e6ab3::1753780119::res://.godot/exported/133200997/export-02801d879f5e6c286cb1924d69c3f1e9-greedy.res
 res://Assets/Sounds/death.tres::475098da577cffd537032adf09d96b50::1753771484::res://.godot/exported/133200997/export-88cdeb11494f8dab8933aad737ca5f6f-death.res
 res://Assets/Sprites/Tiles/tile_set.tres::3cf7ceb58e638fc4db046dfe16c0aaa1::1753781728::res://.godot/exported/133200997/export-5f5a401b2f9d28380216a90e552c68c0-tile_set.res
-res://Scenes/Items/Weapons/ax.tscn::2b5e13fab3d4771a4625e1ed82f35ee2::1753795777::res://.godot/exported/133200997/export-1769bc385e66bc65171b6abd1367de43-ax.scn
-res://Scripts/autoloads/UI.tscn::9089a932e3e6081814bd3c83eebf717d::1753795902::res://.godot/exported/133200997/export-92257444c4f6c6c983e2dda3bc66672c-UI.scn
+res://Scenes/Items/Weapons/ax.tscn::2b5e13fab3d4771a4625e1ed82f35ee2::1753797632::res://.godot/exported/133200997/export-1769bc385e66bc65171b6abd1367de43-ax.scn
+res://Scripts/autoloads/UI.tscn::4b93b747ca95ba772673eef21ed02c18::1753797635::res://.godot/exported/133200997/export-92257444c4f6c6c983e2dda3bc66672c-UI.scn
+res://Scripts/autoloads/pause_menu.tscn::8ac1b8ebfb77583e9cca8d9013a221d1::1753797635::res://.godot/exported/133200997/export-fc6ddfcfa12cbdb042d95abe1a3ce7da-pause_menu.scn
