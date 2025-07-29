@@ -484,13 +484,12 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="Animation"]
-active = false
 root_node = NodePath("../..")
 tree_root = SubResource("AnimationNodeStateMachine_pblej")
 anim_player = NodePath("../AnimationPlayer")
 parameters/conditions/idle = true
 parameters/conditions/is_walking = false
-parameters/Idle/blend_position = Vector2(-0.0016129, 0.472807)
+parameters/Idle/blend_position = Vector2(-0.033871, 0.58022)
 parameters/Walk/blend_position = Vector2(0, 0)
 
 [node name="Weapons" type="Node2D" parent="."]
