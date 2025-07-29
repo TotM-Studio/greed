@@ -15,3 +15,9 @@ res://Scenes/Characters/Player/weapons.gd
 res://Scenes/Items/Weapons/weapon.gd
 res://Scenes/Items/Weapons/sword.gd
 res://Scripts/autoloads/scene_loader.gd
+res://Assets/GUI/Themes/greedy.tres
+res://Scenes/Characters/health_bar.gd
+res://Scenes/Characters/character.gd
+res://Scenes/Items/Weapons/ax.tscn
+res://Scenes/Items/Weapons/ax.gd
+res://Assets/Sprites/Tiles/tile_set.tres

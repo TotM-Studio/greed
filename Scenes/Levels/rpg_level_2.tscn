@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=4 uid="uid://dfq7cnbqled4l"]
 
 [ext_resource type="PackedScene" uid="uid://cdvfiia4s06hs" path="res://Scenes/Characters/Player/player_rpg.tscn" id="1_yct88"]
-[ext_resource type="TileSet" uid="uid://cjn6cgkelp87t" path="res://Assets/Tiles/tile_set.tres" id="2_ovupf"]
+[ext_resource type="TileSet" uid="uid://cjn6cgkelp87t" path="res://Assets/Sprites/Tiles/tile_set.tres" id="2_ovupf"]
 [ext_resource type="Script" uid="uid://co1se4v71ksw0" path="res://Scripts/Components/scene_door.gd" id="3_7jfor"]
 [ext_resource type="PackedScene" uid="uid://k4j8kb50a86" path="res://Scenes/Characters/Greedy/greedy.tscn" id="4_ovupf"]
 
@@ -13,10 +13,6 @@ size = Vector2(128, 32)
 [node name="Player" parent="." instance=ExtResource("1_yct88")]
 modulate = Color(0.74, 0.74, 0.74, 1)
 position = Vector2(728, 72)
-
-[node name="Camera2D" parent="Player" index="2"]
-limit_right = 1664
-limit_bottom = 928
 
 [node name="TileMap" type="Node2D" parent="."]
 
@@ -96,5 +92,3 @@ position = Vector2(136, 168)
 
 [node name="Greedy15" parent="Enemies" instance=ExtResource("4_ovupf")]
 position = Vector2(1368, 200)
-
-[editable path="Player"]

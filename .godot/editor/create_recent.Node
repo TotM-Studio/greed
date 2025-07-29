@@ -1,4 +1,5 @@
 Node2D
+ProgressBar
 CPUParticles2D
 AudioStreamPlayer
 CollisionShape2D
@@ -11,4 +12,3 @@ HitBoxComponent
 CharacterBody2D
 Weapon
 DirectionalLight2D
-Player

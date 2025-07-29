@@ -1,12 +1,14 @@
-[gd_scene load_steps=17 format=3 uid="uid://k4j8kb50a86"]
+[gd_scene load_steps=19 format=3 uid="uid://k4j8kb50a86"]
 
-[ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Characters/Greedy/goblin_greedy.png" id="1_j5lp6"]
+[ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Sprites/Characters/Greedy/goblin_greedy.png" id="1_j5lp6"]
 [ext_resource type="Script" uid="uid://djmn7n4wpe6dg" path="res://Scenes/Characters/Greedy/greedy.gd" id="1_ybk54"]
 [ext_resource type="Script" uid="uid://ds4ps5v85x6xr" path="res://Scripts/Components/hit_box_component.gd" id="2_0kogh"]
-[ext_resource type="Texture2D" uid="uid://gp6qalbg4h3c" path="res://Assets/Characters/Greedy/shadow.png" id="2_v84si"]
+[ext_resource type="Texture2D" uid="uid://gp6qalbg4h3c" path="res://Assets/Sprites/Characters/Greedy/shadow.png" id="2_v84si"]
 [ext_resource type="Shader" uid="uid://dhd3e32jnm73j" path="res://Scenes/Characters/Greedy/greedy.tres" id="3_hnfa7"]
-[ext_resource type="Texture2D" uid="uid://ekoxk1yp0hr" path="res://Assets/SFX/particule.png" id="6_ajao6"]
+[ext_resource type="Theme" uid="uid://26km83b2lrri" path="res://Assets/GUI/Themes/greedy.tres" id="6_0fxfp"]
+[ext_resource type="Texture2D" uid="uid://ekoxk1yp0hr" path="res://Assets/Sprites/SFX/particule.png" id="6_ajao6"]
 [ext_resource type="AudioStream" uid="uid://bylcovv4eaq5j" path="res://Assets/Sounds/punch.mp3" id="6_kriru"]
+[ext_resource type="Script" uid="uid://e746ow6tkf5" path="res://Scenes/Characters/health_bar.gd" id="7_0fxfp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kogh"]
 size = Vector2(20, 30)
@@ -24,97 +26,6 @@ colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
 [sub_resource type="Gradient" id="Gradient_kriru"]
 colors = PackedColorArray(1, 0.0351563, 0.0351563, 1, 1, 0.515625, 0, 1)
 
-[sub_resource type="Animation" id="Animation_hnfa7"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/GoblinGreedy:offset")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/GoblinGreedy:use_parent_material")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Sprites:modulate")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("HitBoxComponent:enabled")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_v84si"]
-resource_name = "take_dmmage"
-length = 0.4
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/GoblinGreedy:offset")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.166667, 0.4),
-"transitions": PackedFloat32Array(1, 0.34151, 0.196146),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, -8.71), Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Sprites/GoblinGreedy:use_parent_material")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [false, true, false, true]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("HitBoxComponent:enabled")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.4),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, true]
-}
-
 [sub_resource type="Animation" id="Animation_2asb6"]
 resource_name = "Death"
 tracks/0/type = "value"
@@ -128,6 +39,97 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hnfa7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites/GoblinGreedy:use_parent_material")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprites:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("HitBoxComponent:enabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprites/GoblinGreedy:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_v84si"]
+resource_name = "take_dmmage"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites/GoblinGreedy:use_parent_material")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HitBoxComponent:enabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprites/GoblinGreedy:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.4),
+"transitions": PackedFloat32Array(1, 0.68302, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -13), Vector2(0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2asb6"]
@@ -168,6 +170,23 @@ texture_filter = 1
 material = SubResource("ShaderMaterial_2asb6")
 use_parent_material = true
 texture = ExtResource("1_j5lp6")
+
+[node name="ProgressBar" type="ProgressBar" parent="Sprites/GoblinGreedy"]
+modulate = Color(0.416667, 1, 0, 1)
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = -22.0
+offset_right = -4.0
+offset_bottom = -18.0
+grow_horizontal = 2
+theme = ExtResource("6_0fxfp")
+value = 100.0
+show_percentage = false
+script = ExtResource("7_0fxfp")
+parent_path = NodePath("../../..")
 
 [node name="Particles" type="Node2D" parent="."]
 

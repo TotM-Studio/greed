@@ -1,11 +1,10 @@
-extends CharacterBody2D
+extends Character
 class_name Player
 
 var direction : Vector2 = Vector2.ZERO
 @export var speed = 155
 @export var runningSpeed = 240
 @export var acceleration = 3000
-@export var health = 100
 @export_category("Light")
 @export var lightOn : bool = false
 

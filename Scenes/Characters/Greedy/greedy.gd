@@ -1,7 +1,5 @@
-extends CharacterBody2D
+extends Character
 class_name Enemy
-
-@export var health = 100
 
 @onready var hit_particles = $Particles/Hit
 @onready var death_particles = $Particles/Death

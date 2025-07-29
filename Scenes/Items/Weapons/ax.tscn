@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://cx2t1geq4i6uq"]
+
+[ext_resource type="Texture2D" uid="uid://baee1dbi3nltk" path="res://Assets/Sprites/Weapons/hâche.png" id="1_kkydg"]
+[ext_resource type="Script" uid="uid://u70vtqswx8t5" path="res://Scenes/Items/Weapons/ax.gd" id="1_pd8q7"]
+[ext_resource type="Script" uid="uid://dpmhbwnrp6nk" path="res://Scripts/Components/attack_component.gd" id="2_cwlr2"]
+[ext_resource type="AudioStream" uid="uid://61pkh6m10ikn" path="res://Assets/Sounds/swoosh-sound-effects.mp3" id="3_cwlr2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pd8q7"]
+size = Vector2(21.5, 19)
+
+[node name="Ax" type="Node2D"]
+script = ExtResource("1_pd8q7")
+
+[node name="Arme" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_kkydg")
+
+[node name="AttackComponent" type="Area2D" parent="."]
+script = ExtResource("2_cwlr2")
+dammages = 90.0
+knockback = 30
+metadata/_custom_type_script = "uid://dpmhbwnrp6nk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackComponent"]
+position = Vector2(6.25, -17.5)
+shape = SubResource("RectangleShape2D_pd8q7")
+
+[node name="sound_effect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_cwlr2")

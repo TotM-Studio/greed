@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cv8b4iqnofdvf" path="res://Scenes/GUI/opening - Copie.gd" id="1_lq7t8"]
 [ext_resource type="Texture2D" uid="uid://ito1dath3eji" path="res://Assets/icon.png" id="2_ss5kx"]
-[ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Characters/Greedy/goblin_greedy.png" id="3_iojqg"]
+[ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Sprites/Characters/Greedy/goblin_greedy.png" id="3_iojqg"]
 
 
 [node name="Opening" type="Control"]

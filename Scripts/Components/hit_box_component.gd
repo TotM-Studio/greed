@@ -6,14 +6,12 @@ class_name HitBoxComponent
 
 func take_dammage(amount:float ,direction :Vector2 = Vector2.ZERO) -> void :
 	if enabled:
-		parent.health -= amount
-		if parent is CharacterBody2D and parent.health > 0:
+		if parent is Character:
+			parent.health -= amount
 			parent.velocity = direction
-		
-		print(parent.health)
-		
-		if parent.has_method("take_dammage"):
-			if parent is Enemy:
-				parent.take_dammage(direction)
-			else:
-				parent.take_dammage()
+			
+			if parent.has_method("take_dammage"):
+				if parent is Enemy:
+					parent.take_dammage(direction)
+				else:
+					parent.take_dammage()
