@@ -12,3 +12,6 @@ res://Scripts/Components/hit_box_component.gd
 res://Scenes/Items/weapon.gd
 res://Scenes/Characters/Player/player_rpg.gd
 res://Scenes/Characters/Player/weapons.gd
+res://Scenes/Items/Weapons/weapon.gd
+res://Scenes/Items/Weapons/sword.gd
+res://Scripts/autoloads/scene_loader.gd

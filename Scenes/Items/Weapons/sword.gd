@@ -1,5 +1,5 @@
-extends Node2D
-class_name Weapon
+extends Weapon
+class_name Sword
 
 @export var disabled : bool = false
 @onready var collision = $AttackComponent/CollisionShape2D
