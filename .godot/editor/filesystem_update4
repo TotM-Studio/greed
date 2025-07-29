@@ -9,3 +9,6 @@ res://Scenes/Characters/Greedy/greedy.gd
 res://Scripts/autoloads/game.gd
 res://Scripts/autoloads/game.tscn
 res://Scripts/Components/hit_box_component.gd
+res://Scenes/Items/weapon.gd
+res://Scenes/Characters/Player/player_rpg.gd
+res://Scenes/Characters/Player/weapons.gd

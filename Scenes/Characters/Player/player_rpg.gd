@@ -20,9 +20,11 @@ func  _ready() -> void:
 
 func _process(_delta: float) -> void:
 	update_animation_tree()
+	
 	light.visible = lightOn
-	if Input.is_action_just_pressed("Attack"):
-		$Weapons/AnimationPlayer.play("Attack")
+	
+	if Input.is_action_just_pressed("Attack") and !$Weapons.playing:
+		$Weapons.attack()
 
 func _physics_process(delta: float) -> void:
 	move = !$Weapons/AnimationPlayer.is_playing()
@@ -30,8 +32,10 @@ func _physics_process(delta: float) -> void:
 		direction = Input.get_vector("Gauche","Droite","Haut","Bas").normalized()
 		velocity.y = move_toward(velocity.y, direction.y * speed, acceleration * delta)
 		velocity.x = move_toward(velocity.x, direction.x * speed, acceleration * delta)
+		
 		if direction != Vector2.ZERO:
 			weapons.global_rotation = direction.angle() + 0.5 * PI
+		
 		move_and_slide()
 
 func update_animation_tree():

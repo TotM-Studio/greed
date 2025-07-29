@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bcrdquwts8i82"]
+[gd_scene load_steps=6 format=3 uid="uid://bcrdquwts8i82"]
 
-[ext_resource type="Script" uid="uid://dnfe4dypt6p5r" path="res://Scenes/Items/weapon.gd" id="1_c4acs"]
+[ext_resource type="Script" uid="uid://dnfe4dypt6p5r" path="res://Scenes/Items/Weapons/sword.gd" id="1_c4acs"]
 [ext_resource type="Texture2D" uid="uid://ckbxnh1e003ic" path="res://Assets/Weapons/arme.png" id="2_d6nal"]
 [ext_resource type="Script" uid="uid://dpmhbwnrp6nk" path="res://Scripts/Components/attack_component.gd" id="2_ykfa2"]
+[ext_resource type="AudioStream" uid="uid://61pkh6m10ikn" path="res://Assets/Sounds/swoosh-sound-effects.mp3" id="4_c4acs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x2u2t"]
 size = Vector2(9, 32)
@@ -24,3 +25,6 @@ texture_filter = 1
 texture = ExtResource("2_d6nal")
 hframes = 4
 vframes = 4
+
+[node name="Swoosh-sound-effects" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_c4acs")

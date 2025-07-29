@@ -13,3 +13,7 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	collision.disabled = disabled
+
+func play_sound():
+	$"Swoosh-sound-effects".pitch_scale = randf()/2 + 0.9
+	$"Swoosh-sound-effects".play()
