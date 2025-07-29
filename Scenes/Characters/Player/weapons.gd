@@ -3,24 +3,29 @@ extends Node2D
 @onready var animation_player = $AnimationPlayer
 @export_node_path("Weapon") var current_weapon_path
 
-var weapons : Dictionary
-var current_weapon : Weapon
+var weapons = []
+var current_weapon : int = 0
 
 var playing : bool = false
 
 func _ready() -> void:
-	current_weapon = get_node(current_weapon_path)
 	for i in $Pivot.get_children():
 		if i is Weapon:
-			weapons[i.name] = i
+			weapons += [i]
 
 func  _process(_delta: float) -> void:
 	playing = animation_player.is_playing()
 	if playing:
-		current_weapon.disabled = false
+		weapons[current_weapon].disabled = false
 	else:
-		current_weapon.disabled = true
+		weapons[current_weapon].disabled = true
+		if Input.is_action_just_pressed("Change Weapon"):
+			change_weapon()
 
 func attack():
-	animation_player.play(current_weapon.name + "Attack")
-	current_weapon.play_sound()
+	animation_player.play(weapons[current_weapon].name + "Attack")
+	weapons[current_weapon].play_sound()
+
+func change_weapon():
+	current_weapon += 1
+	current_weapon %= weapons.size()
