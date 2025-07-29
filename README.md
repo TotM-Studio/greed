@@ -1,2 +1,3 @@
 # Greed
-rogue like
+
+A little rogue like/RPG
