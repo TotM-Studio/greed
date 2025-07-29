@@ -17,7 +17,8 @@ func _ready() -> void:
 func  _process(_delta: float) -> void:
 	playing = animation_player.is_playing()
 	if playing:
-		weapons[current_weapon].disabled = false
+		# weapons[current_weapon].disabled = false
+		pass
 	else:
 		weapons[current_weapon].disabled = true
 		if Input.is_action_just_pressed("Change Weapon"):
@@ -25,7 +26,7 @@ func  _process(_delta: float) -> void:
 
 func attack():
 	animation_player.play(weapons[current_weapon].name + "Attack")
-	weapons[current_weapon].play_sound()
+	# weapons[current_weapon].play_sound()
 
 func change_weapon():
 	current_weapon += 1

@@ -1,6 +1,5 @@
 extends Control
 
-
 func _process(_delta: float) -> void:
 	visible = get_tree().paused
 
@@ -21,7 +20,8 @@ func toggle_fullscreen() -> void:
 func _on_resume_button_pressed() -> void:
 	get_tree().paused = false
 
-
-
 func _on_fullscreen_button_pressed() -> void:
 	toggle_fullscreen()
+
+func _on_resume_button_visibility_changed() -> void:
+	$Panel/Label/ResumeButton.grab_focus()

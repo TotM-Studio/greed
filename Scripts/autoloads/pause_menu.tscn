@@ -112,5 +112,6 @@ theme_override_font_sizes/font_size = 30
 text = "Quit"
 
 [connection signal="pressed" from="Pause Menu/Panel/Label/ResumeButton" to="Pause Menu" method="_on_resume_button_pressed"]
+[connection signal="visibility_changed" from="Pause Menu/Panel/Label/ResumeButton" to="Pause Menu" method="_on_resume_button_visibility_changed"]
 [connection signal="pressed" from="Pause Menu/Panel/Label/FullscreenButton" to="Pause Menu" method="_on_fullscreen_button_pressed"]
 [connection signal="pressed" from="Pause Menu/Panel/Button" to="Pause Menu" method="_on_button_pressed"]
