@@ -342,6 +342,34 @@ states/Walk/node = SubResource("AnimationNodeBlendSpace2D_x8ja7")
 states/Walk/position = Vector2(539, 100)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_8dtjg"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_dr4pe"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_yjwax")]
 
+[sub_resource type="Animation" id="Animation_ycnua"]
+resource_name = "AxAttack"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pivot/Ax:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Pivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.533333, 0.766667),
+"transitions": PackedFloat32Array(1, 0.450625, 0.225313),
+"update": 0,
+"values": [-1.0821, -1.52367, 1.20777]
+}
+
 [sub_resource type="Animation" id="Animation_xubch"]
 length = 0.001
 tracks/0/type = "value"
@@ -433,34 +461,6 @@ tracks/2/keys = {
 "values": [0.0]
 }
 
-[sub_resource type="Animation" id="Animation_ycnua"]
-resource_name = "AxAttack"
-length = 0.8
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Pivot/Ax:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.8),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Pivot:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.533333, 0.766667),
-"transitions": PackedFloat32Array(1, 0.450625, 0.225313),
-"update": 0,
-"values": [-1.0821, -1.52367, 1.20777]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ycnua"]
 _data = {
 &"AxAttack": SubResource("Animation_ycnua"),
@@ -535,7 +535,6 @@ parameters/Walk/blend_position = Vector2(0, 0)
 process_mode = 1
 z_index = 1
 script = ExtResource("15_hmdh8")
-current_weapon_path = NodePath("Pivot/Ax")
 
 [node name="Pivot" type="Node2D" parent="Weapons"]
 

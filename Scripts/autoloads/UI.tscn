@@ -1,0 +1,145 @@
+[gd_scene load_steps=8 format=3 uid="uid://1cp3q5a02d5l"]
+
+[ext_resource type="Script" uid="uid://cfc7gb7e2tumj" path="res://Scripts/autoloads/ui.gd" id="1_fu5ho"]
+[ext_resource type="Script" uid="uid://dinb2575bo6tl" path="res://Scripts/autoloads/pause_menu.gd" id="1_y7hd0"]
+[ext_resource type="Script" uid="uid://6n228j6ldqes" path="res://Scripts/autoloads/gui.gd" id="2_fu5ho"]
+[ext_resource type="Texture2D" uid="uid://baee1dbi3nltk" path="res://Assets/Sprites/Weapons/Ax.png" id="3_364av"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t5me0"]
+font_size = 40
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="InputEventKey" id="InputEventKey_gmn1e"]
+device = -1
+alt_pressed = true
+keycode = 4194309
+
+[sub_resource type="Shortcut" id="Shortcut_qluvc"]
+events = [SubResource("InputEventKey_gmn1e")]
+
+[node name="UI" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_fu5ho")
+
+[node name="Pause Menu" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y7hd0")
+
+[node name="Panel" type="Panel" parent="Pause Menu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -300.0
+offset_right = 300.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Pause Menu/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -128.0
+offset_top = 20.0
+offset_right = 128.0
+offset_bottom = 75.0
+grow_horizontal = 2
+text = "PAUSE MENU"
+label_settings = SubResource("LabelSettings_t5me0")
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="Pause Menu/Panel/Label"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.0
+offset_top = 120.0
+offset_right = 150.0
+offset_bottom = 220.0
+grow_horizontal = 2
+focus_neighbor_top = NodePath("../../Button")
+focus_neighbor_right = NodePath("../FullscreenButton")
+theme_override_font_sizes/font_size = 30
+text = "RESUME"
+
+[node name="FullscreenButton" type="CheckButton" parent="Pause Menu/Panel/Label"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = 217.5
+offset_right = 150.0
+offset_bottom = 317.5
+grow_horizontal = 2
+grow_vertical = 2
+focus_neighbor_top = NodePath("../ResumeButton")
+focus_neighbor_bottom = NodePath("../../Button")
+theme_override_font_sizes/font_size = 30
+shortcut = SubResource("Shortcut_qluvc")
+text = "FULLSCREEN"
+alignment = 1
+
+[node name="Button" type="Button" parent="Pause Menu/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = 100.0
+offset_right = 150.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_neighbor_top = NodePath("../Label/FullscreenButton")
+focus_neighbor_bottom = NodePath("../Label/ResumeButton")
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
+[node name="GUI" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_fu5ho")
+
+[node name="Panel" type="Panel" parent="GUI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -180.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = 180.0
+grow_horizontal = 0
+
+[node name="Ax" type="Sprite2D" parent="GUI/Panel"]
+texture_filter = 1
+position = Vector2(65, 65)
+scale = Vector2(2, 2)
+texture = ExtResource("3_364av")
+
+[connection signal="pressed" from="Pause Menu/Panel/Label/ResumeButton" to="Pause Menu" method="_on_resume_button_pressed"]
+[connection signal="pressed" from="Pause Menu/Panel/Label/FullscreenButton" to="Pause Menu" method="_on_fullscreen_button_pressed"]
+[connection signal="pressed" from="Pause Menu/Panel/Button" to="Pause Menu" method="_on_button_pressed"]

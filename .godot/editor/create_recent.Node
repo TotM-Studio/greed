@@ -1,3 +1,10 @@
+Panel
+Control
+CanvasLayer
+Sprite2D
+CheckButton
+Button
+Label
 Node2D
 ProgressBar
 CPUParticles2D
@@ -5,10 +12,3 @@ AudioStreamPlayer
 CollisionShape2D
 SceneDoor
 AnimationPlayer
-StaticBody3D
-CollisionShape3D
-MeshInstance3D
-HitBoxComponent
-CharacterBody2D
-Weapon
-DirectionalLight2D

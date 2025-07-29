@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baee1dbi3nltk"
-path="res://.godot/imported/hâche.png-a5fcb820e85b4fab3641c9680b64794a.ctex"
+uid="uid://boraidbi31bwu"
+path="res://.godot/imported/Sword.png-f82192021fa31daebc2e602aa463b57e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Weapons/hâche.png"
-dest_files=["res://.godot/imported/hâche.png-a5fcb820e85b4fab3641c9680b64794a.ctex"]
+source_file="res://Assets/Sprites/Weapons/Sword.png"
+dest_files=["res://.godot/imported/Sword.png-f82192021fa31daebc2e602aa463b57e.ctex"]
 
 [params]
 

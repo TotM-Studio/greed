@@ -21,3 +21,9 @@ res://Scenes/Characters/character.gd
 res://Scenes/Items/Weapons/ax.tscn
 res://Scenes/Items/Weapons/ax.gd
 res://Assets/Sprites/Tiles/tile_set.tres
+res://Scripts/autoloads/pause_menu.gd
+res://Scenes/Items/Weapons/pause_menu.tscn
+res://Scripts/autoloads/pause_menu.tscn
+res://Scripts/autoloads/UI.tscn
+res://Scripts/autoloads/gui.gd
+res://Scripts/autoloads/ui.gd

@@ -15,6 +15,7 @@ var direction : Vector2 = Vector2.ZERO
 var move : bool = true
 
 func  _ready() -> void:
+	UI.show_gui()
 	animationTree.active = true
 
 func _process(_delta: float) -> void:

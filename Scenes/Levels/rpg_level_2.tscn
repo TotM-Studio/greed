@@ -9,6 +9,7 @@
 size = Vector2(128, 32)
 
 [node name="Level" type="Node2D"]
+process_mode = 1
 
 [node name="Player" parent="." instance=ExtResource("1_yct88")]
 modulate = Color(0.74, 0.74, 0.74, 1)

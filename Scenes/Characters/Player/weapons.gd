@@ -1,7 +1,6 @@
 extends Node2D
 
 @onready var animation_player = $AnimationPlayer
-@export_node_path("Weapon") var current_weapon_path
 
 var weapons = []
 var current_weapon : int = 0
@@ -29,3 +28,5 @@ func attack():
 func change_weapon():
 	current_weapon += 1
 	current_weapon %= weapons.size()
+	UI.change_weapon("res://Assets/Sprites/Weapons/" + 
+		weapons[current_weapon].name + ".png")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cx2t1geq4i6uq"]
 
-[ext_resource type="Texture2D" uid="uid://baee1dbi3nltk" path="res://Assets/Sprites/Weapons/hâche.png" id="1_kkydg"]
+[ext_resource type="Texture2D" uid="uid://baee1dbi3nltk" path="res://Assets/Sprites/Weapons/Ax.png" id="1_kkydg"]
 [ext_resource type="Script" uid="uid://u70vtqswx8t5" path="res://Scenes/Items/Weapons/ax.gd" id="1_pd8q7"]
 [ext_resource type="Script" uid="uid://dpmhbwnrp6nk" path="res://Scripts/Components/attack_component.gd" id="2_cwlr2"]
 [ext_resource type="AudioStream" uid="uid://61pkh6m10ikn" path="res://Assets/Sounds/swoosh-sound-effects.mp3" id="3_cwlr2"]
