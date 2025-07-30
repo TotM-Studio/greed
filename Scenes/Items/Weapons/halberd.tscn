@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8t04lsa786x0"]
+
+[ext_resource type="Script" uid="uid://cofu1kw745ntb" path="res://Scenes/Items/Weapons/weapon.gd" id="1_xua7a"]
+[ext_resource type="Script" uid="uid://dpmhbwnrp6nk" path="res://Scripts/Components/attack_component.gd" id="2_rfr1y"]
+[ext_resource type="Texture2D" uid="uid://cusmu36nxc83j" path="res://Assets/Sprites/Weapons/Halberd.png" id="3_7ubhw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbee5"]
+size = Vector2(29, 38)
+
+[node name="Halberd" type="Node2D"]
+script = ExtResource("1_xua7a")
+metadata/_custom_type_script = "uid://cofu1kw745ntb"
+
+[node name="AttackComponent" type="Area2D" parent="."]
+script = ExtResource("2_rfr1y")
+metadata/_custom_type_script = "uid://dpmhbwnrp6nk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackComponent"]
+position = Vector2(-0.5, -23)
+shape = SubResource("RectangleShape2D_tbee5")
+
+[node name="Arme" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("3_7ubhw")
+
+[node name="sound_effect" type="AudioStreamPlayer" parent="."]

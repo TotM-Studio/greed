@@ -9,7 +9,7 @@ res://Scenes/Levels/rpg_level_1.tscn::f48c065912d0dcc3707868f8b050190f::17537805
 res://Scenes/Levels/rpg_level_2.tscn::44f7551a0e89984a0d37dde3171cfcf9::1753817690::res://.godot/exported/133200997/export-bfc8a2729721c98742983efe1ea5e791-rpg_level_2.scn
 res://Scripts/autoloads/game.tscn::240577e2cff0bc00f2f04cbf268c125d::1753817690::res://.godot/exported/133200997/export-922351d21b796735ec8fd75118a7b618-game.scn
 res://Scripts/autoloads/scene_loader.tscn::568caa23969ca7658de78685cf5302ce::1753557095::res://.godot/exported/133200997/export-c14709859e261cc3c4c804f980df775a-scene_loader.scn
-res://Scenes/Characters/Greedy/greedy.tres::d8ad8ac594d28a020572a1d3e0631e35::1753817690::res://.godot/exported/133200997/export-0791d6eccb0e5b477848b0bb25c730f3-greedy.res
+res://Scenes/Characters/Greedy/greedy.tres::d8ad8ac594d28a020572a1d3e0631e35::1753817724::res://.godot/exported/133200997/export-0791d6eccb0e5b477848b0bb25c730f3-greedy.res
 res://Assets/GUI/Themes/greedy.tres::ed23a22ce7c661c191039a37be8e6ab3::1753816583::res://.godot/exported/133200997/export-02801d879f5e6c286cb1924d69c3f1e9-greedy.res
 res://Assets/Sounds/death.tres::475098da577cffd537032adf09d96b50::1753771484::res://.godot/exported/133200997/export-88cdeb11494f8dab8933aad737ca5f6f-death.res
 res://Assets/Sprites/Tiles/tile_set.tres::3cf7ceb58e638fc4db046dfe16c0aaa1::1753816583::res://.godot/exported/133200997/export-5f5a401b2f9d28380216a90e552c68c0-tile_set.res

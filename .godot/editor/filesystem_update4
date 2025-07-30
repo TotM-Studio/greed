@@ -1,12 +1,6 @@
-res://Scenes/Items/Weapons/ax.tscn
+res://Scenes/Items/Weapons/weapon.gd
 res://Scripts/autoloads/pause_menu.gd
 res://Assets/Sprites/Tiles/tile_set.tres
 res://Scenes/Characters/Greedy/greedy.tres
 res://Assets/GUI/Themes/greedy.tres
-res://Scenes/Characters/Player/player_rpg.tscn
-res://Scenes/Items/Weapons/sword.tscn
-res://Scenes/Levels/rpg_level_2.tscn
-res://Scripts/autoloads/game.tscn
-res://Scripts/autoloads/UI.tscn
-res://Scripts/autoloads/pause_menu.tscn
-res://Scenes/Characters/Player/weapons.gd
+res://Scenes/Items/Weapons/hallberd.tscn
