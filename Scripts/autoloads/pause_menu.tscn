@@ -16,7 +16,7 @@ keycode = 4194309
 events = [SubResource("InputEventKey_gmn1e")]
 
 [node name="PauseMenu" type="CanvasLayer"]
-layer = 2
+layer = 3
 
 [node name="Pause Menu" type="Control" parent="."]
 process_mode = 3

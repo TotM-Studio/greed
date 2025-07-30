@@ -1,19 +1,24 @@
-[gd_scene load_steps=6 format=4 uid="uid://dfq7cnbqled4l"]
+[gd_scene load_steps=8 format=4 uid="uid://dfq7cnbqled4l"]
 
+[ext_resource type="Script" uid="uid://bkwbdyfi1e2f6" path="res://Scenes/Levels/level.gd" id="1_7jfor"]
 [ext_resource type="PackedScene" uid="uid://cdvfiia4s06hs" path="res://Scenes/Characters/Player/player_rpg.tscn" id="1_yct88"]
 [ext_resource type="TileSet" uid="uid://cjn6cgkelp87t" path="res://Assets/Sprites/Tiles/tile_set.tres" id="2_ovupf"]
 [ext_resource type="Script" uid="uid://co1se4v71ksw0" path="res://Scripts/Components/scene_door.gd" id="3_7jfor"]
 [ext_resource type="PackedScene" uid="uid://k4j8kb50a86" path="res://Scenes/Characters/Greedy/greedy.tscn" id="4_ovupf"]
+[ext_resource type="Script" uid="uid://d042yaitutpbl" path="res://Scenes/Items/spawner_1.gd" id="6_dqdr2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kaul"]
 size = Vector2(128, 32)
 
 [node name="Level" type="Node2D"]
 process_mode = 1
+script = ExtResource("1_7jfor")
 
 [node name="Player" parent="." instance=ExtResource("1_yct88")]
 modulate = Color(0.74, 0.74, 0.74, 1)
 position = Vector2(728, 72)
+limit_right = 1700
+limit_bottom = 960
 
 [node name="TileMap" type="Node2D" parent="."]
 
@@ -39,7 +44,8 @@ energy = 0.3
 collision_layer = 4
 collision_mask = 4
 script = ExtResource("3_7jfor")
-exit_scene_path = "uid://o3cfhi77nf0a"
+next_scene_path = "uid://o3cfhi77nf0a"
+exit_spawner = 1
 metadata/_custom_type_script = "uid://co1se4v71ksw0"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneDoor"]
@@ -53,7 +59,7 @@ debug_color = Color(0.169531, 0.7, 0, 0.42)
 position = Vector2(664, 192)
 
 [node name="Greedy2" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(640, 192)
+position = Vector2(548, 182)
 
 [node name="Greedy3" parent="Enemies" instance=ExtResource("4_ovupf")]
 position = Vector2(1344, 368)
@@ -93,3 +99,11 @@ position = Vector2(136, 168)
 
 [node name="Greedy15" parent="Enemies" instance=ExtResource("4_ovupf")]
 position = Vector2(1368, 200)
+
+[node name="Spawners" type="Node2D" parent="."]
+
+[node name="Spawner_1" type="Node2D" parent="Spawners"]
+position = Vector2(728, 72)
+script = ExtResource("6_dqdr2")
+player_node_path = NodePath("../../Player")
+metadata/_custom_type_script = "uid://d042yaitutpbl"

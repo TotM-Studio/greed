@@ -1,7 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://qjo2ixpusqju"]
+[gd_scene load_steps=4 format=3 uid="uid://qjo2ixpusqju"]
 
 [ext_resource type="Script" uid="uid://dmxbxah8wfsai" path="res://Scenes/GUI/loading_screen.gd" id="1_w2ym0"]
+[ext_resource type="Texture2D" uid="uid://g0i4e8vlhfe7" path="res://Assets/goblin_greedy_ban.png" id="2_pmgts"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pmgts"]
+bg_color = Color(0.1558, 0.38, 0.185693, 0.890196)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+anti_aliasing = false
 
 [node name="LoadingScreen" type="CanvasLayer"]
 process_mode = 3
@@ -28,7 +36,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0)
+color = Color(0, 0, 0, 1)
 
 [node name="BackgroundTextureRect" type="TextureRect" parent="Control"]
 layout_mode = 1
@@ -37,23 +45,28 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_pmgts")
 expand_mode = 1
 stretch_mode = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = 30.0
-offset_top = -23.0
+offset_top = -120.0
 offset_right = -30.0
-offset_bottom = 98.0
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_constants/separation = 50
 
 [node name="ProgressLabel" type="Label" parent="Control/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 61
 text = "Loading..."
 horizontal_alignment = 1
 
@@ -61,6 +74,7 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_pmgts")
 max_value = 1.0
 
 [node name="ErrorMessage" type="AcceptDialog" parent="Control"]

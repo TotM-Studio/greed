@@ -10,5 +10,5 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	value = parent.health
-	modulate.h = value/max_value /3.59
+	modulate.h = value / max_value /3.59
 	visible = (value != max_value)

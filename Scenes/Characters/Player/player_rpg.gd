@@ -7,8 +7,12 @@ var direction : Vector2 = Vector2.ZERO
 @export var acceleration = 3000
 @export_category("Light")
 @export var lightOn : bool = false
+@export_category("Camera")
+@export var limit_right : int = 1080
+@export var limit_bottom : int = 720
 
 @onready var light : PointLight2D = $PointLight2D
+@onready var camera : Camera2D = $Camera2D
 @onready var animationTree : AnimationTree = $Animation/AnimationTree
 @onready var weapons : WeaponManager = $Weapons
 
@@ -17,6 +21,8 @@ var move : bool = true
 func  _ready() -> void:
 	Gui.show_gui()
 	animationTree.active = true
+	camera.limit_bottom = limit_bottom
+	camera.limit_right = limit_right
 
 func _process(_delta: float) -> void:
 	update_animation_tree()

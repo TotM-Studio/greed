@@ -1,20 +1,22 @@
-[gd_scene load_steps=5 format=4 uid="uid://o3cfhi77nf0a"]
+[gd_scene load_steps=7 format=4 uid="uid://o3cfhi77nf0a"]
 
+[ext_resource type="Script" uid="uid://bkwbdyfi1e2f6" path="res://Scenes/Levels/level.gd" id="1_nlyft"]
 [ext_resource type="PackedScene" uid="uid://cdvfiia4s06hs" path="res://Scenes/Characters/Player/player_rpg.tscn" id="1_yuuxe"]
 [ext_resource type="TileSet" uid="uid://cjn6cgkelp87t" path="res://Assets/Sprites/Tiles/tile_set.tres" id="2_nlyft"]
 [ext_resource type="Script" uid="uid://co1se4v71ksw0" path="res://Scripts/Components/scene_door.gd" id="3_dmhoq"]
+[ext_resource type="Script" uid="uid://d042yaitutpbl" path="res://Scenes/Items/spawner_1.gd" id="4_dmhoq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_npfmg"]
 size = Vector2(128, 32)
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_nlyft")
 
 [node name="Player" parent="." instance=ExtResource("1_yuuxe")]
 z_index = 7
-position = Vector2(1280, 1320)
-
-[node name="PointLight2D" parent="Player" index="1"]
-energy = 4.86
+position = Vector2(1826, 608)
+limit_right = 2464
+limit_bottom = 1376
 
 [node name="TileMap" type="Node2D" parent="."]
 
@@ -44,18 +46,30 @@ energy = 0.3
 shadow_enabled = true
 shadow_filter_smooth = 10.9
 
-[node name="Sortie du château" type="Area2D" parent="."]
-collision_layer = 4
-collision_mask = 4
-script = ExtResource("3_dmhoq")
-exit_scene_path = "uid://dfq7cnbqled4l"
-metadata/_custom_type_script = "uid://co1se4v71ksw0"
+[node name="Spawners" type="Node2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sortie du château"]
-position = Vector2(1280, 1360)
-shape = SubResource("RectangleShape2D_npfmg")
-debug_color = Color(0.185937, 0.7, 0, 0.42)
+[node name="Spawner" type="Node2D" parent="Spawners"]
+position = Vector2(1280, 1320)
+script = ExtResource("4_dmhoq")
+player_node_path = NodePath("../../Player")
+metadata/_custom_type_script = "uid://d042yaitutpbl"
+
+[node name="Spawner2" type="Node2D" parent="Spawners"]
+position = Vector2(1826, 608)
+script = ExtResource("4_dmhoq")
+player_node_path = NodePath("../../Player")
+metadata/_custom_type_script = "uid://d042yaitutpbl"
 
 [node name="Sorties de niveau" type="Node2D" parent="."]
 
-[editable path="Player"]
+[node name="Sortie du château" type="Area2D" parent="Sorties de niveau"]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("3_dmhoq")
+next_scene_path = "uid://dfq7cnbqled4l"
+metadata/_custom_type_script = "uid://co1se4v71ksw0"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sorties de niveau/Sortie du château"]
+position = Vector2(1280, 1360)
+shape = SubResource("RectangleShape2D_npfmg")
+debug_color = Color(0.185937, 0.7, 0, 0.42)

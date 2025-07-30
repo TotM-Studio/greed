@@ -1,6 +1,7 @@
 extends Node
 
 var paused = false
+var spawner = 0
 
 func  freeze_engine(freezeTime:float, freezeSlow:float = 0.5) -> void:
 	Engine.time_scale = freezeSlow
