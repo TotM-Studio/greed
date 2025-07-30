@@ -7,3 +7,5 @@ res://Scenes/Levels/rpg_level_1.tscn
 res://Scenes/Levels/level.gd
 res://Scripts/Components/scene_door.gd
 res://Scenes/Items/spawner_1.gd
+res://Scenes/Items/spawner.gd
+res://Scenes/Characters/Player/player_rpg.tscn

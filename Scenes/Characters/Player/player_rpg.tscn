@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://c8t04lsa786x0" path="res://Scenes/Items/Weapons/halberd.tscn" id="17_kw2s4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_donwm"]
-size = Vector2(28, 28)
+size = Vector2(28, 26)
 
 [sub_resource type="Gradient" id="Gradient_8l3wm"]
 offsets = PackedFloat32Array(0.0238095, 1)
@@ -642,6 +642,7 @@ script = ExtResource("1_donwm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_donwm")
+debug_color = Color(0, 0.595, 0.7, 0.780392)
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 visible = false

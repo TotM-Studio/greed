@@ -1,4 +1,4 @@
-class_name SceneDoor
+class_name SceneExit
 extends Area2D
 
 @export_file("*.tscn") var next_scene_path : String
