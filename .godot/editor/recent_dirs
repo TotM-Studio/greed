@@ -1,3 +1,4 @@
+res://Scenes/GUI
 res://Scenes/Levels
 res://Scenes/Items
 res://Scripts/autoloads
@@ -9,7 +10,6 @@ res://Assets/GUI/Themes
 res://Assets/Sounds
 res://Assets
 res://Scenes/Characters/Greedy
-res://Scenes/GUI
 res://Scenes
 res://Scenes/Characters/Player
 res://Scripts

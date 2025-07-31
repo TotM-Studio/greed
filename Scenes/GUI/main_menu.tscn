@@ -1,0 +1,113 @@
+[gd_scene load_steps=6 format=3 uid="uid://gk14xv57xu0j"]
+
+[ext_resource type="Script" uid="uid://b4ult6s1b2dwl" path="res://Scenes/GUI/main_menu.gd" id="1_gv7mq"]
+[ext_resource type="Texture2D" uid="uid://w80vrkmflpxx" path="res://Assets/Sprites/Characters/Greedy/goblin_greedy_head.png" id="2_sar4h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_khfnj"]
+bg_color = Color(0.1914, 0.33, 0.22374, 0.827451)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.120071, 0.167969, 0.131247, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sar4h"]
+bg_color = Color(0.126953, 0.5, 0.213997, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c428o"]
+bg_color = Color(0.114136, 0.171875, 0.127217, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+anti_aliasing = false
+
+[node name="CanvasLayer" type="CanvasLayer"]
+layer = 3
+
+[node name="Main Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gv7mq")
+
+[node name="ColorRect" type="ColorRect" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.259399, 0.332031, 0.276347, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Main Menu"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_sar4h")
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="Main Menu"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 150.0
+offset_top = -250.0
+offset_right = 550.0
+offset_bottom = 250.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_khfnj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Main Menu/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -100.0
+offset_right = 150.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="play_button" type="Button" parent="Main Menu/Panel/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../quit_button")
+focus_neighbor_bottom = NodePath("../quit_button")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sar4h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_c428o")
+text = "Play"
+
+[node name="quit_button" type="Button" parent="Main Menu/Panel/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../play_button")
+focus_neighbor_bottom = NodePath("../play_button")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sar4h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_c428o")
+text = "Quit"
+
+[connection signal="pressed" from="Main Menu/Panel/VBoxContainer/play_button" to="Main Menu" method="_on_play_button_pressed"]
+[connection signal="pressed" from="Main Menu/Panel/VBoxContainer/quit_button" to="Main Menu" method="_on_quit_button_pressed"]

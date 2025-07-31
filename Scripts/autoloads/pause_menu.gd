@@ -24,4 +24,8 @@ func _on_fullscreen_button_pressed() -> void:
 	toggle_fullscreen()
 
 func _on_resume_button_visibility_changed() -> void:
-	$Panel/Label/ResumeButton.grab_focus()
+	$Panel/VBoxContainer/ResumeButton.grab_focus()
+
+
+func _on_main_menu_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/GUI/main_menu.tscn")

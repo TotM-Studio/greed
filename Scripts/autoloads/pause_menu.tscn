@@ -16,11 +16,10 @@ keycode = 4194309
 events = [SubResource("InputEventKey_gmn1e")]
 
 [node name="PauseMenu" type="CanvasLayer"]
-layer = 3
+layer = 2
 
 [node name="Pause Menu" type="Control" parent="."]
 process_mode = 3
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -57,23 +56,18 @@ text = "PAUSE MENU"
 label_settings = SubResource("LabelSettings_gmn1e")
 horizontal_alignment = 1
 
-[node name="ResumeButton" type="Button" parent="Pause Menu/Panel/Label"]
+[node name="HSeparator" type="HSeparator" parent="Pause Menu/Panel"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -150.0
-offset_top = 120.0
-offset_right = 150.0
-offset_bottom = 220.0
+offset_left = -200.0
+offset_top = 80.0
+offset_right = 200.0
+offset_bottom = 84.0
 grow_horizontal = 2
-focus_neighbor_top = NodePath("../../Button")
-focus_neighbor_right = NodePath("../FullscreenButton")
-theme_override_font_sizes/font_size = 30
-text = "RESUME"
 
-[node name="FullscreenButton" type="CheckButton" parent="Pause Menu/Panel/Label"]
-process_mode = 3
+[node name="VBoxContainer" type="VBoxContainer" parent="Pause Menu/Panel"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -81,37 +75,46 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -150.0
-offset_top = 217.5
+offset_top = -200.0
 offset_right = 150.0
-offset_bottom = 317.5
+offset_bottom = 200.0
 grow_horizontal = 2
 grow_vertical = 2
+alignment = 1
+
+[node name="ResumeButton" type="Button" parent="Pause Menu/Panel/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../QuitButton")
+focus_neighbor_right = NodePath("../FullscreenButton")
+theme_override_font_sizes/font_size = 30
+text = "RESUME"
+
+[node name="FullscreenButton" type="CheckButton" parent="Pause Menu/Panel/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
 focus_neighbor_top = NodePath("../ResumeButton")
-focus_neighbor_bottom = NodePath("../../Button")
+focus_neighbor_bottom = NodePath("../MainMenuButton")
 theme_override_font_sizes/font_size = 30
 shortcut = SubResource("Shortcut_qluvc")
 text = "FULLSCREEN"
 alignment = 1
 
-[node name="Button" type="Button" parent="Pause Menu/Panel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = 100.0
-offset_right = 150.0
-offset_bottom = 200.0
-grow_horizontal = 2
-grow_vertical = 2
-focus_neighbor_top = NodePath("../Label/FullscreenButton")
-focus_neighbor_bottom = NodePath("../Label/ResumeButton")
+[node name="MainMenuButton" type="Button" parent="Pause Menu/Panel/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../FullscreenButton")
+focus_neighbor_bottom = NodePath("../QuitButton")
+theme_override_font_sizes/font_size = 30
+text = "Main Menu"
+
+[node name="QuitButton" type="Button" parent="Pause Menu/Panel/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../MainMenuButton")
+focus_neighbor_bottom = NodePath("../ResumeButton")
 theme_override_font_sizes/font_size = 30
 text = "Quit"
 
-[connection signal="pressed" from="Pause Menu/Panel/Label/ResumeButton" to="Pause Menu" method="_on_resume_button_pressed"]
-[connection signal="visibility_changed" from="Pause Menu/Panel/Label/ResumeButton" to="Pause Menu" method="_on_resume_button_visibility_changed"]
-[connection signal="pressed" from="Pause Menu/Panel/Label/FullscreenButton" to="Pause Menu" method="_on_fullscreen_button_pressed"]
-[connection signal="pressed" from="Pause Menu/Panel/Button" to="Pause Menu" method="_on_button_pressed"]
+[connection signal="pressed" from="Pause Menu/Panel/VBoxContainer/ResumeButton" to="Pause Menu" method="_on_resume_button_pressed"]
+[connection signal="visibility_changed" from="Pause Menu/Panel/VBoxContainer/ResumeButton" to="Pause Menu" method="_on_resume_button_visibility_changed"]
+[connection signal="pressed" from="Pause Menu/Panel/VBoxContainer/FullscreenButton" to="Pause Menu" method="_on_fullscreen_button_pressed"]
+[connection signal="pressed" from="Pause Menu/Panel/VBoxContainer/MainMenuButton" to="Pause Menu" method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="Pause Menu/Panel/VBoxContainer/QuitButton" to="Pause Menu" method="_on_button_pressed"]

@@ -5,3 +5,10 @@ res://Scenes/Characters/Greedy/greedy.tres
 res://Assets/GUI/Themes/greedy.tres
 res://Scenes/Levels/rpg_level_2.tscn
 res://Scenes/Characters/Player/player_rpg.tscn
+res://Scenes/GUI/main_menu.tscn
+res://Scenes/GUI/main_menu.gd
+res://Scripts/autoloads/UI.tscn
+res://Scenes/GUI/opening - Copie.tscn
+res://Scripts/Components/scene_exit.gd
+res://Scripts/autoloads/transition_manager.tscn
+res://Scripts/autoloads/pause_menu.tscn
