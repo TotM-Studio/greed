@@ -1,14 +1,14 @@
+TextureRect
+Label
 Control
 ReferenceRect
 VBoxContainer
 Button
 HSeparator
 ColorRect
-TextureRect
 CanvasLayer
 Panel
 Container
 Node2D
 Spawner
 CollisionShape2D
-SceneExit

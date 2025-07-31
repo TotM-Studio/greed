@@ -20,7 +20,7 @@ config/name_localized={
 "fr_FR": "Gourmandise"
 }
 config/description="Un pitit roguelike bien sympa : )"
-config/version="0.0.6"
+config/version="0.0.7"
 config/tags=PackedStringArray("2d", "rpg")
 run/main_scene="uid://sikc02ddepyt"
 config/features=PackedStringArray("4.4", "Mobile")
@@ -53,6 +53,10 @@ folder_colors={
 "res://Scenes/": "purple",
 "res://Scripts/": "green"
 }
+
+[gui]
+
+theme/custom="uid://26km83b2lrri"
 
 [input]
 

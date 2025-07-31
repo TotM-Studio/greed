@@ -30,11 +30,16 @@ offset_bottom = 157.0
 grow_horizontal = 0
 scale = Vector2(0.5, 0.5)
 
-[node name="Ax" type="Sprite2D" parent="GUI/PanelUp"]
+[node name="Ax" type="TextureRect" parent="GUI/PanelUp"]
 texture_filter = 1
-position = Vector2(65, 65)
-scale = Vector2(2, 2)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("3_364av")
+stretch_mode = 5
 
 [node name="Panel" type="Panel" parent="GUI"]
 layout_mode = 1
@@ -47,11 +52,16 @@ offset_right = -35.0
 offset_bottom = 232.0
 grow_horizontal = 0
 
-[node name="Ax" type="Sprite2D" parent="GUI/Panel"]
+[node name="Ax" type="TextureRect" parent="GUI/Panel"]
 texture_filter = 1
-position = Vector2(65, 65)
-scale = Vector2(2, 2)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("3_364av")
+stretch_mode = 5
 
 [node name="PanelDown" type="Panel" parent="GUI"]
 layout_mode = 1
@@ -65,8 +75,13 @@ offset_bottom = 369.0
 grow_horizontal = 0
 scale = Vector2(0.5, 0.5)
 
-[node name="Ax" type="Sprite2D" parent="GUI/PanelDown"]
+[node name="Ax" type="TextureRect" parent="GUI/PanelDown"]
 texture_filter = 1
-position = Vector2(65, 65)
-scale = Vector2(2, 2)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("3_364av")
+stretch_mode = 5

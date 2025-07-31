@@ -1,11 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://30knxu35d0kb"]
+[gd_scene load_steps=7 format=3 uid="uid://30knxu35d0kb"]
 
 [ext_resource type="Script" uid="uid://dinb2575bo6tl" path="res://Scripts/autoloads/pause_menu.gd" id="1_gmn1e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gmn1e"]
+bg_color = Color(0.45288, 0.54, 0.4212, 0.74902)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [sub_resource type="LabelSettings" id="LabelSettings_gmn1e"]
 font_size = 40
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_gmn1e"]
+color = Color(0.194702, 0.34375, 0.197031, 1)
+thickness = 3
 
 [sub_resource type="InputEventKey" id="InputEventKey_gmn1e"]
 device = -1
@@ -41,6 +52,7 @@ offset_right = 300.0
 offset_bottom = 300.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gmn1e")
 
 [node name="Label" type="Label" parent="Pause Menu/Panel"]
 layout_mode = 1
@@ -62,10 +74,11 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -200.0
-offset_top = 80.0
+offset_top = 150.0
 offset_right = 200.0
-offset_bottom = 84.0
+offset_bottom = 160.0
 grow_horizontal = 2
+theme_override_styles/separator = SubResource("StyleBoxLine_gmn1e")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Pause Menu/Panel"]
 layout_mode = 1
@@ -74,10 +87,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = -200.0
-offset_right = 150.0
-offset_bottom = 200.0
+offset_left = -174.0
+offset_top = -120.0
+offset_right = 174.0
+offset_bottom = 260.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
@@ -86,7 +99,7 @@ alignment = 1
 layout_mode = 2
 focus_neighbor_top = NodePath("../QuitButton")
 focus_neighbor_right = NodePath("../FullscreenButton")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 20
 text = "RESUME"
 
 [node name="FullscreenButton" type="CheckButton" parent="Pause Menu/Panel/VBoxContainer"]
@@ -94,7 +107,7 @@ process_mode = 3
 layout_mode = 2
 focus_neighbor_top = NodePath("../ResumeButton")
 focus_neighbor_bottom = NodePath("../MainMenuButton")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 20
 shortcut = SubResource("Shortcut_qluvc")
 text = "FULLSCREEN"
 alignment = 1
@@ -103,15 +116,15 @@ alignment = 1
 layout_mode = 2
 focus_neighbor_top = NodePath("../FullscreenButton")
 focus_neighbor_bottom = NodePath("../QuitButton")
-theme_override_font_sizes/font_size = 30
-text = "Main Menu"
+theme_override_font_sizes/font_size = 20
+text = "MAIN MENU"
 
 [node name="QuitButton" type="Button" parent="Pause Menu/Panel/VBoxContainer"]
 layout_mode = 2
 focus_neighbor_top = NodePath("../MainMenuButton")
 focus_neighbor_bottom = NodePath("../ResumeButton")
-theme_override_font_sizes/font_size = 30
-text = "Quit"
+theme_override_font_sizes/font_size = 20
+text = "QUIT"
 
 [connection signal="pressed" from="Pause Menu/Panel/VBoxContainer/ResumeButton" to="Pause Menu" method="_on_resume_button_pressed"]
 [connection signal="visibility_changed" from="Pause Menu/Panel/VBoxContainer/ResumeButton" to="Pause Menu" method="_on_resume_button_visibility_changed"]

@@ -1,7 +1,10 @@
 extends Control
 
+
+
 func _ready() -> void:
 	$Panel/VBoxContainer/play_button.grab_focus()
+
 
   
 func _on_play_button_pressed() -> void:

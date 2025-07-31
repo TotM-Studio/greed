@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://26km83b2lrri"]
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://26km83b2lrri"]
+
+[ext_resource type="FontFile" uid="uid://bw0j3b07nx5ce" path="res://Assets/GUI/Pixeled.ttf" id="1_i70k3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i70k3"]
 bg_color = Color(0, 0, 0, 0.415686)
@@ -18,5 +20,7 @@ anti_aliasing = false
 anti_aliasing_size = 0.01
 
 [resource]
+default_font = ExtResource("1_i70k3")
+default_font_size = 15
 ProgressBar/styles/background = SubResource("StyleBoxFlat_i70k3")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_cimn0")
