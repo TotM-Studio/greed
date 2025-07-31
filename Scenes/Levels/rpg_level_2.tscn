@@ -19,7 +19,6 @@ process_mode = 1
 script = ExtResource("1_7jfor")
 
 [node name="Player" parent="." instance=ExtResource("1_yct88")]
-modulate = Color(0.74, 0.74, 0.74, 1)
 position = Vector2(2576, 640)
 limit_right = 1700
 limit_bottom = 960
@@ -78,7 +77,6 @@ tile_map_data = PackedByteArray("AAAAAAAAAAACAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAABAAA
 tile_set = ExtResource("2_ovupf")
 
 [node name="Walls" type="Node2D" parent="TileMap"]
-modulate = Color(0.6, 0.6, 0.6, 1)
 
 [node name="Murs" type="TileMapLayer" parent="TileMap"]
 texture_filter = 1
