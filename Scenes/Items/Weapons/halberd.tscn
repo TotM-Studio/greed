@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://c8t04lsa786x0"]
+[gd_scene load_steps=6 format=3 uid="uid://c8t04lsa786x0"]
 
 [ext_resource type="Script" uid="uid://cofu1kw745ntb" path="res://Scenes/Items/Weapons/weapon.gd" id="1_xua7a"]
 [ext_resource type="Script" uid="uid://dpmhbwnrp6nk" path="res://Scripts/Components/attack_component.gd" id="2_rfr1y"]
 [ext_resource type="Texture2D" uid="uid://cusmu36nxc83j" path="res://Assets/Sprites/Weapons/Halberd.png" id="3_7ubhw"]
+[ext_resource type="AudioStream" uid="uid://61pkh6m10ikn" path="res://Assets/Sounds/swoosh-sound-effects.mp3" id="4_t7a5p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tbee5"]
 size = Vector2(29, 38)
@@ -24,3 +25,4 @@ texture_filter = 1
 texture = ExtResource("3_7ubhw")
 
 [node name="sound_effect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_t7a5p")
