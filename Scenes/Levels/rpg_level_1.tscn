@@ -14,7 +14,6 @@ size = Vector2(64, 32)
 script = ExtResource("1_nlyft")
 
 [node name="Player" parent="." instance=ExtResource("1_yuuxe")]
-process_mode = 0
 z_index = 7
 position = Vector2(1224, 462)
 limit_right = 2464
