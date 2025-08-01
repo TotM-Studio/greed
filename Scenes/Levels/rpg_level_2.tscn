@@ -70,6 +70,96 @@ position = Vector2(136, 168)
 [node name="Greedy15" parent="Enemies" instance=ExtResource("4_ovupf")]
 position = Vector2(1368, 200)
 
+[node name="Greedy16" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(864, 168)
+
+[node name="Greedy17" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(748, 158)
+
+[node name="Greedy18" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1544, 344)
+
+[node name="Greedy19" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(960, 568)
+
+[node name="Greedy20" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(512, 432)
+
+[node name="Greedy21" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(992, 288)
+
+[node name="Greedy22" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1584, 696)
+
+[node name="Greedy23" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(376, 808)
+
+[node name="Greedy24" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(736, 656)
+
+[node name="Greedy25" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1216, 768)
+
+[node name="Greedy26" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1296, 480)
+
+[node name="Greedy27" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1288, 160)
+
+[node name="Greedy28" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(776, 400)
+
+[node name="Greedy29" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(336, 144)
+
+[node name="Greedy30" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1568, 176)
+
+[node name="Greedy31" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(768, 168)
+
+[node name="Greedy32" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(652, 158)
+
+[node name="Greedy33" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1448, 344)
+
+[node name="Greedy34" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(864, 568)
+
+[node name="Greedy35" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(416, 432)
+
+[node name="Greedy36" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(896, 288)
+
+[node name="Greedy37" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1488, 696)
+
+[node name="Greedy38" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(280, 808)
+
+[node name="Greedy39" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(640, 656)
+
+[node name="Greedy40" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1120, 768)
+
+[node name="Greedy41" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1200, 480)
+
+[node name="Greedy42" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1192, 160)
+
+[node name="Greedy43" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(680, 400)
+
+[node name="Greedy44" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(240, 144)
+
+[node name="Greedy45" parent="Enemies" instance=ExtResource("4_ovupf")]
+position = Vector2(1472, 176)
+
 [node name="TileMap" type="Node2D" parent="."]
 
 [node name="Floor" type="TileMapLayer" parent="TileMap"]
