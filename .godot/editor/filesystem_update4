@@ -1,8 +1,4 @@
-res://Scenes/Levels/rpg_level_1.tscn
 res://Assets/GUI/Themes/greedy.tres
 res://Scripts/autoloads/pause_menu.gd
 res://Assets/Sprites/Tiles/tile_set.tres
 res://Scenes/Characters/Greedy/greedy.tres
-res://Scenes/Levels/rpg_level_2.tscn
-res://Scenes/Characters/Player/player_rpg.tscn
-res://Scenes/Characters/Greedy/greedy.tscn
