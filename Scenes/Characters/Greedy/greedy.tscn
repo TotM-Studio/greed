@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://k4j8kb50a86"]
+[gd_scene load_steps=22 format=3 uid="uid://k4j8kb50a86"]
 
 [ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Sprites/Characters/Greedy/goblin_greedy.png" id="1_j5lp6"]
 [ext_resource type="Script" uid="uid://djmn7n4wpe6dg" path="res://Scenes/Characters/Greedy/greedy.gd" id="1_ybk54"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://e746ow6tkf5" path="res://Scenes/Characters/health_bar.gd" id="7_0fxfp"]
 [ext_resource type="Script" uid="uid://c0gkyyanr8as7" path="res://Scripts/Components/fsm.gd" id="10_oej52"]
 [ext_resource type="Script" uid="uid://55dboqjddaqo" path="res://Scenes/Characters/Greedy/idle_state.gd" id="11_babhn"]
+[ext_resource type="Script" uid="uid://doanunkuiy1dg" path="res://Scenes/Characters/Greedy/chasing_state.gd" id="12_babhn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kogh"]
 size = Vector2(20, 30)
@@ -142,7 +143,6 @@ _data = {
 }
 
 [node name="Greedy" type="CharacterBody2D"]
-z_index = 1
 collision_layer = 48
 collision_mask = 48
 script = ExtResource("1_ybk54")
@@ -163,12 +163,13 @@ shape = SubResource("RectangleShape2D_ybk54")
 
 [node name="Shadow" type="Sprite2D" parent="Sprites"]
 modulate = Color(1, 1, 1, 0.517647)
+z_as_relative = false
 texture_filter = 1
 position = Vector2(0, 1)
 texture = ExtResource("2_v84si")
 
 [node name="GoblinGreedy" type="Sprite2D" parent="Sprites"]
-z_index = 1
+z_as_relative = false
 texture_filter = 1
 material = SubResource("ShaderMaterial_2asb6")
 use_parent_material = true
@@ -241,4 +242,8 @@ initial_state = NodePath("Idle")
 
 [node name="Idle" type="Node" parent="FSM"]
 script = ExtResource("11_babhn")
+metadata/_custom_type_script = "uid://cht8m2k2gdf80"
+
+[node name="Chasing" type="Node" parent="FSM"]
+script = ExtResource("12_babhn")
 metadata/_custom_type_script = "uid://cht8m2k2gdf80"
