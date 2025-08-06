@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://co1se4v71ksw0" path="res://Scripts/Components/scene_exit.gd" id="3_7jfor"]
 [ext_resource type="PackedScene" uid="uid://k4j8kb50a86" path="res://Scenes/Characters/Greedy/greedy.tscn" id="4_ovupf"]
 [ext_resource type="Script" uid="uid://d042yaitutpbl" path="res://Scripts/Components/spawner.gd" id="6_dqdr2"]
-[ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Sprites/Characters/Player_1/devant.png" id="7_irsmr"]
+[ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Sprites/Characters/Player_1/front.png" id="7_irsmr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kaul"]
 size = Vector2(128, 32)
