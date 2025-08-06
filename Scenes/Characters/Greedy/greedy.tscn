@@ -16,9 +16,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kogh"]
 size = Vector2(20, 30)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybk54"]
-size = Vector2(20, 30)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2asb6"]
 shader = ExtResource("3_hnfa7")
 
@@ -73,7 +70,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("HitBoxComponent:enabled")
+tracks/2/path = NodePath("Components/HitBoxComponent:enabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -113,7 +110,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("HitBoxComponent:enabled")
+tracks/1/path = NodePath("Components/HitBoxComponent:enabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -142,7 +139,12 @@ _data = {
 &"take_dmmage": SubResource("Animation_v84si")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybk54"]
+size = Vector2(20, 30)
+
 [node name="Greedy" type="CharacterBody2D"]
+z_as_relative = false
+y_sort_enabled = true
 collision_layer = 48
 collision_mask = 48
 script = ExtResource("1_ybk54")
@@ -150,14 +152,6 @@ script = ExtResource("1_ybk54")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 shape = SubResource("RectangleShape2D_0kogh")
-
-[node name="HitBoxComponent" type="Area2D" parent="."]
-visible = false
-script = ExtResource("2_0kogh")
-metadata/_custom_type_script = "uid://ds4ps5v85x6xr"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBoxComponent"]
-shape = SubResource("RectangleShape2D_ybk54")
 
 [node name="Sprites" type="Node2D" parent="."]
 
@@ -182,9 +176,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -20.0
-offset_top = -22.0
+offset_top = -20.0
 offset_right = -4.0
-offset_bottom = -18.0
+offset_bottom = -16.0
 grow_horizontal = 2
 theme = ExtResource("6_0fxfp")
 value = 100.0
@@ -229,11 +223,6 @@ color_ramp = SubResource("Gradient_kriru")
 position = Vector2(0, -1)
 stream = ExtResource("6_kriru")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_2asb6")
-}
-
 [node name="Timer" type="Timer" parent="."]
 
 [node name="FSM" type="Node" parent="."]
@@ -247,3 +236,18 @@ metadata/_custom_type_script = "uid://cht8m2k2gdf80"
 [node name="Chasing" type="Node" parent="FSM"]
 script = ExtResource("12_babhn")
 metadata/_custom_type_script = "uid://cht8m2k2gdf80"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_2asb6")
+}
+
+[node name="Components" type="Node2D" parent="."]
+
+[node name="HitBoxComponent" type="Area2D" parent="Components"]
+visible = false
+script = ExtResource("2_0kogh")
+metadata/_custom_type_script = "uid://ds4ps5v85x6xr"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Components/HitBoxComponent"]
+shape = SubResource("RectangleShape2D_ybk54")

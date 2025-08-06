@@ -683,10 +683,13 @@ position_smoothing_speed = 4.0
 
 [node name="Shadow" type="Sprite2D" parent="Sprites"]
 modulate = Color(1, 1, 1, 0.462745)
+texture_filter = 1
 position = Vector2(0, 2)
 texture = ExtResource("2_8l3wm")
 
 [node name="Icon" type="AnimatedSprite2D" parent="Sprites"]
+z_as_relative = false
+y_sort_enabled = true
 texture_filter = 1
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_8dtjg")

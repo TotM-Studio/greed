@@ -10,13 +10,6 @@
 process_mode = 1
 script = ExtResource("1_54emp")
 
-[node name="Player" parent="." instance=ExtResource("2_2asdq")]
-position = Vector2(0, -30)
-limit_right = 1088
-limit_bottom = 608
-
-[node name="Enemies" type="Node2D" parent="."]
-
 [node name="TileMap" type="Node2D" parent="."]
 
 [node name="Floor" type="TileMapLayer" parent="TileMap"]
@@ -34,7 +27,7 @@ tile_set = ExtResource("3_yelnu")
 [node name="Sortie du chateau" type="Node2D" parent="Spawners"]
 position = Vector2(85, 84)
 script = ExtResource("4_yaw8y")
-player_node_path = NodePath("../../Player")
+player_node_path = NodePath("../../Entities/Player")
 metadata/_custom_type_script = "uid://d042yaitutpbl"
 metadata/_edit_group_ = true
 
@@ -44,3 +37,26 @@ position = Vector2(0, -8)
 texture = ExtResource("5_olrdb")
 
 [node name="LevelExits" type="Node2D" parent="."]
+
+[node name="Entities" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Enemies" type="Node2D" parent="Entities"]
+y_sort_enabled = true
+
+[node name="Player" parent="Entities" instance=ExtResource("2_2asdq")]
+z_as_relative = true
+position = Vector2(0, -30)
+limit_right = 9999999
+limit_bottom = 9999999
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -4
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.478431, 0.662745, 0.360784, 1)

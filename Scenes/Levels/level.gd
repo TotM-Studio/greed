@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var player : Player = $Player
+@onready var player : Player = $Entities/Player
 @onready var spawners = $Spawners
 
 func _ready() -> void:

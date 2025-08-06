@@ -10,3 +10,6 @@ res://Scripts/Components/fsm.gd
 res://Scripts/Components/state.gd
 res://Scenes/Characters/Greedy/idle_state.gd
 res://Scenes/Characters/Greedy/chasing_state.gd
+res://Scenes/Levels/level.gd
+res://Scenes/Levels/rpg_level.tscn
+res://Scripts/Components/hit_box_component.gd

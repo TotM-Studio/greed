@@ -1,7 +1,7 @@
 extends Area2D
 class_name HitBoxComponent
 
-@onready var parent = get_parent()
+@onready var parent = get_parent().get_parent()
 @export var enabled : bool = true
 
 func take_dammage(amount:float ,direction :Vector2 = Vector2.ZERO) -> void :

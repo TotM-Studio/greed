@@ -1,5 +1,9 @@
-State
+TileMapLayer
+Node2D
 Node
+ColorRect
+CanvasLayer
+State
 Timer
 TextureRect
 Label
@@ -8,7 +12,3 @@ ReferenceRect
 VBoxContainer
 Button
 HSeparator
-ColorRect
-CanvasLayer
-Panel
-Container
