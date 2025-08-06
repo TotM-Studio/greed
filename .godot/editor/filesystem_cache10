@@ -25,8 +25,9 @@ shop armes-export.png::CompressedTexture2D/CompressedTexture2D::5161995187442992
 goblin_greedy.png::CompressedTexture2D/CompressedTexture2D::5741362986420996365::1753542607::1753778619::1::::<><><>0<>0<>006b9fd3ec29897ea1195bd9fd299bb1<>res://.godot/imported/goblin_greedy.png-6180455ba206b0eb37867b40654c1a0e.ctex::
 goblin_greedy_head.png::CompressedTexture2D/CompressedTexture2D::1613835361309203337::1753816178::1753816210::1::::<><><>0<>0<>3a467746388e43d6c331d035929e17fe<>res://.godot/imported/goblin_greedy_head.png-921a750849966e21e8a0c38044180dac.ctex::
 shadow.png::CompressedTexture2D/CompressedTexture2D::454009544664780542::1753712367::1753778619::1::::<><><>0<>0<>4809712d965ba9bd8f342751f2458fc4<>res://.godot/imported/shadow.png-503c7d9b55270506db8471dd7a1ac6f6.ctex::
-::res://Assets/Sprites/Characters/Player_1/::1754499337
+::res://Assets/Sprites/Characters/Player_1/::1754499939
 back.png::CompressedTexture2D/CompressedTexture2D::4581302038782370036::1753439030::1754499273::1::::<><><>0<>0<>b36f76421eafceddd2239e92f5706bfc<>res://.godot/imported/back.png-be18078975a6b36c15e11fd29c9253c0.ctex::
+front-Sheet.png::CompressedTexture2D::1171840105330914673::1754499939::1754504655::1::::<><><>0<>0<>743da360e24fce6553cecbc69a62bd1d<>res://.godot/imported/front-Sheet.png-d8fe70b277d8bf4da23c8ca46c7eed73.ctex::
 front.png::CompressedTexture2D/CompressedTexture2D::3405426344596382046::1753439030::1754498832::1::::<><><>0<>0<>a9ad74e5ba7f112344845bf07b326017<>res://.godot/imported/front.png-a50f390730130cf9193a97b5886c3def.ctex::
 front_hurt.png::CompressedTexture2D/CompressedTexture2D::1253184889230167927::1753441801::1754498724::1::::<><><>0<>0<>381f5a2c1fb1c9570b169e733e8b1d91<>res://.godot/imported/front_hurt.png-b38595197fb02c9f59802ca8d7b31999.ctex::
 left.png::CompressedTexture2D/CompressedTexture2D::1835238779287902762::1753439030::1754499174::1::::<><><>0<>0<>e9265ec6bf944d9a63111cd308eb4c64<>res://.godot/imported/left.png-6b8635bb97513210621bb4f40e7fbfb3.ctex::
