@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://k4j8kb50a86"]
+[gd_scene load_steps=21 format=3 uid="uid://k4j8kb50a86"]
 
 [ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Sprites/Characters/Greedy/goblin_greedy.png" id="1_j5lp6"]
 [ext_resource type="Script" uid="uid://djmn7n4wpe6dg" path="res://Scenes/Characters/Greedy/greedy.gd" id="1_ybk54"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://ekoxk1yp0hr" path="res://Assets/Sprites/SFX/particule.png" id="6_ajao6"]
 [ext_resource type="AudioStream" uid="uid://bylcovv4eaq5j" path="res://Assets/Sounds/punch.mp3" id="6_kriru"]
 [ext_resource type="Script" uid="uid://e746ow6tkf5" path="res://Scenes/Characters/health_bar.gd" id="7_0fxfp"]
+[ext_resource type="Script" uid="uid://c0gkyyanr8as7" path="res://Scripts/Components/fsm.gd" id="10_oej52"]
+[ext_resource type="Script" uid="uid://55dboqjddaqo" path="res://Scenes/Characters/Greedy/idle_state.gd" id="11_babhn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kogh"]
 size = Vector2(20, 30)
@@ -232,3 +234,11 @@ libraries = {
 }
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="FSM" type="Node" parent="."]
+script = ExtResource("10_oej52")
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node" parent="FSM"]
+script = ExtResource("11_babhn")
+metadata/_custom_type_script = "uid://cht8m2k2gdf80"

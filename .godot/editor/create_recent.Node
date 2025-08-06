@@ -1,5 +1,6 @@
-Timer
+State
 Node
+Timer
 TextureRect
 Label
 Control
@@ -11,5 +12,3 @@ ColorRect
 CanvasLayer
 Panel
 Container
-Node2D
-Spawner

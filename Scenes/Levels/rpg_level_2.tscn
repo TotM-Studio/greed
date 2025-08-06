@@ -12,7 +12,7 @@
 size = Vector2(128, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_irsmr"]
-size = Vector2(32, 64)
+size = Vector2(32, 32)
 
 [node name="Level" type="Node2D"]
 process_mode = 1
@@ -93,39 +93,6 @@ position = Vector2(1584, 696)
 
 [node name="Greedy23" parent="Enemies" instance=ExtResource("4_ovupf")]
 position = Vector2(376, 808)
-
-[node name="Greedy24" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(736, 656)
-
-[node name="Greedy25" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(1216, 768)
-
-[node name="Greedy26" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(1296, 480)
-
-[node name="Greedy27" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(1288, 160)
-
-[node name="Greedy28" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(776, 400)
-
-[node name="Greedy29" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(336, 144)
-
-[node name="Greedy30" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(1568, 176)
-
-[node name="Greedy31" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(768, 168)
-
-[node name="Greedy32" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(652, 158)
-
-[node name="Greedy33" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(1448, 344)
-
-[node name="Greedy34" parent="Enemies" instance=ExtResource("4_ovupf")]
-position = Vector2(864, 568)
 
 [node name="TileMap" type="Node2D" parent="."]
 
