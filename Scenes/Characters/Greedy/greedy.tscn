@@ -170,6 +170,7 @@ use_parent_material = true
 texture = ExtResource("1_j5lp6")
 
 [node name="ProgressBar" type="ProgressBar" parent="Sprites/GoblinGreedy"]
+visible = false
 modulate = Color(0.416667, 1, 0, 1)
 texture_filter = 1
 anchors_preset = 5

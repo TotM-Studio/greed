@@ -1,7 +1,7 @@
 extends Node2D
 
-@onready var player : Player = $Entities/Player
-@onready var spawners = $Spawners
+@onready var player : Player = $"Y-sortedObjects"/Player
+@onready var spawners = $StaticsObjects/Spawners
 
 func _ready() -> void:
 	TransitionManager._in(1.5)
