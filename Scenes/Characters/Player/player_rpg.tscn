@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://cdvfiia4s06hs"]
+[gd_scene load_steps=44 format=3 uid="uid://cdvfiia4s06hs"]
 
 [ext_resource type="Script" uid="uid://cflt5iwnm31e7" path="res://Scenes/Characters/Player/player_rpg.gd" id="1_donwm"]
 [ext_resource type="Texture2D" uid="uid://c6dh4c1ity7bu" path="res://Assets/Sprites/Characters/Player_1/shadow.png" id="2_8l3wm"]
@@ -18,9 +18,14 @@
 [ext_resource type="Script" uid="uid://bvp3h7mgdjof6" path="res://Scenes/Characters/Player/weapons.gd" id="15_hmdh8"]
 [ext_resource type="PackedScene" uid="uid://cx2t1geq4i6uq" path="res://Scenes/Items/Weapons/ax.tscn" id="17_b70df"]
 [ext_resource type="PackedScene" uid="uid://c8t04lsa786x0" path="res://Scenes/Items/Weapons/halberd.tscn" id="17_kw2s4"]
+[ext_resource type="Script" uid="uid://ds4ps5v85x6xr" path="res://Scripts/Components/hit_box_component.gd" id="19_mutwq"]
+[ext_resource type="Script" uid="uid://c0gkyyanr8as7" path="res://Scripts/Components/fsm.gd" id="20_ycnua"]
+[ext_resource type="Script" uid="uid://blg2emgshyss2" path="res://Scenes/Characters/Player/idle_state.gd" id="21_iodfc"]
+[ext_resource type="Script" uid="uid://cw4nvwhm175yq" path="res://Scenes/Characters/Player/attack_state.gd" id="22_iodfc"]
+[ext_resource type="Script" uid="uid://23ymmdpd6x3y" path="res://Scenes/Characters/Player/walking_state.gd" id="22_q7ui1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_donwm"]
-size = Vector2(28, 26)
+size = Vector2(28, 28)
 
 [sub_resource type="Gradient" id="Gradient_8l3wm"]
 offsets = PackedFloat32Array(0.0238095, 1)
@@ -128,6 +133,9 @@ animations = [{
 "name": &"walkRight",
 "speed": 9.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xubch"]
+size = Vector2(28, 28)
 
 [sub_resource type="Animation" id="Animation_ycnua"]
 resource_name = "AxAttack"
@@ -582,72 +590,6 @@ _data = {
 &"Walk Right": SubResource("Animation_kw2s4")
 }
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xubch"]
-animation = &"Idle Back"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ycnua"]
-animation = &"Idle Front"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_iodfc"]
-animation = &"Idle Left"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_q7ui1"]
-animation = &"Idle Right"
-
-[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_lwwpi"]
-blend_point_0/node = SubResource("AnimationNodeAnimation_xubch")
-blend_point_0/pos = Vector2(0, -1)
-blend_point_1/node = SubResource("AnimationNodeAnimation_ycnua")
-blend_point_1/pos = Vector2(0, 0.9)
-blend_point_2/node = SubResource("AnimationNodeAnimation_iodfc")
-blend_point_2/pos = Vector2(-1, 0)
-blend_point_3/node = SubResource("AnimationNodeAnimation_q7ui1")
-blend_point_3/pos = Vector2(1, 0)
-min_space = Vector2(-1, -1.1)
-max_space = Vector2(1, 1.1)
-blend_mode = 2
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1i4tc"]
-animation = &"Walk Front"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_dkwr0"]
-animation = &"Walk Back"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_6rpqp"]
-animation = &"Walk Left"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_j1xdo"]
-animation = &"Walk Right"
-
-[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_x8ja7"]
-blend_point_0/node = SubResource("AnimationNodeAnimation_1i4tc")
-blend_point_0/pos = Vector2(0, 1)
-blend_point_1/node = SubResource("AnimationNodeAnimation_dkwr0")
-blend_point_1/pos = Vector2(0, -1)
-blend_point_2/node = SubResource("AnimationNodeAnimation_6rpqp")
-blend_point_2/pos = Vector2(-1, 0)
-blend_point_3/node = SubResource("AnimationNodeAnimation_j1xdo")
-blend_point_3/pos = Vector2(1, 0)
-blend_mode = 1
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8dtjg"]
-advance_mode = 2
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_dr4pe"]
-advance_mode = 2
-advance_condition = &"is_walking"
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_yjwax"]
-advance_mode = 2
-advance_condition = &"idle"
-
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_pblej"]
-states/Idle/node = SubResource("AnimationNodeBlendSpace2D_lwwpi")
-states/Idle/position = Vector2(367, 100)
-states/Walk/node = SubResource("AnimationNodeBlendSpace2D_x8ja7")
-states/Walk/position = Vector2(539, 100)
-transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_8dtjg"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_dr4pe"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_yjwax")]
-
 [node name="Player" type="CharacterBody2D"]
 z_as_relative = false
 y_sort_enabled = true
@@ -696,51 +638,73 @@ sprite_frames = SubResource("SpriteFrames_8dtjg")
 animation = &"walkFront"
 autoplay = "walkFront"
 
-[node name="Weapons" type="Node2D" parent="."]
+[node name="Components" type="Node2D" parent="."]
+
+[node name="HitBoxComponent" type="Area2D" parent="Components"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("19_mutwq")
+metadata/_custom_type_script = "uid://ds4ps5v85x6xr"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Components/HitBoxComponent"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_xubch")
+
+[node name="Weapons" type="Node2D" parent="Components"]
 process_mode = 1
-z_index = 1
+y_sort_enabled = true
 script = ExtResource("15_hmdh8")
 metadata/_custom_type_script = "uid://bvp3h7mgdjof6"
 
-[node name="Pivot" type="Node2D" parent="Weapons"]
+[node name="Pivot" type="Node2D" parent="Components/Weapons"]
+y_sort_enabled = true
 
-[node name="Ax" parent="Weapons/Pivot" instance=ExtResource("17_b70df")]
+[node name="Ax" parent="Components/Weapons/Pivot" instance=ExtResource("17_b70df")]
 visible = false
+y_sort_enabled = true
 position = Vector2(4, -50)
 disabled = true
 dammages = 90
 knockback = 1000
 
-[node name="Halberd" parent="Weapons/Pivot" instance=ExtResource("17_kw2s4")]
+[node name="Halberd" parent="Components/Weapons/Pivot" instance=ExtResource("17_kw2s4")]
 visible = false
+y_sort_enabled = true
 position = Vector2(4, -26)
 disabled = true
 dammages = 15
 knockback = 800
 
-[node name="Sword" parent="Weapons/Pivot" instance=ExtResource("15_cj732")]
+[node name="Sword" parent="Components/Weapons/Pivot" instance=ExtResource("15_cj732")]
 visible = false
-z_index = 0
+y_sort_enabled = true
 disabled = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Weapons"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Components/Weapons"]
 libraries = {
 &"": SubResource("AnimationLibrary_ycnua")
 }
 
-[node name="Animation" type="Node" parent="."]
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Animation"]
-root_node = NodePath("../..")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_mutwq")
 }
 
-[node name="AnimationTree" type="AnimationTree" parent="Animation"]
-root_node = NodePath("../..")
-tree_root = SubResource("AnimationNodeStateMachine_pblej")
-anim_player = NodePath("../AnimationPlayer")
-parameters/conditions/idle = true
-parameters/conditions/is_walking = false
-parameters/Idle/blend_position = Vector2(-0.033871, 0.58022)
-parameters/Walk/blend_position = Vector2(0, 0)
+[node name="FSM" type="Node" parent="."]
+script = ExtResource("20_ycnua")
+initial_state = NodePath("Idle")
+animation_player_path = NodePath("../AnimationPlayer")
+metadata/_custom_type_script = "uid://c0gkyyanr8as7"
+
+[node name="Idle" type="Node" parent="FSM"]
+script = ExtResource("21_iodfc")
+metadata/_custom_type_script = "uid://cht8m2k2gdf80"
+
+[node name="Walk" type="Node" parent="FSM"]
+script = ExtResource("22_q7ui1")
+metadata/_custom_type_script = "uid://cht8m2k2gdf80"
+
+[node name="Attack" type="Node" parent="FSM"]
+script = ExtResource("22_iodfc")
+attack_animation_path = NodePath("../../Components/Weapons")
+metadata/_custom_type_script = "uid://cht8m2k2gdf80"

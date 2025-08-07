@@ -7,3 +7,14 @@ res://Scenes/Levels/rpg_level_2.tscn
 res://Scenes/Characters/Player/player_rpg.tscn
 res://Scenes/Characters/Greedy/greedy.tscn
 res://Scenes/Levels/level.gd
+res://Scenes/Items/Weapons/ax.tscn
+res://Scenes/Items/Weapons/halberd.tscn
+res://Scenes/Items/Weapons/sword.tscn
+res://Scripts/Components/fsm.gd
+res://Scenes/Characters/Player/idle.gd
+res://Scenes/Characters/Player/player_rpg.gd
+res://Scenes/Characters/Player/attack.gd
+res://Scenes/Characters/Greedy/idle_state.gd
+res://Scripts/Components/state.gd
+res://Scenes/Characters/Player/attack_state.gd
+res://Scenes/Characters/Player/idle_state.gd

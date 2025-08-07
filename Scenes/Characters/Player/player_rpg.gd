@@ -13,27 +13,18 @@ var direction : Vector2 = Vector2.ZERO
 
 @onready var light : PointLight2D = $PointLight2D
 @onready var camera : Camera2D = $Camera2D
-@onready var animationTree : AnimationTree = $Animation/AnimationTree
-@onready var weapons : WeaponManager = $Weapons
+@onready var weapons : WeaponManager = $Components/Weapons
 
 var move : bool = true
 
 func  _ready() -> void:
 	Gui.show_gui()
-	animationTree.active = true
 	camera.limit_bottom = limit_bottom
 	camera.limit_right = limit_right
-
-func _process(_delta: float) -> void:
-	update_animation_tree()
-	
 	light.visible = lightOn
-	
-	if Input.is_action_just_pressed("Attack") and !weapons.playing:
-		weapons.attack()
 
 func _physics_process(delta: float) -> void:
-	move = !$Weapons/AnimationPlayer.is_playing()
+	move = !weapons.playing
 	if move:
 		direction = Input.get_vector("Gauche","Droite","Haut","Bas").normalized()
 		velocity.y = move_toward(velocity.y, direction.y * speed, acceleration * delta)
@@ -43,14 +34,3 @@ func _physics_process(delta: float) -> void:
 			weapons.global_rotation = direction.angle() + 0.5 * PI
 		
 		move_and_slide()
-
-func update_animation_tree():
-	if (velocity == Vector2.ZERO):
-		animationTree["parameters/conditions/is_walking"] = false
-		animationTree["parameters/conditions/idle"] = true
-	else:
-		animationTree["parameters/conditions/is_walking"] = true
-		animationTree["parameters/conditions/idle"] = false
-			
-		animationTree["parameters/Idle/blend_position"] = direction
-		animationTree["parameters/Walk/blend_position"] = direction
