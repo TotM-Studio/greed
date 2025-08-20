@@ -2,6 +2,7 @@ extends Node
 class_name State
 
 @onready var parent = get_parent()
+@onready var Owner =  $"../.."
 
 func Enter():
 	pass

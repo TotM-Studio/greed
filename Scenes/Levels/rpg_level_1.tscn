@@ -5,7 +5,7 @@
 [ext_resource type="TileSet" uid="uid://cjn6cgkelp87t" path="res://Assets/Sprites/Tiles/tile_set.tres" id="2_nlyft"]
 [ext_resource type="Script" uid="uid://co1se4v71ksw0" path="res://Scripts/Components/scene_exit.gd" id="3_dmhoq"]
 [ext_resource type="Script" uid="uid://d042yaitutpbl" path="res://Scripts/Components/spawner.gd" id="4_dmhoq"]
-[ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Sprites/Characters/Player_1/front.png" id="5_0j0gg"]
+[ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Sprites/Characters/Player_1/Idle/front.png" id="5_0j0gg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_npfmg"]
 size = Vector2(64, 32)

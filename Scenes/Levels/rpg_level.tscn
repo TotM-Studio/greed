@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cdvfiia4s06hs" path="res://Scenes/Characters/Player/player_rpg.tscn" id="2_2asdq"]
 [ext_resource type="TileSet" uid="uid://cjn6cgkelp87t" path="res://Assets/Sprites/Tiles/tile_set.tres" id="3_yelnu"]
 [ext_resource type="Script" uid="uid://d042yaitutpbl" path="res://Scripts/Components/spawner.gd" id="4_yaw8y"]
-[ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Sprites/Characters/Player_1/front.png" id="5_olrdb"]
+[ext_resource type="Texture2D" uid="uid://boru4y0ybx575" path="res://Assets/Sprites/Characters/Player_1/Idle/front.png" id="5_olrdb"]
 
 [node name="Level" type="Node2D"]
 process_mode = 1

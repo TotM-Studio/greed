@@ -5,9 +5,11 @@ class_name FiniteStateMachine
 var current_state : State
 var states : Dictionary = {}
 
-@export_node_path("AnimationPlayer") var animation_player_path
-var animation_player = AnimationPlayer.new()
-var animation_direction
+@export_node_path("AnimatedSprite2D") var animation_player_path
+var animation_player : AnimatedSprite2D
+@export var directions : Dictionary = {}
+var animation_direction : String = "Front"
+var animation_direction_angle : float
 var animation_state : String
 
 func _ready() -> void:
@@ -17,25 +19,23 @@ func _ready() -> void:
 		if child is State:
 			states[child.name.to_lower()] = child
 	
-	if animation_player_path != null:
-		animation_player = get_node(animation_player_path)
-	else :
-		animation_player = null
+	animation_player = get_node(animation_player_path)
 
 func _process(delta: float) -> void:
 	current_state.Update()
 
 func change_current_state(state : State, next_state : String):
 	current_state.Exit()
+	print(current_state) 
 	current_state = states[next_state]
 	current_state.Enter()
 
 func change_animation_direction(direction : Vector2):
-	animation_direction = direction.angle_to(Vector2.UP)
+	animation_direction_angle = direction.angle_to(Vector2.UP)
+	
 
 func play(state):
-	if animation_player != null:
-		if state == "":
-			animation_player.play("RESET")
-		else:
-			animation_player.play(state.capitalize() + " Front")
+	if state == "":
+		animation_player.animation = "RESET"
+	else:
+		animation_player.play(state + "Front")
