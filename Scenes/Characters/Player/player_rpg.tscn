@@ -71,10 +71,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_dr4pe")
+"texture": ExtResource("2_iyc8d")
 }, {
 "duration": 1.0,
 "texture": ExtResource("2_iyc8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_iyc8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_iyc8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dr4pe")
 }, {
 "duration": 1.0,
 "texture": ExtResource("8_yjwax")
@@ -87,7 +96,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idleFront",
-"speed": 10.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -651,8 +660,9 @@ y_sort_enabled = true
 texture_filter = 1
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_8dtjg")
+animation = &"idleFront"
 autoplay = "walkFront"
-frame_progress = 0.213702
+frame_progress = 0.80077
 
 [node name="Components" type="Node2D" parent="."]
 visible = false
