@@ -1,5 +1,5 @@
-AnimationTree
 State
+AnimationTree
 FiniteStateMachine
 Node
 CollisionShape2D
@@ -12,4 +12,3 @@ Timer
 TextureRect
 Label
 Control
-ReferenceRect

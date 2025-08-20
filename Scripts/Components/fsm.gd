@@ -38,4 +38,4 @@ func play(state):
 	if state == "":
 		animation_player.animation = "RESET"
 	else:
-		animation_player.play(state + "Front")
+		animation_player.play(state + animation_direction)

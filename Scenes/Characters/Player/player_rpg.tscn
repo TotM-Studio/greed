@@ -13,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://b8q5x73tgho73" path="res://Assets/Sprites/Characters/Player_1/Idle/front2.png" id="8_yjwax"]
 [ext_resource type="Texture2D" uid="uid://b1mln6na6g65l" path="res://Assets/Sprites/Characters/Player_1/Idle/front3.png" id="9_pblej"]
 [ext_resource type="Texture2D" uid="uid://b8qcy13rka1j7" path="res://Assets/Sprites/Characters/Player_1/walk/walkFront1.png" id="9_ycnua"]
-[ext_resource type="Texture2D" uid="uid://deduaiqynx4rx" path="res://Assets/Sprites/Characters/Player_1/Idle/front4.png" id="10_bdctq"]
 [ext_resource type="Texture2D" uid="uid://c0nxwsw5wgm11" path="res://Assets/Sprites/Characters/Player_1/walk/walkLeft1.png" id="10_iodfc"]
 [ext_resource type="Texture2D" uid="uid://bq2fhcdwv4kqq" path="res://Assets/Sprites/Characters/Player_1/walk/walkLeft2.png" id="11_q7ui1"]
 [ext_resource type="Texture2D" uid="uid://cpfj1uwevi28i" path="res://Assets/Sprites/Characters/Player_1/walk/walkRight1.png" id="12_lwwpi"]
@@ -27,6 +26,7 @@
 [ext_resource type="Script" uid="uid://blg2emgshyss2" path="res://Scenes/Characters/Player/idle_state.gd" id="21_iodfc"]
 [ext_resource type="Script" uid="uid://cw4nvwhm175yq" path="res://Scenes/Characters/Player/attack_state.gd" id="22_iodfc"]
 [ext_resource type="Script" uid="uid://23ymmdpd6x3y" path="res://Scenes/Characters/Player/walking_state.gd" id="22_q7ui1"]
+[ext_resource type="Script" uid="uid://cuc8ny8aogrg0" path="res://Scenes/Characters/Player/initial_state.gd" id="25_yjwax"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_donwm"]
 size = Vector2(28, 28)
@@ -90,9 +90,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("9_pblej")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_bdctq")
 }],
 "loop": true,
 "name": &"idleFront",
@@ -662,10 +659,9 @@ position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_8dtjg")
 animation = &"idleFront"
 autoplay = "walkFront"
-frame_progress = 0.80077
+frame_progress = 0.019239
 
 [node name="Components" type="Node2D" parent="."]
-visible = false
 
 [node name="HitBoxComponent" type="Area2D" parent="Components"]
 collision_layer = 2
@@ -679,7 +675,6 @@ shape = SubResource("RectangleShape2D_xubch")
 
 [node name="Weapons" type="Node2D" parent="Components"]
 process_mode = 1
-y_sort_enabled = true
 script = ExtResource("15_hmdh8")
 metadata/_custom_type_script = "uid://bvp3h7mgdjof6"
 
@@ -720,7 +715,7 @@ libraries = {
 
 [node name="FSM" type="Node" parent="."]
 script = ExtResource("20_ycnua")
-initial_state = NodePath("Idle")
+initial_state = NodePath("Initial_State")
 animation_player_path = NodePath("../Sprites/Icon")
 directions = {
 "Back": 0,
@@ -729,6 +724,10 @@ directions = {
 "Right": 90
 }
 metadata/_custom_type_script = "uid://c0gkyyanr8as7"
+
+[node name="Initial_State" type="Node" parent="FSM"]
+script = ExtResource("25_yjwax")
+metadata/_custom_type_script = "uid://cht8m2k2gdf80"
 
 [node name="Idle" type="Node" parent="FSM"]
 script = ExtResource("21_iodfc")
