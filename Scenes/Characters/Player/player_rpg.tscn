@@ -659,7 +659,7 @@ position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_8dtjg")
 animation = &"idleFront"
 autoplay = "walkFront"
-frame_progress = 0.019239
+frame_progress = 0.309917
 
 [node name="Components" type="Node2D" parent="."]
 

@@ -9,6 +9,8 @@ func Update():
 	
 	if Owner.direction == Vector2.ZERO:
 		quit_to("idle")
+	
+	parent.change_animation_direction(Owner.direction)
 
 func Exit():
 	pass
