@@ -9,8 +9,7 @@ var states : Dictionary = {}
 var animation_player : AnimatedSprite2D
 @export var directions : Dictionary = {}
 var animation_direction : String = "Front"
-var animation_direction_angle : float
-var animation_state : String
+var last_animation_direction : String = "Front"
 
 func _ready() -> void:
 	if initial_state != null:
@@ -30,12 +29,13 @@ func change_current_state(state : State, next_state : String):
 	current_state = states[next_state]
 	current_state.Enter()
 
-func change_animation_direction(direction : Vector2):
-	animation_direction_angle = direction.angle_to(Vector2.UP)
-	print(floori(rad_to_deg(direction.angle() + 0.5 * PI)))
-	if floori(rad_to_deg(direction.angle() + 0.5 * PI)) in directions.values():
-		animation_direction = directions.find_key(floori(rad_to_deg(direction.angle() + 0.5 * PI)))
-	
+func change_animation_direction(direction : Vector2, state : String = "walk"):
+	var angle = floori(rad_to_deg(direction.angle() + 0.5 * PI))
+	if angle in directions.values():
+		animation_direction = directions.find_key(angle)
+	if animation_direction != last_animation_direction:
+		play(state)
+		last_animation_direction = animation_direction
 
 func play(state):
 	if state == "":

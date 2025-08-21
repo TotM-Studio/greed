@@ -11,7 +11,3 @@ func Update():
 		quit_to("idle")
 	else:
 		parent.change_animation_direction(Owner.direction)
-	
-
-func Exit():
-	pass
