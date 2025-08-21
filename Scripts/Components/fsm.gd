@@ -32,15 +32,9 @@ func change_current_state(state : State, next_state : String):
 
 func change_animation_direction(direction : Vector2):
 	animation_direction_angle = direction.angle_to(Vector2.UP)
-	var angle : String = "Front"
-	var angle_ecart = 300
-	for i in directions.values():
-		if abs(direction.angle_to(Vector2(cos(deg_to_rad(i)),sin(deg_to_rad(i))))) < abs(angle_ecart):
-			print(i, direction.angle_to(Vector2(cos(deg_to_rad(i)),sin(deg_to_rad(i))))        )
-			angle_ecart = direction.angle_to(Vector2(cos(deg_to_rad(i)),sin(deg_to_rad(i))))
-			print(directions.values())
-			angle = directions.find_key(i)
-	animation_direction = angle
+	print(floori(rad_to_deg(direction.angle() + 0.5 * PI)))
+	if floori(rad_to_deg(direction.angle() + 0.5 * PI)) in directions.values():
+		animation_direction = directions.find_key(floori(rad_to_deg(direction.angle() + 0.5 * PI)))
 	
 
 func play(state):
