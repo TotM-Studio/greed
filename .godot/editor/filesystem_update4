@@ -6,9 +6,4 @@ res://Scenes/Characters/Greedy/greedy.tres
 res://Scenes/Levels/rpg_level_2.tscn
 res://Scenes/Characters/Player/player_rpg.tscn
 res://Scenes/Characters/Greedy/greedy.tscn
-res://Scripts/Components/fsm.gd
-res://Scenes/Characters/Player/idle_state.gd
-res://Scripts/Components/state.gd
-res://Scenes/Characters/Player/walking_state.gd
 res://Scenes/GUI/main_menu.tscn
-res://Scenes/Characters/Player/initial_state.gd
