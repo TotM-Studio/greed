@@ -3,16 +3,8 @@ res://Assets/GUI/Themes/greedy.tres
 res://Scripts/autoloads/pause_menu.gd
 res://Assets/Sprites/Tiles/tile_set.tres
 res://Scenes/Characters/Greedy/greedy.tres
-res://Scripts/Components/fsm.gd
 res://Scenes/Levels/rpg_level_2.tscn
 res://Scenes/Characters/Player/player_rpg.tscn
 res://Scenes/Characters/Greedy/greedy.tscn
 res://Scenes/GUI/main_menu.tscn
-res://Scenes/Characters/Greedy/greedy.gd
-res://Scripts/Components/scene_exit.gd
-res://Scenes/Characters/Greedy/idle_state.gd
-res://Scripts/Components/state.gd
-res://Scenes/Characters/Player/attack_state.gd
-res://Scenes/Characters/Player/idle_state.gd
-res://Scenes/Characters/Player/initial_state.gd
-res://Scenes/Characters/Player/walking_state.gd
+res://Scripts/Components/fsm.gd

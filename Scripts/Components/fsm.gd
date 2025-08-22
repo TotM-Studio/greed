@@ -26,7 +26,6 @@ func _process(_delta: float) -> void:
 
 func change_current_state(_state : State, next_state : String):
 	current_state.Exit()
-	print(current_state) 
 	current_state = states[next_state]
 	current_state.Enter()
 

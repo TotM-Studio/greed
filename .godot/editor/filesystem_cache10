@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1755861681
+::res://::1755877123
 export_presets.cfg::TextFile/TextFile::-1::1755708609::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::3170293212729327055::1753439031::1753439091::1::::<><><>0<>0<>982b0da918d7702093a7d166582af472<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1753784798::0::1::::<><><>0<>0<><>::
@@ -59,8 +59,8 @@ player.png::CompressedTexture2D/CompressedTexture2D::7116561477133530321::175343
 ::res://Assets/Sprites/SFX/::1753778614
 particule.png::CompressedTexture2D/CompressedTexture2D::8890906757681563::1753639183::1753778614::1::::<><><>0<>0<>37907b460bba53e24fc3e35b0818cf0a<>res://.godot/imported/particule.png-22495e54b24fde1304cbf4cb54657fd5.ctex::
 Sword.png::CompressedTexture2D/CompressedTexture2D::76330806227968518::1753561078::1753778614::1::::<><><>0<>0<>0c820ca24d0499150c0deb06b05b7322<>res://.godot/imported/Sword.png-c9ce4edb7b49fe87c14b742cd7364d71.ctex::
-::res://Assets/Sprites/Tiles/::1755873821
-Chemin.png::CompressedTexture2D::4333599544431599693::1755873901::1755873908::1::::<><><>0<>0<>72d1d706f0efc2de6ad06eed5d176b38<>res://.godot/imported/Chemin.png-2ea46559df4294de8b75ad5a4a1adc51.ctex::
+::res://Assets/Sprites/Tiles/::1755873908
+Chemin.png::CompressedTexture2D/CompressedTexture2D::4333599544431599693::1755877090::1755877128::1::::<><><>0<>0<>72d1d706f0efc2de6ad06eed5d176b38<>res://.godot/imported/Chemin.png-2ea46559df4294de8b75ad5a4a1adc51.ctex::
 MUR.png::CompressedTexture2D/CompressedTexture2D::6596722679481629416::1753439031::1753778648::1::::<><><>0<>0<>019a5ed4e8fdc4660908eb0ff0d1093d<>res://.godot/imported/MUR.png-d6e1f4c27d18784ae39b87202fdb05ac.ctex::
 tile_ground.png::CompressedTexture2D/CompressedTexture2D::3035256114342649715::1755872676::1755872683::1::::<><><>0<>0<>271fe8878c16305a53c5ec134cbc8195<>res://.godot/imported/tile_ground.png-1bf67da3ffe9a4aa6fb1fbdffd149670.ctex::
 tile_set.tres::TileSet::5433264000080056063::1755873821::0::1::::<><><>0<>0<><>::uid://bjikhv2pgebcl::::res://Assets/Sprites/Tiles/tile_ground.png<>uid://c08rb85vpvhto::::res://Assets/Sprites/Tiles/MUR.png<>uid://b20h0stcaropp::::res://Assets/Sprites/Tiles/Chemin.png
@@ -74,13 +74,13 @@ Sword.png::CompressedTexture2D/CompressedTexture2D::3404173362312589268::1753792
 ::res://Scenes/Characters/::1753891374
 character.gd::GDScript/GDScript::5754583499356667256::1753779532::0::1::::Character<>CharacterBody2D<><>0<>0<><>::
 health_bar.gd::GDScript/GDScript::10253893700888504::1753891374::0::1::::HealthBar<>ProgressBar<><>0<>0<><>::
-::res://Scenes/Characters/Greedy/::1755873825
+::res://Scenes/Characters/Greedy/::1755873981
 chasing_state.gd::GDScript/GDScript::8142731597967787156::1754483090::0::1::::<>State<><>0<>0<><>::
+death.gd::GDScript/GDScript::996721369277079448::1755869716::0::1::::<>State<><>0<>0<><>::
 greedy.gd::GDScript::7816581371803930104::1755871468::0::1::::Enemy<>Character<><>0<>0<><>::
-greedy.tres::VisualShader::7658485821571113809::1755873825::0::1::::<><><>0<>0<><>::
+greedy.tres::VisualShader::7658485821571113809::1755873981::0::1::::<><><>0<>0<><>::
 greedy.tscn::PackedScene::22422391281077449::1755873823::0::1::::<><><>0<>0<><>::uid://cn2fn6ppoachx::::res://Assets/Sprites/Characters/Greedy/goblin_greedy.png<>uid://djmn7n4wpe6dg::::res://Scenes/Characters/Greedy/greedy.gd<>uid://ds4ps5v85x6xr::::res://Scripts/Components/hit_box_component.gd<>uid://gp6qalbg4h3c::::res://Assets/Sprites/Characters/Greedy/shadow.png<>uid://dhd3e32jnm73j::::res://Scenes/Characters/Greedy/greedy.tres<>uid://26km83b2lrri::::res://Assets/GUI/Themes/greedy.tres<>uid://ekoxk1yp0hr::::res://Assets/Sprites/SFX/particule.png<>uid://bylcovv4eaq5j::::res://Assets/Sounds/punch.mp3<>uid://e746ow6tkf5::::res://Scenes/Characters/health_bar.gd<>uid://c0gkyyanr8as7::::res://Scripts/Components/fsm.gd<>uid://55dboqjddaqo::::res://Scenes/Characters/Greedy/idle_state.gd<>uid://doanunkuiy1dg::::res://Scenes/Characters/Greedy/chasing_state.gd<>uid://og24c04f521y::::res://Scenes/Characters/Greedy/death.gd
 idle_state.gd::GDScript::2167781338991788054::1755871141::0::1::::<>State<><>0<>0<><>::
-death.gd::GDScript::996721369277079448::1755869716::0::1::::<>State<><>0<>0<><>::
 ::res://Scenes/Characters/Player/::1755873823
 attack_state.gd::GDScript::6377690871777212056::1755871468::0::1::::<>State<><>0<>0<><>::
 idle_state.gd::GDScript::3172531372593314999::1755871468::0::1::::<>State<><>0<>0<><>::
