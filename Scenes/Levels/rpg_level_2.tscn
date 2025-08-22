@@ -32,7 +32,7 @@ tile_set = ExtResource("2_ovupf")
 [node name="Sortie du chateau" type="Node2D" parent="StaticsObjects/Spawners"]
 position = Vector2(728, 72)
 script = ExtResource("6_dqdr2")
-player_node_path = NodePath("../../../Y-sortedObjects/Player")
+player_node_path = NodePath("")
 metadata/_custom_type_script = "uid://d042yaitutpbl"
 metadata/_edit_group_ = true
 
@@ -44,7 +44,7 @@ texture = ExtResource("7_irsmr")
 [node name="Sortie_entrée du labyrinthe" type="Node2D" parent="StaticsObjects/Spawners"]
 position = Vector2(1520, 816)
 script = ExtResource("6_dqdr2")
-player_node_path = NodePath("../../../Y-sortedObjects/Player")
+player_node_path = NodePath("")
 metadata/_custom_type_script = "uid://d042yaitutpbl"
 metadata/_edit_group_ = true
 
@@ -168,7 +168,7 @@ position = Vector2(1584, 696)
 position = Vector2(376, 808)
 
 [node name="Player" parent="Y-sortedObjects" instance=ExtResource("1_yct88")]
-position = Vector2(144, 176)
+position = Vector2(694, 84)
 limit_right = 1728
 limit_bottom = 960
 

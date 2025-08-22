@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://k4j8kb50a86"]
+[gd_scene load_steps=24 format=3 uid="uid://k4j8kb50a86"]
 
 [ext_resource type="Texture2D" uid="uid://cn2fn6ppoachx" path="res://Assets/Sprites/Characters/Greedy/goblin_greedy.png" id="1_j5lp6"]
 [ext_resource type="Script" uid="uid://djmn7n4wpe6dg" path="res://Scenes/Characters/Greedy/greedy.gd" id="1_ybk54"]
@@ -12,12 +12,32 @@
 [ext_resource type="Script" uid="uid://c0gkyyanr8as7" path="res://Scripts/Components/fsm.gd" id="10_oej52"]
 [ext_resource type="Script" uid="uid://55dboqjddaqo" path="res://Scenes/Characters/Greedy/idle_state.gd" id="11_babhn"]
 [ext_resource type="Script" uid="uid://doanunkuiy1dg" path="res://Scenes/Characters/Greedy/chasing_state.gd" id="12_babhn"]
+[ext_resource type="Script" uid="uid://og24c04f521y" path="res://Scenes/Characters/Greedy/death.gd" id="13_d67pi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kogh"]
 size = Vector2(20, 30)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2asb6"]
 shader = ExtResource("3_hnfa7")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d67pi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j5lp6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j5lp6")
+}],
+"loop": true,
+"name": &"idleFront",
+"speed": 5.0
+}]
 
 [sub_resource type="Gradient" id="Gradient_2asb6"]
 offsets = PackedFloat32Array(0, 0.993902)
@@ -162,12 +182,14 @@ texture_filter = 1
 position = Vector2(0, 1)
 texture = ExtResource("2_v84si")
 
-[node name="GoblinGreedy" type="Sprite2D" parent="Sprites"]
+[node name="GoblinGreedy" type="AnimatedSprite2D" parent="Sprites"]
 z_as_relative = false
 texture_filter = 1
 material = SubResource("ShaderMaterial_2asb6")
 use_parent_material = true
-texture = ExtResource("1_j5lp6")
+sprite_frames = SubResource("SpriteFrames_d67pi")
+animation = &"idleFront"
+frame_progress = 0.774694
 
 [node name="ProgressBar" type="ProgressBar" parent="Sprites/GoblinGreedy"]
 visible = false
@@ -241,6 +263,8 @@ shape = SubResource("RectangleShape2D_ybk54")
 [node name="FSM" type="Node" parent="."]
 script = ExtResource("10_oej52")
 initial_state = NodePath("Idle")
+animation_player_path = NodePath("../AnimationPlayer")
+metadata/_custom_type_script = "uid://c0gkyyanr8as7"
 
 [node name="Idle" type="Node" parent="FSM"]
 script = ExtResource("11_babhn")
@@ -248,6 +272,10 @@ metadata/_custom_type_script = "uid://cht8m2k2gdf80"
 
 [node name="Chasing" type="Node" parent="FSM"]
 script = ExtResource("12_babhn")
+metadata/_custom_type_script = "uid://cht8m2k2gdf80"
+
+[node name="Death" type="Node" parent="FSM"]
+script = ExtResource("13_d67pi")
 metadata/_custom_type_script = "uid://cht8m2k2gdf80"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

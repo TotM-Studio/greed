@@ -10,6 +10,6 @@ func Enter():
 	if attack_animation != null:
 		attack_animation.attack()
 
-func Update():
+func Update(_delta):
 	if !attack_animation.playing:
 		quit_to("idle")

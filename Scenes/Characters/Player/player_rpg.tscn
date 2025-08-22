@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://cdvfiia4s06hs"]
+[gd_scene load_steps=38 format=3 uid="uid://cdvfiia4s06hs"]
 
 [ext_resource type="Script" uid="uid://cflt5iwnm31e7" path="res://Scenes/Characters/Player/player_rpg.gd" id="1_donwm"]
 [ext_resource type="Texture2D" uid="uid://c6dh4c1ity7bu" path="res://Assets/Sprites/Characters/Player_1/shadow.png" id="2_8l3wm"]
@@ -464,154 +464,6 @@ _data = {
 &"SwordAttack": SubResource("Animation_mutwq")
 }
 
-[sub_resource type="Animation" id="Animation_iyc8d"]
-resource_name = "Idle Back"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"idleBack"]
-}
-
-[sub_resource type="Animation" id="Animation_lbm88"]
-resource_name = "Idle Front"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"idleFront"]
-}
-
-[sub_resource type="Animation" id="Animation_dkwr0"]
-resource_name = "Idle Left"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"idleLeft"]
-}
-
-[sub_resource type="Animation" id="Animation_j1xdo"]
-resource_name = "Idle Right"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"idleRight"]
-}
-
-[sub_resource type="Animation" id="Animation_6rpqp"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
-"update": 1,
-"values": []
-}
-
-[sub_resource type="Animation" id="Animation_hmdh8"]
-resource_name = "Walk Back"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"walkBack"]
-}
-
-[sub_resource type="Animation" id="Animation_cj732"]
-resource_name = "Walk Front"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"walkFront"]
-}
-
-[sub_resource type="Animation" id="Animation_b70df"]
-resource_name = "Walk Left"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"walkLeft"]
-}
-
-[sub_resource type="Animation" id="Animation_kw2s4"]
-resource_name = "Walk Right"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites/Icon:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"walkRight"]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_mutwq"]
-_data = {
-&"Idle Back": SubResource("Animation_iyc8d"),
-&"Idle Front": SubResource("Animation_lbm88"),
-&"Idle Left": SubResource("Animation_dkwr0"),
-&"Idle Right": SubResource("Animation_j1xdo"),
-&"RESET": SubResource("Animation_6rpqp"),
-&"Walk Back": SubResource("Animation_hmdh8"),
-&"Walk Front": SubResource("Animation_cj732"),
-&"Walk Left": SubResource("Animation_b70df"),
-&"Walk Right": SubResource("Animation_kw2s4")
-}
-
 [node name="Player" type="CharacterBody2D"]
 z_as_relative = false
 y_sort_enabled = true
@@ -707,22 +559,10 @@ libraries = {
 &"": SubResource("AnimationLibrary_ycnua")
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../FSM")
-libraries = {
-&"": SubResource("AnimationLibrary_mutwq")
-}
-
 [node name="FSM" type="Node" parent="."]
 script = ExtResource("20_ycnua")
 initial_state = NodePath("Initial_State")
 animation_player_path = NodePath("../Sprites/Icon")
-directions = {
-"Back": 0,
-"Front": 180,
-"Left": 270,
-"Right": 90
-}
 metadata/_custom_type_script = "uid://c0gkyyanr8as7"
 
 [node name="Initial_State" type="Node" parent="FSM"]

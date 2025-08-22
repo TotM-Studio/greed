@@ -11,13 +11,9 @@ var direction : Vector2 = Vector2.ZERO
 var speed : float = 10
 var chasing : bool = false
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if !sound.playing and health <= 0 and !animation.is_playing():
 		queue_free()
-	if chasing:
-		chasing_process()
-	else:
-		idling_process(delta)
 
 func _physics_process(delta: float) -> void:
 	velocity.y = move_toward(velocity.y, 0, 2000 * delta)
@@ -25,11 +21,11 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
-func take_dammage(direction : Vector2 = Vector2.ZERO):
+func take_dammage(dir : Vector2 = Vector2.ZERO):
 	randomize_direction()
 	if health > 0:
 		$AnimationPlayer.play("take_dmmage")
-		hit_particles.direction = direction.normalized()
+		hit_particles.direction = dir.normalized()
 		hit_particles.emitting = true
 		Game.freeze_engine(0.5, 0.04)
 	else:
@@ -44,17 +40,6 @@ func take_dammage(direction : Vector2 = Vector2.ZERO):
 		sound.play()
 	
 	Game.vibration(0.5, 0, 0.1)
-
-func idling_process(delta):
-	if timer.is_stopped() or is_on_ceiling() or is_on_floor() or is_on_wall():
-		randomize_direction()
-	position += direction * speed * delta
-
-func chasing_process():
-	pass
-
-func attack_process():
-	pass
 
 func randomize_direction():
 	direction = Vector2(randf_range(-1,1),randf_range(-1,1))

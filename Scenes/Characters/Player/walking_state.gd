@@ -3,7 +3,7 @@ extends State
 func Enter():
 	parent.play("walk")
 
-func Update():
+func Update(_delta):
 	if Input.is_action_just_pressed("Attack"):
 		quit_to("attack")
 	

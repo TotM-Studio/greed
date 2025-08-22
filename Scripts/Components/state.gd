@@ -10,7 +10,7 @@ func Enter():
 func Exit():
 	pass
 
-func Update():
+func Update(_delta):
 	pass
 
 func quit_to(next_state : String):

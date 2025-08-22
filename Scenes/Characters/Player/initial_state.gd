@@ -1,4 +1,4 @@
 extends State
 
-func Update():
+func Update(_delta):
 	quit_to("idle")
