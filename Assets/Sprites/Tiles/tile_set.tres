@@ -1,7 +1,8 @@
-[gd_resource type="TileSet" load_steps=19 format=3 uid="uid://cjn6cgkelp87t"]
+[gd_resource type="TileSet" load_steps=21 format=3 uid="uid://cjn6cgkelp87t"]
 
 [ext_resource type="Texture2D" uid="uid://bjikhv2pgebcl" path="res://Assets/Sprites/Tiles/tile_ground.png" id="1_2u7pv"]
 [ext_resource type="Texture2D" uid="uid://c08rb85vpvhto" path="res://Assets/Sprites/Tiles/MUR.png" id="2_g80y4"]
+[ext_resource type="Texture2D" uid="uid://b20h0stcaropp" path="res://Assets/Sprites/Tiles/Chemin.png" id="3_wxd37"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_db73o"]
 texture = ExtResource("1_2u7pv")
@@ -467,6 +468,98 @@ texture_region_size = Vector2i(32, 32)
 5:5/0/terrains_peering_bit/left_side = 0
 5:5/0/terrains_peering_bit/top_side = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a50k3"]
+texture = ExtResource("3_wxd37")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 1
+0:0/0/terrains_peering_bit/right_side = 1
+0:0/0/terrains_peering_bit/bottom_right_corner = 1
+0:0/0/terrains_peering_bit/bottom_side = 1
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 1
+1:0/0/terrains_peering_bit/right_side = 1
+1:0/0/terrains_peering_bit/bottom_right_corner = 1
+1:0/0/terrains_peering_bit/bottom_side = 1
+1:0/0/terrains_peering_bit/bottom_left_corner = 1
+1:0/0/terrains_peering_bit/left_side = 1
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 1
+2:0/0/terrains_peering_bit/bottom_side = 1
+2:0/0/terrains_peering_bit/bottom_left_corner = 1
+2:0/0/terrains_peering_bit/left_side = 1
+2:1/0 = 0
+2:1/0/terrain_set = 0
+2:1/0/terrain = 1
+2:1/0/terrains_peering_bit/bottom_side = 1
+2:1/0/terrains_peering_bit/bottom_left_corner = 1
+2:1/0/terrains_peering_bit/left_side = 1
+2:1/0/terrains_peering_bit/top_left_corner = 1
+2:1/0/terrains_peering_bit/top_side = 1
+2:2/0 = 0
+2:2/0/terrain_set = 0
+2:2/0/terrain = 1
+2:2/0/terrains_peering_bit/left_side = 1
+2:2/0/terrains_peering_bit/top_left_corner = 1
+2:2/0/terrains_peering_bit/top_side = 1
+1:2/0 = 0
+1:2/0/terrain_set = 0
+1:2/0/terrain = 1
+1:2/0/terrains_peering_bit/right_side = 1
+1:2/0/terrains_peering_bit/left_side = 1
+1:2/0/terrains_peering_bit/top_left_corner = 1
+1:2/0/terrains_peering_bit/top_side = 1
+1:2/0/terrains_peering_bit/top_right_corner = 1
+0:2/0 = 0
+0:2/0/terrain_set = 0
+0:2/0/terrain = 1
+0:2/0/terrains_peering_bit/right_side = 1
+0:2/0/terrains_peering_bit/top_side = 1
+0:2/0/terrains_peering_bit/top_right_corner = 1
+0:1/0 = 0
+0:1/0/terrain_set = 0
+0:1/0/terrain = 1
+0:1/0/terrains_peering_bit/right_side = 1
+0:1/0/terrains_peering_bit/bottom_right_corner = 1
+0:1/0/terrains_peering_bit/bottom_side = 1
+0:1/0/terrains_peering_bit/top_side = 1
+0:1/0/terrains_peering_bit/top_right_corner = 1
+1:1/0 = 0
+1:1/0/terrain_set = 0
+1:1/0/terrain = 1
+1:1/0/terrains_peering_bit/right_side = 1
+1:1/0/terrains_peering_bit/bottom_right_corner = 1
+1:1/0/terrains_peering_bit/bottom_side = 1
+1:1/0/terrains_peering_bit/bottom_left_corner = 1
+1:1/0/terrains_peering_bit/left_side = 1
+1:1/0/terrains_peering_bit/top_left_corner = 1
+1:1/0/terrains_peering_bit/top_side = 1
+1:1/0/terrains_peering_bit/top_right_corner = 1
+2:3/0 = 0
+2:3/0/terrain_set = 0
+2:3/0/terrain = 1
+1:3/0 = 0
+1:3/0/terrain_set = 0
+1:3/0/terrain = 1
+1:3/0/terrains_peering_bit/right_side = 1
+1:3/0/terrains_peering_bit/left_side = 1
+0:3/0 = 0
+0:3/0/terrain_set = 0
+0:3/0/terrain = 1
+0:3/0/terrains_peering_bit/bottom_side = 1
+0:3/0/terrains_peering_bit/top_side = 1
+0:4/0 = 0
+0:4/0/terrain_set = 0
+0:4/0/terrain = 1
+0:4/0/terrains_peering_bit/top_side = 1
+1:4/0 = 0
+1:4/0/terrain_set = 0
+1:4/0/terrain = 1
+1:4/0/terrains_peering_bit/left_side = 1
+
 [resource]
 tile_size = Vector2i(32, 32)
 occlusion_layer_0/light_mask = 1
@@ -475,5 +568,8 @@ physics_layer_0/collision_mask = 17
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Murs"
 terrain_set_0/terrain_0/color = Color(1, 0.0078125, 0.0078125, 1)
+terrain_set_0/terrain_1/name = "Chemins"
+terrain_set_0/terrain_1/color = Color(0.25, 0.271484, 0.5, 1)
 sources/0 = SubResource("TileSetAtlasSource_db73o")
 sources/1 = SubResource("TileSetAtlasSource_naivx")
+sources/2 = SubResource("TileSetAtlasSource_a50k3")

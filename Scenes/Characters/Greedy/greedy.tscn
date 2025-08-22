@@ -189,7 +189,7 @@ material = SubResource("ShaderMaterial_2asb6")
 use_parent_material = true
 sprite_frames = SubResource("SpriteFrames_d67pi")
 animation = &"idleFront"
-frame_progress = 0.774694
+frame_progress = 0.139269
 
 [node name="ProgressBar" type="ProgressBar" parent="Sprites/GoblinGreedy"]
 visible = false
